@@ -102,13 +102,38 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 .dec h2{margin:2rem 0 .75rem;padding:.6rem .85rem;background:#e6f0f4;border-left:4px solid #05668D;text-transform:uppercase;letter-spacing:.08em;font-size:1.25rem}
 .rw .card{border-radius:0;border-left:4px solid #0B6E4F}@media(max-width:700px){.rw{grid-template-columns:1fr 1fr}.rw .card{flex-direction:column}}
 .std{background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin:.5rem 0}.std summary{min-height:44px;padding:.75rem 1rem;cursor:pointer;font:700 1.15rem "Khand",sans-serif}.std ol{margin:0;padding:0 1rem 1rem 2.25rem}.std li{margin:.25rem 0}
+
+/* Dashboard Layout Deck round 1 (Max, Oct 13 2026): 12 Yes picks */
+.tbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:.75rem;margin:0 -1.25rem .75rem;padding:0 1.25rem;min-height:48px;background:rgba(251,248,241,.96);border-bottom:1px solid var(--bd);backdrop-filter:blur(6px)}
+.tbar .home{color:var(--fg);text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+.tbar .nm{font:700 1.15rem "Khand",sans-serif;flex:1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tbar .upd{color:var(--mut);font-size:.8rem;white-space:nowrap}
+@media (min-width:1600px){.tbar{margin:0 -1.75rem .85rem;padding:0 1.75rem;min-height:56px}.tbar .home,.tbar .upd{font-size:.9rem}.tbar .nm{font-size:1.3rem}}
+@media (min-width:2400px){.tbar{margin:0 -2.25rem 1rem;padding:0 2.25rem;min-height:64px}.tbar .home,.tbar .upd{font-size:1rem}.tbar .nm{font-size:1.45rem}}
+h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:.35rem 0}
+@media (min-width:1600px){h2{margin:1.4rem 0 .6rem}.grid{gap:.85rem}}
+@media (min-width:2400px){h2{margin:1.6rem 0 .7rem}.grid{gap:1rem}}
+details.rep{padding:0}details.rep>summary{list-style:none;display:flex;align-items:center;gap:.75rem;min-height:48px;padding:.75rem 1rem;cursor:pointer;font-weight:600}
+details.rep>summary::-webkit-details-marker{display:none}
+details.rep>summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(45deg);margin-left:auto;flex:none}
+details.rep[open]>summary::after{transform:rotate(-135deg)}
+details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar+.alert{margin-top:.5rem}
+.grid .card{padding:.6rem .85rem;align-items:center;cursor:pointer}
+.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.open p{-webkit-line-clamp:unset;display:block}
+.card>div{flex:1;min-width:0}.card .date{margin-left:auto;flex:none;text-align:right;color:var(--mut);font-size:.85rem;white-space:nowrap;padding-left:.5rem}
+.rw .card{flex-direction:row!important}@media(max-width:700px){.rw{grid-template-columns:1fr!important}}
+.more5{display:none!important}.seeall{margin-top:.5rem;min-height:44px;min-width:44px;background:none;border:0;color:var(--blue);font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;padding:0 .25rem}
+.stats{display:flex;gap:.5rem;overflow-x:auto;margin:.75rem 0 0;padding-bottom:2px}
+.stat{flex:1 0 0;min-width:5.5rem;background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:.5rem .75rem}.stat b{display:block;font:700 1.5rem/1.1 "Khand",sans-serif}.stat span{font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+@media (min-width:1600px){.stat{padding:.75rem 1rem}.stat b{font-size:1.8rem}}
 </style><script src="ptr.js" defer></script></head><body><main class="wrap">
-<nav class="topnav" aria-label="Apps Home"><a class="home mw-hover" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/" style="display:inline-flex;align-items:center;min-height:44px;min-width:44px">← Apps Home</a></nav>
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 13, 11:45 PM ICT</span></header>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
 <a class="mw-hover" href="#qs"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Top Coaching Suggestions</h3><p>Questionnaire on this page</p></div></a>
-<a class="mw-hover" href="https://webermanapps.github.io/dashboard-layout-deck-9l1e5q/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M5 8h4M15 8h4M15 11h4"/></svg></span><div><h3>Dashboard Layout Deck</h3><p>100 layout ideas</p></div></a>
+<a class="mw-hover" href="https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M5 8h4M15 8h4M15 11h4"/></svg></span><div><h3>Dashboard Layout Deck 2</h3><p>25 refined layout ideas</p></div></a>
 <a class="mw-hover" href="https://webermanapps.github.io/brief-app/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Brief App</h3><p>Agent briefs</p></div></a>
 </nav>
 </section>
@@ -124,18 +149,20 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
-<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 13, 2026, 11:28 PM ICT</p>
+<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 13, 2026, 11:45 PM ICT</p>
 
-<section class="bar" aria-label="Fresh Start"><div class="label">Fresh Start &middot; Oct 13, 2026</div><h2 style="margin-top:.25rem">Ready For Max Now</h2><p class="sub">What Coach has lined up for this work block. Top three first.</p>
+<details class="bar rep" aria-label="Fresh Start"><summary><span class="sline">Fresh Start &middot; 3 Items Ready</span></summary><div class="rbody"><div class="label">Fresh Start &middot; Oct 13, 2026</div><h2 style="margin-top:.25rem">Ready For Max Now</h2><p class="sub">What Coach has lined up for this work block. Top three first.</p>
 <div class="grid" style="margin-bottom:1rem">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Top Coaching Suggestions</h3><p>Seven restructure cards at the top of this page. Vote No / Maybe / Love / Yes, add notes, then Submit.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Brief App</h3><p>Ready for taps when the next brief lands. Open from the Coach Apps strip at the top.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Team Fresh Start</h3><p>Agents are refreshing dashboards and apps for this work block. Start with the questionnaire, then other Waiting On You decks.</p></div></div>
 </div>
+</div></details>
 <details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>1 Need From Max</summary>
 <div class="abody"><h3>Questionnaire Answers</h3><p>No real answers yet (only a Coach TEST in the inbox). Submit the seven suggestions when ready.</p></div>
 </details>
-</section><div class="top"><section><h2>Routines</h2><div class="grid">
+<div class="stats" aria-label="Stats"><div class="stat"><b>5</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>0</b><span>Decisions</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
+<div class="top"><section><h2>Routines</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Daily Workflow Review</h3><p>Every day, 4:00 ICT</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coach Morning Report</h3><p>Every day, 4:43 ICT</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V4h10l-2 4 2 4H4"/></svg></span><div><h3>Coach Evening Report</h3><p>Every day, 18:00 ICT</p></div></div>
@@ -153,6 +180,7 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 <div class="abody"><h3>None Right Now</h3><p>Nothing waiting on Max.</p></div>
 </details>
 </section></div><h2>Recent Work</h2><div class="grid rw">
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; Dashboard Layout Deck 2 (25 cards) is live.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Dashboard Layout Standards</h3><p>Max&#x27;s 19 settled dashboard picks folded into Coach layout guidance and this page.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></span><div><h3>Deck Submit Upgrade</h3><p>Dashboard Layout Deck: Back to Deck Building button, header Deck Building link, Submit anytime.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Fresh Start Report</h3><p>Evening Report swapped for Fresh Start bar; ptr.js v3 and submit.js synced.</p></div></div>
@@ -167,6 +195,8 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 </div>
 
 <h2>Dashboard Layout Standards</h2>
+<details class="std"><summary>Layout Deck Round 1: Every Dashboard (12)</summary><ol>
+<li>One Shared Top Bar</li><li>Title Before Report</li><li>Report As One Line That Expands</li><li>Sticky Mini Header On Scroll</li><li>Decisions Owed Right Under The Report</li><li>Consistent Dashboard Names</li><li>Condensed Rows That Expand</li><li>Show Five Then See All</li><li>Right-Aligned Dates In Rows</li><li>Two-Line Card Limit</li><li>Tighter Vertical Rhythm</li><li>Stat Tiles As One Strip</li></ol></details>
 <details class="std"><summary>Settled Picks From Max (19)</summary><ol>
 <li>Apps Home Link: Spaced Caps Title, Compact; Bottom Tabs, Lagoon</li>
 <li>Fresh Start Bar: Big Title, Fold-Out Sections, Icon Action Tiles</li>
@@ -201,6 +231,17 @@ document.getElementById('share').onclick=async()=>{const u=location.href.split('
 if(navigator.share){try{await navigator.share({title:t,url:u});return}catch(e){if(e.name==='AbortError')return}}
 if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(t+' '+u);return}
 try{await navigator.clipboard.writeText(t+' '+u);document.getElementById('toast').textContent='Link copied'}catch(e){prompt('Copy link',u)}};
+</script>
+<script>
+/* Layout round 1: tap rows to expand, dates right-aligned, show five then See All */
+(function(){
+document.querySelectorAll('.grid .card').forEach(c=>{const p=c.querySelector('p');
+ if(p&&/^(Every day|Weekdays|Thursday|Monday|Daily)[^.]*ICT/.test(p.textContent)){const m=p.textContent.match(/^([^.]*ICT)\.?\s*(.*)$/);const d=document.createElement('span');d.className='date';d.textContent=m[1];c.appendChild(d);if(m[2])p.textContent=m[2];else p.remove()}
+ c.addEventListener('click',()=>c.classList.toggle('open'))});
+document.querySelectorAll('.grid').forEach(g=>{const cs=[...g.children].filter(x=>x.classList.contains('card'));if(cs.length<=5||g.closest('.bar'))return;
+ cs.slice(5).forEach(x=>x.classList.add('more5'));const b=document.createElement('button');b.type='button';b.className='seeall mw-hover';b.textContent='See All ('+cs.length+')';b.setAttribute('aria-expanded','false');
+ b.onclick=()=>{const o=b.getAttribute('aria-expanded')==='true';cs.slice(5).forEach(x=>x.classList.toggle('more5',o));b.setAttribute('aria-expanded',String(!o));b.textContent=o?'See All ('+cs.length+')':'Show Fewer'};g.after(b)});
+})();
 </script>
 <script src="submit.js"></script>
 <script>
