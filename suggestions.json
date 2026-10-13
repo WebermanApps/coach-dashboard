@@ -1,14 +1,12 @@
 {
-  "round": "2026-10-13",
+  "round": "2026-10-14",
   "title": "Top Coaching Suggestions",
-  "subtitle": "Oct 13 Restructure. Pick an answer for each, add a note if you like, then Submit.",
+  "subtitle": "Oct 14 Workflow Review. Pick an answer for each, add a note if you like, then Submit.",
   "items": [
-    {"id": "front-door", "title": "One Front Door For Max's Asks", "why": "Misrouted asks get forwarded to the chart owner, who acks before Dump closes them."},
-    {"id": "upkeep-decisions", "title": "Close UpKeep's Foundation Decisions", "why": "Every Upkeep lane builds on drafts until the name, tiers and 7 questions are locked."},
-    {"id": "decision-queue", "title": "One Ranked Decision Queue", "why": "30+ waiting-on-Max items sit across 18 dashboards; one top-5 queue plus standing OKs."},
-    {"id": "rolled-up-report", "title": "One Rolled-Up Report", "why": "One digest line per agent by group instead of 18 pages with two reports each."},
-    {"id": "reorg-close-out", "title": "Finish The Reorg Close-Out", "why": "One checklist for retired agents and the UpKeep Content merge; Mo-era relays already handed off."},
-    {"id": "graphics-kit", "title": "Small-Graphics Brand Kit", "why": "Every agent now makes its own small graphics; a kit and weekly spot check stop drift."},
-    {"id": "lane-line", "title": "Research And UpKeep Lane Line", "why": "Research supplies sourced scans and UpKeep owns market-study conclusions, with no parallel study."}
+    {"id": "freeze-cleanup", "title": "Freeze Cleanup First", "why": "Owner: Grok Bot. One overnight list in the 7:18 brief, then the Router back on; test pings and site unlocks stay out of the results inbox."},
+    {"id": "dashboard-standard", "title": "One Numbered Dashboard Standard", "why": "Owner: Branding Agent. One numbered standard so dashboard rules stop flip-flopping."},
+    {"id": "upkeep-site-lane", "title": "UpKeep Owns Its Customer Site", "why": "Owner: UpKeep and Grok Bot. Grok Bot hands requests over; every customer-facing approval is logged; passwords stay out of the feed."},
+    {"id": "legal-on-chart", "title": "Add Legal To The Org Chart", "why": "Owner: Grok Bot. Split the lawyer work between Legal and WellNest, and finish the three pending agent deletions."},
+    {"id": "report-checkable", "title": "Morning Reports At 5:00, Checked Automatically", "why": "Owner: Grok Bot and every agent. Settle on 5:00, and every dashboard posts a small report file for automatic on-time checks."}
   ]
 }
