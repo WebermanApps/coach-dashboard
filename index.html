@@ -58,11 +58,25 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 .sg{background:var(--bg);border:1px solid var(--bd);border-radius:var(--r)}.sg summary{list-style:none;display:flex;gap:.75rem;padding:1rem;min-height:44px;cursor:pointer}.sg summary::-webkit-details-marker{display:none}
 .sg p{margin:.35rem 0 0;font-size:.95rem}.sg .more{padding:0 1rem 1rem 3.25rem;color:var(--mut)}.num{flex:none;width:28px;height:28px;border-radius:50%;background:var(--pri);color:#fafafa;display:grid;place-items:center;font:700 .9rem "Khand",sans-serif}
 .sg[open]{transform:none}
+
+.alert{background:var(--card);border:1px solid var(--bd);border-left:4px solid var(--amber);border-radius:var(--r);margin-top:.25rem}
+.alert>summary{list-style:none;display:flex;align-items:center;gap:.75rem;padding:1rem;min-height:44px;cursor:pointer;font-weight:600;color:var(--fg)}
+.alert>summary::-webkit-details-marker{display:none}
+.alert>summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(45deg);margin-left:auto;flex:none}
+.alert[open]>summary::after{transform:rotate(-135deg);margin-top:4px}
+.alert .ic{background:#fef3c7}
+.alert .ic svg{stroke:var(--amber)}
+.alert .abody{padding:0 1rem 1rem 3.25rem;color:var(--mut)}
+.alert .abody h3{color:var(--fg);margin:0 0 .2rem}
+.alert .abody p{margin:0;font-size:.95rem}
+.alert:not([open])>.abody{display:none}
+@media (min-width:1600px){.alert>summary{padding:1.15rem;gap:1rem}.alert .abody{padding:0 1.15rem 1.15rem 3.75rem}}
+@media (min-width:2400px){.alert>summary{padding:1.35rem;gap:1.15rem}.alert .abody{padding:0 1.35rem 1.35rem 4.25rem}}
 </style></head><body><main class="wrap">
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
-<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 13, 2026, 5:10 PM ICT</p>
+<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 13, 2026, 5:20 PM ICT</p>
 
 <section class="bar" aria-label="Update bar"><div class="label">Morning Report &middot; Oct 13, 2026</div><h2 style="margin-top:.25rem">What Coach Is Working On</h2><p class="sub">Fresh morning view for the TV. One or two lines per lane.</p>
 <div class="grid" style="margin-bottom:1rem">
@@ -81,10 +95,10 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><div><h3>Weekly Quality Check Rubric</h3><p><span class="pill amber">Drafting</span></p></div></div>
 </div>
 
-</section><section><h2>Decisions Max Owes</h2><div class="grid">
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>None Right Now</h3><p>Nothing waiting on Max.</p></div></div>
-</div>
-
+</section><section><h2>Decisions Max Owes</h2>
+<details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>0 Decisions Owed</summary>
+<div class="abody"><h3>None Right Now</h3><p>Nothing waiting on Max.</p></div>
+</details>
 </section></div><h2>Recent Work</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Oct 13 Reorg Handoffs</h3><p>Routines handed to Thai, Portfolio and Grok Bot.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></svg></span><div><h3>Upkeep Group Audit</h3><p>Reviewed the Upkeep group's workflow.</p></div></div>
