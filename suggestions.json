@@ -1,0 +1,14 @@
+{
+  "round": "2026-10-13",
+  "title": "Top Coaching Suggestions",
+  "subtitle": "Oct 13 Restructure. Pick an answer for each, add a note if you like, then Submit.",
+  "items": [
+    {"id": "front-door", "title": "One Front Door For Max's Asks", "why": "Misrouted asks get forwarded to the chart owner, who acks before Dump closes them."},
+    {"id": "upkeep-decisions", "title": "Close UpKeep's Foundation Decisions", "why": "Every Upkeep lane builds on drafts until the name, tiers and 7 questions are locked."},
+    {"id": "decision-queue", "title": "One Ranked Decision Queue", "why": "30+ waiting-on-Max items sit across 18 dashboards; one top-5 queue plus standing OKs."},
+    {"id": "rolled-up-report", "title": "One Rolled-Up Report", "why": "One digest line per agent by group instead of 18 pages with two reports each."},
+    {"id": "reorg-close-out", "title": "Finish The Reorg Close-Out", "why": "One checklist for retired agents and the UpKeep Content merge; Mo-era relays already handed off."},
+    {"id": "graphics-kit", "title": "Small-Graphics Brand Kit", "why": "Every agent now makes its own small graphics; a kit and weekly spot check stop drift."},
+    {"id": "lane-line", "title": "Research And UpKeep Lane Line", "why": "Research supplies sourced scans and UpKeep owns market-study conclusions, with no parallel study."}
+  ]
+}
