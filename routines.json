@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 18:00 ICT",
+ "updated": "2026-10-14 20:20 ICT",
  "routines": [
   {
    "name": "Daily Workflow Review",
@@ -18,16 +18,17 @@
   {
    "name": "Coach Evening Report",
    "group": "Reports",
-   "schedule_plain": "Daily At 6:00 PM ICT",
-   "status": "on",
-   "last_run": "Today 6:00 PM"
+   "schedule_plain": "Daily At 6:00 PM ICT (Retired)",
+   "status": "paused",
+   "last_run": "Today 6:00 PM",
+   "note": "Retired by Max, Oct 14 2026 20:05 ICT: only the Morning Report (by 5:00 ICT) remains."
   },
   {
    "name": "Questionnaire Submit Watch",
    "group": "Event/Listener",
    "schedule_plain": "Hourly At :17 ICT",
    "status": "on",
-   "last_run": "Today 5:24 PM"
+   "last_run": "Today 7:20 PM"
   },
   {
    "name": "Weekly Agent Optimization Review",

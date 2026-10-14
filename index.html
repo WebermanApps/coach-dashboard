@@ -2,8 +2,8 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light"><title>Coach Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=1">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=2">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=3">
 <style>
 :root{--bg:#FDFBF6;--card:#fff;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--blue:#155dfc;--green:#16a34a;--amber:#d97706;--r:.75rem;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
 *{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}
@@ -132,7 +132,30 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .sugg-teaser p{margin:0;color:var(--mut)}
 .sugg-teaser .cta{display:inline-flex;align-items:center;min-height:44px;margin-top:.5rem;font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--blue)}
 
-/* R47 Evening Report: numbered picture rows, saffron accent */
+
+/* Questions Center (Max QC Deck, Oct 14) */
+.qc{margin:1.25rem auto .5rem;max-width:760px}
+.qc h2{margin:0 0 .25rem}
+.qc .cnt{font:500 .9rem "Hind",sans-serif;color:var(--mut);margin:0 0 .75rem}
+.qc h3.qg{font:600 .8rem "Hind",sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:1.1rem 0 .4rem;color:var(--mut)}
+.qcard{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:1rem;margin:.5rem 0}
+.qcard.done{opacity:.55}
+.qcard .qt{font:600 1.05rem "Hind",sans-serif;margin:.4rem 0 .65rem}
+.qcard .qimg{display:block;width:100%;max-width:420px;margin:.35rem 0 .75rem;border:1px solid var(--bd);border-radius:8px;background:#fff}
+.qpill{display:inline-block;font:600 .7rem "Hind",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.1rem .55rem;border-radius:99px;border:1px solid var(--bd);background:var(--bg);color:var(--mut)}
+.qpill.Urgent{color:#b42318;border-color:#f3b8b2}
+.qpill.Open{color:#525252;border-color:#d6cfc2}
+.qdue{font:500 .8rem "Hind",sans-serif;color:#b42318;margin-left:.5rem}
+.qrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.qb{min-height:40px;padding:0 .9rem;border:1.5px solid var(--pri);background:#fff;border-radius:8px;font:600 .85rem "Hind",sans-serif;cursor:pointer;color:var(--fg)}
+.qb.on{background:var(--pri);color:#fff}
+.qcard input.qtxt,.qcard textarea.qnote{width:100%;box-sizing:border-box;min-height:40px;border:1px solid #d6cfc2;border-radius:8px;padding:.5rem;font:1rem "Hind",sans-serif;margin-top:.5rem;background:#fff;color:var(--fg)}
+.qlink{background:none;border:0;color:var(--blue);font:600 .85rem "Hind",sans-serif;cursor:pointer;padding:.4rem 0}
+.qsend{margin-left:auto}
+.qbar{display:flex;justify-content:center;align-items:center;gap:.75rem;margin:1rem 0}
+.qtick{color:var(--green);font:600 .9rem "Hind",sans-serif}
+
+/* Morning Report: numbered picture rows, saffron accent */
 .rep.open-rep{border-left-color:#D4A017}
 .rep.open-rep .rhd{border-bottom:1px solid #EFEAE2}
 .erows{list-style:none;margin:.35rem 0 0;padding:0}
@@ -148,11 +171,11 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 @media (min-width:1600px){.erows .num,.erows .ic{width:34px;height:34px}.erows .ic svg{width:22px;height:22px}.erows .num{font-size:1rem}}
 @media (min-width:2400px){.erows .num,.erows .ic{width:40px;height:40px}.erows .ic svg{width:26px;height:26px}.erows .num{font-size:1.05rem}}
 </style><script src="ptr.js" defer></script></head><body><main class="wrap">
-<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 6:00 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 8:20 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
 <section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
 <script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=1" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=2" defer></script>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
@@ -163,41 +186,94 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
-<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 6:00 PM ICT</p>
+<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 8:20 PM ICT</p>
 
-<section class="bar rep open-rep" aria-label="Evening Report"><div class="rhd"><span class="sline">Evening Report &middot; Catch-Up Shipped, Round 2 Open</span></div><div class="rbody"><div class="label">Evening Report &middot; Oct 14, 2026</div><h2 style="margin-top:.25rem">What I Worked On Today</h2><p class="sub">Morning fixes settled, Round 2 still open, and dashboard catch-up shipped (R63–R66).</p>
+<section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Morning Fixes Yes&#x27;d, Round 2 Open, R63–R66 Catch-Up</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 14, 2026 &middot; Posted 4:43 AM ICT (due by 5:00)</div><h2 style="margin-top:.25rem">What Was Posted By 5:00</h2><p class="sub">Morning fixes Max Yes&#x27;d, Round 2 still open in Suggestions, and R63–R66 catch-up on the board.</p>
 <ol class="erows">
 <li><span class="num" aria-hidden="true">1</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5h10l-2 4 2 4H4"/><path d="M16 19h4"/></svg></span><div class="txt"><b>Morning Report</b>Five coaching fixes from the 4:00 workflow review, posted by 4:43.</div></li>
 <li><span class="num" aria-hidden="true">2</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div class="txt"><b>Max Said Yes To All Five</b>Yes at 13:03. Round 2 suggestions deck posted for new votes.</div></li>
 <li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h10"/></svg></span><div class="txt"><b>Questionnaire Clarity</b>Plain-language cards with images; answered cards drop after Submit.</div></li>
 <li><span class="num" aria-hidden="true">4</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div class="txt"><b>Catch-Up Polish</b>Cream base, Share header icon, open report card, and report.json.</div></li>
-<li><span class="num" aria-hidden="true">5</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h2M7 17h2"/></svg></span><div class="txt"><b>R63–R66 Plus Picks</b>Routines schedule table, Ready Deck Shelf (4 ready 20-card decks plus Coach Suggestions), Agent Dashboard picks 15A/19A applied.</div></li>
+<li><span class="num" aria-hidden="true">5</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h2M7 17h2"/></svg></span><div class="txt"><b>R63–R66 Plus Picks</b>Routines schedule table, Ready Deck Shelf (4 ready 20-card decks plus Coach Suggestions), Agent Dashboard picks applied.</div></li>
 </ol>
-<div class="er-split"><h3>Tomorrow</h3>
+<details class="rmore"><summary>Next / Open</summary>
 <ol class="erows">
 <li><span class="num" aria-hidden="true">1</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div class="txt"><b>Daily Workflow Review</b>4:00 AM ICT, then Morning Report by 5:00 (routine 4:43).</div></li>
 <li><span class="num" aria-hidden="true">2</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></span><div class="txt"><b>Thursday Weekly Review</b>6:29 AM ICT: dashboards live and on time, team-feed posts, Share-button re-check.</div></li>
-<li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div class="txt"><b>Round 2 Still Open</b>Coach Suggestions waiting on Max&#x27;s votes; keep Need From Max until Submit.</div></li>
+<li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div class="txt"><b>Round 2 Still Open</b>Coach Suggestions waiting on Max&#x27;s votes (publishing rule, echo posts, suggestion lanes).</div></li>
 </ol>
-</div>
-</div></section>
-</div></section>
-<details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>1 Need From Max</summary>
-<div class="abody"><h3>Questionnaire Answers</h3><p>Round 2: five new suggestions in the Coach Suggestions deck. Vote, add notes if you like, then Submit.</p></div>
 </details>
-<div class="stats" aria-label="Stats"><div class="stat"><b>5</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>0</b><span>Decisions</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
-<section data-routines="routines.json" id="routines"></section>
+</div></section>
+
+<section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
+<script>
+(function(){
+ const H='coach-qc-hidden', D=JSON.parse(localStorage.getItem(H)||'[]'), A={};
+ function send(ids,extra){
+  const ans=ids.map(i=>A[i]).filter(Boolean);
+  const p={agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:Object.assign({answers:ans},extra||{})};
+  try{if(window.MWSubmit)return MWSubmit.send(p)}catch(e){}
+  return Promise.resolve(false);
+ }
+ function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+ fetch('questions.json?'+Date.now()).then(r=>r.json()).then(Q=>{
+  Q=Q.filter(q=>!D.includes(q.id));
+  const o={Urgent:0,Soon:1,Open:2};Q.sort((a,b)=>(o[a.u]??9)-(o[b.u]??9));
+  document.getElementById('qcnt').textContent=Q.length+' open, '+Q.filter(q=>q.u==='Urgent').length+' urgent';
+  const L=document.getElementById('qlist');let g='';
+  L.innerHTML=Q.map(q=>{
+   let h='';if(q.u!==g){g=q.u;h='<h3 class="qg">'+(g==='Open'?'Open':g)+'</h3>'}
+   const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
+   const btns=opts.map(v=>'<button class="qb mw-hover" type="button" data-v="'+esc(v)+'">'+esc(v)+'</button>').join('');
+   const img=q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'">':'';
+   return h+'<div class="qcard" data-id="'+esc(q.id)+'"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span>'+(q.due?'<span class="qdue">'+esc(q.due)+'</span>':'')+'<div class="qt">'+esc(q.q)+'</div>'+img+'<div class="qrow">'+btns+'<button class="qlink qn" type="button">+ Note</button><button class="qlink qd" type="button">Ask for more detail</button><button class="qb qsend mw-hover" type="button">Send</button></div><input class="qtxt" placeholder="Or type your answer"><textarea class="qnote" placeholder="Note" hidden></textarea></div>';
+  }).join('');
+  L.querySelectorAll('.qcard').forEach(c=>{
+   const id=c.dataset.id,q=Q.find(x=>x.id===id);
+   const up=(v)=>{A[id]={id,question:q.q,choice:v||(A[id]&&A[id].choice)||'',text:c.querySelector('.qtxt').value,note:c.querySelector('.qnote').value};c.classList.add('done')};
+   c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{c.querySelectorAll('[data-v]').forEach(x=>x.classList.remove('on'));b.classList.add('on');up(b.dataset.v)});
+   c.querySelector('.qtxt').oninput=()=>up();
+   c.querySelector('.qnote').oninput=()=>up();
+   c.querySelector('.qn').onclick=()=>{c.querySelector('.qnote').hidden=false};
+   c.querySelector('.qd').onclick=async e=>{
+    const btn=e.target;btn.disabled=true;btn.textContent='Sending';
+    A[id]={id,question:q.q,choice:'Ask for more detail'};
+    const ok=await send([id],{type:'detail-request',detail_request:true,question:q.q});
+    btn.textContent=ok?'Asked':(window.MWSubmit&&MWSubmit.blocked?'Ask for more detail':'Queued');
+    btn.disabled=!!ok;
+   };
+   c.querySelector('.qsend').onclick=async()=>{
+    if(!A[id]||!(A[id].choice||A[id].text))return;
+    const ok=await send([id]);
+    if(ok||!(window.MWSubmit&&MWSubmit.blocked)){D.push(id);localStorage.setItem(H,JSON.stringify(D));c.remove();
+     const left=[...L.querySelectorAll('.qcard')].length;
+     document.getElementById('qcnt').textContent=left+' open, '+[...L.querySelectorAll('.qpill.Urgent')].length+' urgent';
+     if(!left){document.getElementById('qsent').hidden=false}}
+   };
+  });
+  document.getElementById('qsubmit').onclick=async()=>{
+   const ids=Object.keys(A).filter(i=>A[i]&&(A[i].choice||A[i].text));
+   if(!ids.length)return;
+   const ok=await send(ids);
+   if(ok||!(window.MWSubmit&&MWSubmit.blocked)){
+    ids.forEach(i=>{D.push(i);const c=L.querySelector('[data-id="'+i+'"]');c&&c.remove()});
+    localStorage.setItem(H,JSON.stringify(D));
+    document.getElementById('qsent').hidden=false;
+    document.getElementById('qcnt').textContent='0 open, 0 urgent';
+   }
+  };
+ });
+})();
+</script>
+
+<div class="stats" aria-label="Stats"><div class="stat"><b>5</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>5</b><span>Open Qs</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
 <div class="top"><section><h2>In Progress</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><div><h3>Weekly Quality Check Rubric</h3><p><span class="pill amber">Drafting</span></p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span><div><h3>Share Button Re-Check</h3><p><span class="pill blue">Thursday</span> Verify each owner&#x27;s fix in the Oct 15 review.</p></div></div>
 </div>
 
-</section><section class="dec"><h2>Decisions Max Owes</h2>
-<details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>0 Decisions Owed</summary>
-<div class="abody"><h3>None Right Now</h3><p>Nothing waiting on Max.</p></div>
-</details>
 </section></div><h2>Recent Work</h2><div class="grid rw">
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg></span><div><h3>Evening Report Oct 14</h3><p>Catch-up shipped, Round 2 still open; tomorrow 4:00 review and Thursday weekly check.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Morning fixes Yes&#x27;d, Round 2 open, R63–R66 catch-up; Evening Report retired.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></span><div><h3>R66 Ready Deck Shelf / R65 Routines</h3><p>Ready To Swipe: Dashboard Layout, Agent Overlap And Handoffs, Rule Cleanup, Workflow And Routines (20 cards each); Routines schedule table.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Max Yes On Morning Fixes</h3><p>All five Yes at 13:03; Round 2 Coach Suggestions deck posted.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Five coaching fixes from the 4:00 workflow review.</p></div></div>
@@ -210,12 +286,11 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 </div>
 
 <h2>Dashboard Layout Standards</h2>
-<details class="std"><summary>Layout Deck Round 1: Every Dashboard (12)</summary><ol>
-<li>One Shared Top Bar</li><li>Title Before Report</li><li>Report As One Line That Expands</li><li>Sticky Mini Header On Scroll</li><li>Decisions Owed Right Under The Report</li><li>Consistent Dashboard Names</li><li>Condensed Rows That Expand</li><li>Show Five Then See All</li><li>Right-Aligned Dates In Rows</li><li>Two-Line Card Limit</li><li>Tighter Vertical Rhythm</li><li>Stat Tiles As One Strip</li></ol></details>
-<details class="std"><summary>Settled Picks From Max (19)</summary><ol>
+<details class="std"><summary>Settled Picks From Max</summary><ol>
+<li>Layout Round 1 (12): Shared Top Bar; Title Before Report; Report Opens As Key Lines; Sticky Mini Header On Scroll; Decisions Under Report; Consistent Names; Condensed Expanding Rows; Show Five Then See All; Right-Aligned Dates; Two-Line Card Limit; Tighter Rhythm; Stat Tiles Strip</li>
 <li>Apps Home Link: Spaced Caps Title, Compact; Bottom Tabs, Lagoon</li>
 <li>Fresh Start Bar: Big Title, Fold-Out Sections, Icon Action Tiles</li>
-<li>Evening Report: Numbered Rows, Saffron; Picture Rows Where Images Exist</li>
+<li>Morning Report: Numbered Rows, Saffron; Picture Rows Where Images Exist</li>
 <li>Waiting On Max: Tinted Title Box, Color Band Header, Side Rule</li>
 <li>Status Chips: Pill Buttons; Text Links, Not A Sticky Bar</li>
 <li>Open Items: Two-Up Cards With Color Edge, Square Corners</li>
@@ -223,8 +298,8 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 <li>Pull To Refresh Cue: Numbered Rows, Fold-Out Sections</li>
 <li>Deck Building Page: Fold-Out Sections, Big Title Header</li></ol></details>
 <details class="std"><summary>Still Open (6 To Retest)</summary><ol>
-<li>Evening Report rows: small colored dots beside each line, or a color stripe on the left edge of each card?</li>
-<li>Evening Report stats: one large number for each metric, or a progress bar that fills to show how far along it is?</li>
+<li>Report rows: small colored dots beside each line, or a color stripe on the left edge of each card?</li>
+<li>Report stats: one large number for each metric, or a progress bar that fills to show how far along it is?</li>
 <li>Status chips area: a small grid of icons you tap, or a short feature list with a plus button to add more?</li>
 <li>App tiles: show a big headline number on each tile, or a progress bar that shows completion?</li>
 <li>Deck Building page alerts: a small toast banner along the bottom, or a centered pop-up in the middle of the screen?</li>
@@ -240,10 +315,10 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 <a class="card mw-hover" href="https://webermanapps.github.io/"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><div><h3>App Hub</h3><p><span class="pill blue">Hub</span></p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/style-swipe/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Style Swipe</h3><p>Standardized</p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/blueprint-swipe/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Blueprint Swipe</h3><p>Standardized</p></div></a>
-<a class="card mw-hover" href="https://webermanapps.github.io/decision-deck/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Decision Deck</h3><p>Standardized</p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/thai-vocab-quiz/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Thai Vocab Quiz</h3><p>Standardized</p></div></a>
 </div>
 
+<section data-routines="routines.json" id="routines" aria-label="Routines"></section>
 <div id="toast" aria-live="polite"></div>
 </main>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
@@ -265,7 +340,7 @@ document.querySelectorAll('.grid').forEach(g=>{const cs=[...g.children].filter(x
 })();
 </script>
 <script src="submit.js?v=gr2"></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>
 <script>
 /* R66 Ready Deck Shelf: render shelf.json; Coach Suggestions stays pinned only while it has unanswered cards on this device (5-deck cap) */
 addEventListener('DOMContentLoaded',()=>{

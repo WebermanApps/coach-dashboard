@@ -1,0 +1,34 @@
+[
+ {
+  "id": "cq-whistle",
+  "q": "Which whistle (A / B / C) for Coach's picture?",
+  "u": "Urgent",
+  "opts": ["Whistle A", "Whistle B", "Whistle C"],
+  "img": "img/whistle-options.png",
+  "alt": "Three whistle icon options labeled A, B and C"
+ },
+ {
+  "id": "cq-sticky-header",
+  "q": "Should the sticky mini header go on every agent dashboard?",
+  "u": "Open",
+  "opts": ["Yes Everywhere", "Coach Only", "Not Yet"]
+ },
+ {
+  "id": "cq-one-publish-rule",
+  "q": "One Publishing Rule: merge the three slightly different publish rules into one brand-guide line (customer apps wait for your OK; everything else publishes right away)?",
+  "u": "Open",
+  "opts": ["Yes", "No"]
+ },
+ {
+  "id": "cq-no-echo-posts",
+  "q": "Stop Repeating Rules In The Feed: agents post only when they changed something, and Grok Bot adds one short done-by-all line?",
+  "u": "Open",
+  "opts": ["Yes", "No"]
+ },
+ {
+  "id": "cq-who-suggests",
+  "q": "Clear Lanes For Suggestions: Coach covers how agents work, Research brings outside ideas, Branding covers look and decks, and Branding is listed once on the org chart?",
+  "u": "Open",
+  "opts": ["Yes", "No"]
+ }
+]
