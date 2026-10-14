@@ -265,19 +265,20 @@ maybe:'<svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.2" 
 love:'<svg viewBox="0 0 24 24" fill="#DC2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',
 yes:'<svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>'};
 const ORDER=['yes','maybe','no'],L={no:'No',maybe:'Maybe',love:'Love',yes:'Yes'};
-let D,KEY,st={};const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
+let D,KEY,st={},ALLI=[];const SK='coach-q-submitted';let SENT={};try{SENT=JSON.parse(localStorage.getItem(SK))||{}}catch(_){SENT={}}
+function markSent(){let n=0;ALLI.forEach(i=>{const v=st[i.id];if(!SENT[i.id]&&v&&(v.answer||(v.note&&v.note.trim()))){SENT[i.id]=new Date().toISOString();n++}});try{localStorage.setItem(SK,JSON.stringify(SENT))}catch(_){}D.items=ALLI.filter(i=>!SENT[i.id]);render();return n}const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
 function summary(){if(!D)return'';const c={yes:0,maybe:0,no:0};D.items.forEach(i=>{const v=st[i.id];if(v&&v.answer)c[v.answer]++});
  const out=['Coach suggestions '+D.round+': '+c.yes+' Yes, '+c.maybe+' Maybe, '+c.no+' No'];
  D.items.forEach(i=>{const v=st[i.id];if(v&&(v.answer||v.note))out.push('- '+i.title+': '+(v.answer?L[v.answer]:'No vote')+(v.note?' | Note: '+v.note.trim():''))});return out.join('\n')}
 window.mwShareSummary=summary;
-function render(){$('qList').innerHTML=D.items.map((i,n)=>{const v=st[i.id]||{};return '<div class="q" data-id="'+e(i.id)+'"><h3>'+(n+1)+'. '+e(i.title)+'</h3>'+
+function render(){if(!D.items.length){$('qList').innerHTML='<div class="q qdone"><h3>All Caught Up</h3><p class="why">Every suggestion here has been sent to Coach. New ones appear when Coach publishes the next round.</p></div>';return}$('qList').innerHTML=D.items.map((i,n)=>{const v=st[i.id]||{};return '<div class="q" data-id="'+e(i.id)+'"><h3>'+(n+1)+'. '+e(i.title)+'</h3>'+
  (i.problem?'<p class="fx prob"><b>The Problem:</b> '+e(i.problem)+'</p><p class="fx sol"><b>The Fix:</b> '+e(i.fix)+'</p>':'<p class="why">'+e(i.why)+'</p>')+
  (i.owner?'<p class="own">Who does it: '+e(i.owner)+'</p>':'')+
  (i.img?'<figure><img src="'+e(i.img)+'" alt="'+e(i.alt||'')+'" width="720" height="400"></figure>':'')+
  '<div class="qv" role="group" aria-label="Answer for '+e(i.title)+'">'+
  ORDER.map(k=>'<button type="button" class="qb mw-hover'+(v.answer===k?' on':'')+'" data-v="'+k+'" aria-pressed="'+(v.answer===k)+'">'+IC[k]+L[k]+'</button>').join('')+'</div>'+
  '<button type="button" class="qn mw-hover" aria-expanded="'+(!!v.note)+'">Add Note</button><textarea class="'+(v.note?'show':'')+'" aria-label="Note for '+e(i.title)+'">'+e(v.note||'')+'</textarea></div>'}).join('')}
-fetch('suggestions.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;KEY='coach-q-'+d.round;try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
+fetch('suggestions.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;ALLI=d.items.slice();d.items=ALLI.filter(i=>!SENT[i.id]);KEY='coach-q-'+d.round;try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
  $('qTitle').textContent=d.title||'Top Coaching Suggestions';if(d.settled&&d.settled.length){$('qSetSum').textContent='Settled Today ('+d.settled.length+')';$('qSetList').innerHTML=d.settled.map(x=>'<li><strong>'+e(x.title)+'</strong>: '+e(x.note)+'</li>').join('');$('qSettled').hidden=false}$('qSub').textContent=d.subtitle||'';render();$('qs').hidden=false;
  $('qList').addEventListener('click',ev=>{const q=ev.target.closest('.q');if(!q)return;const id=q.dataset.id,b=ev.target.closest('.qb');
   if(b){const k=b.dataset.v;st[id]=Object.assign(st[id]||{},{answer:(st[id]&&st[id].answer===k)?null:k,time:new Date().toISOString()});save();
@@ -285,7 +286,7 @@ fetch('suggestions.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;KEY='coach-
   if(ev.target.closest('.qn')){const t=q.querySelector('textarea');t.classList.toggle('show');ev.target.closest('.qn').setAttribute('aria-expanded',t.classList.contains('show'));if(t.classList.contains('show'))t.focus()}});
  $('qList').addEventListener('input',ev=>{const q=ev.target.closest('.q');if(!q)return;const id=q.dataset.id;st[id]=Object.assign(st[id]||{},{note:ev.target.value,time:new Date().toISOString()});save()});
  MWSubmit.button($('mwSubmit'),{agent:'coach',app:'coach-dashboard',deck:d.round,
-  getResults:()=>{save();return {round:d.round,answers:st,questions:d.items.map(i=>({id:i.id,title:i.title}))}},getNotes:summary});
+  getResults:()=>{save();const r={round:d.round,answers:st,questions:d.items.map(i=>({id:i.id,title:i.title}))};setTimeout(markSent,0);return r},getNotes:summary});
  $('qCopy').onclick=async()=>{const t=summary()+'\n'+location.href.split('#')[0];try{await navigator.clipboard.writeText(t);$('qCopyMsg').textContent='Copied'}catch(_){const b=$('qCopyBox');b.value=t;b.hidden=false;b.select()}};
 }).catch(()=>{});
 })();
