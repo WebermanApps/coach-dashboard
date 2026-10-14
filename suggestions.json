@@ -1,12 +1,12 @@
 {
   "round": "2026-10-14",
   "title": "Top Coaching Suggestions",
-  "subtitle": "Oct 14 Workflow Review. Pick an answer for each, add a note if you like, then Submit.",
+  "subtitle": "Five ideas from today's review, checked again at 12:40. Tap Yes, Maybe or No on each, add a note if you like, and press Submit any time.",
   "items": [
-    {"id": "freeze-cleanup", "title": "Freeze Cleanup First", "why": "Owner: Grok Bot. One overnight list in the 7:18 brief, then the Router back on; test pings and site unlocks stay out of the results inbox."},
-    {"id": "dashboard-standard", "title": "One Numbered Dashboard Standard", "why": "Owner: Branding Agent. One numbered standard so dashboard rules stop flip-flopping."},
-    {"id": "upkeep-site-lane", "title": "UpKeep Owns Its Customer Site", "why": "Owner: UpKeep and Grok Bot. Grok Bot hands requests over; every customer-facing approval is logged; passwords stay out of the feed."},
-    {"id": "legal-on-chart", "title": "Add Legal To The Org Chart", "why": "Owner: Grok Bot. Split the lawyer work between Legal and WellNest, and finish the three pending agent deletions."},
-    {"id": "report-checkable", "title": "Morning Reports At 5:00, Checked Automatically", "why": "Owner: Grok Bot and every agent. Settle on 5:00, and every dashboard posts a small report file for automatic on-time checks."}
+    {"id": "freeze-cleanup", "title": "Keep The Results Inbox Clean", "problem": "The freeze is over and cleanup is done, but test pings and site unlocks still land in the same inbox as your real answers.", "fix": "Grok Bot skips test pings automatically and sends site unlocks to their own log.", "img": "img/c1-inbox.webp", "alt": "Diagram: before, real answers, test pings and site unlocks share one inbox; after, only real answers reach it", "owner": "Grok Bot"},
+    {"id": "dashboard-standard", "title": "One Rulebook For Dashboards", "problem": "Dashboard rules changed three times in one night, so dashboards now disagree, for example Blueprint has bottom tabs and UpKeep does not.", "fix": "Branding keeps one numbered rulebook, and new rules are added to it only after any clashes are settled.", "img": "img/c2-dashboards.webp", "alt": "Phone screenshots: Blueprint dashboard with bottom tabs next to UpKeep dashboard without them", "owner": "Branding Agent"},
+    {"id": "upkeep-site-lane", "title": "UpKeep Runs Its Customer Site", "problem": "Two agents edit the customer website, nobody records when you approved each change, and a password is still written out in 7 team feed lines.", "fix": "Only UpKeep edits the site, each change notes your OK and the time, and Grok Bot removes the password from the feed.", "img": "img/c3-site.webp", "alt": "Diagram: Grok Bot sends requests to UpKeep, which alone changes the customer site and logs your OK", "owner": "UpKeep and Grok Bot"},
+    {"id": "legal-on-chart", "title": "Put Legal On The Org Chart", "problem": "Legal is working but is missing from the org chart, and three agents marked for deletion are still waiting.", "fix": "Add Legal to the chart as the owner of all legal and lawyer work, then finish the three deletions.", "img": "img/c4-legal.webp", "alt": "Mini org chart with Legal added next to the Work agents", "owner": "Grok Bot"},
+    {"id": "report-checkable", "title": "One Morning Report Deadline", "problem": "Shared notes still list two deadlines for Morning Reports, 5:00 and 7:00.", "fix": "Keep 5:00, drop 7:00, and have each dashboard post a small file so late reports are flagged automatically.", "img": "img/c5-time.webp", "alt": "Timeline: all 19 reports in by 4:57, keep 5:00, drop 7:00", "owner": "Grok Bot and every agent"}
   ]
 }
