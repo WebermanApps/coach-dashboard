@@ -247,7 +247,7 @@ document.querySelectorAll('.grid').forEach(g=>{const cs=[...g.children].filter(x
  b.onclick=()=>{const o=b.getAttribute('aria-expanded')==='true';cs.slice(5).forEach(x=>x.classList.toggle('more5',o));b.setAttribute('aria-expanded',String(!o));b.textContent=o?'See All ('+cs.length+')':'Show Fewer'};g.after(b)});
 })();
 </script>
-<script src="submit.js"></script>
+<script src="submit.js?v=gr1"></script>
 <script>
 /* Coach questionnaire: renders suggestions.json. Answers + notes autosave to localStorage (coach-q-<round>), Submit sends via shared MWSubmit pipeline. */
 (function(){
