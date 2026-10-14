@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light"><title>Coach Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-launcher.css?v=1">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=1">
 <link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
 <style>
 :root{--bg:#FDFBF6;--card:#fff;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--blue:#155dfc;--green:#16a34a;--amber:#d97706;--r:.75rem;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
@@ -125,8 +125,8 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .od-strip a b{font:700 1.05rem "Khand",sans-serif;flex:1;min-width:0}.od-strip a span{flex:none;font-size:.8rem;font-weight:600;color:#0B6E4F;border:1px solid #0B6E4F;border-radius:99px;padding:.05rem .55rem}
 @media (min-width:1600px){.od-strip a{min-height:56px}.od-strip a b{font-size:1.2rem}}
 
-/* R66 launcher + compact suggestions teaser */
-#deck-launcher{margin:.25rem 0 .75rem}
+/* R66 Ready Deck Shelf (kit deck-shelf) */
+#ready-to-swipe{margin:.25rem 0 .75rem}
 .sugg-teaser{display:block;background:#fff;border:1px solid var(--bd);border-left:4px solid var(--pri);border-radius:var(--r);padding:1rem;margin:0 0 1rem;color:inherit;text-decoration:none}
 .sugg-teaser h2{margin:.15rem 0 .25rem;font-size:1.4rem}
 .sugg-teaser p{margin:0;color:var(--mut)}
@@ -149,22 +149,17 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 @media (min-width:2400px){.erows .num,.erows .ic{width:40px;height:40px}.erows .ic svg{width:26px;height:26px}.erows .num{font-size:1.05rem}}
 </style><script src="ptr.js" defer></script></head><body><main class="wrap">
 <header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 6:00 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
-<div id="deck-launcher" aria-label="Open a New Deck"></div>
+<section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
+<script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
+<script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=1" defer></script>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
-<a class="mw-hover" href="suggestions.html"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coach Suggestions</h3><p>Open the suggestions deck</p></div></a>
-<a class="mw-hover" href="https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M5 8h4M15 8h4M15 11h4"/></svg></span><div><h3>Layout Quick Picks</h3><p>25 refined layout ideas</p></div></a>
 <a class="mw-hover" href="https://webermanapps.github.io/brief-app/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Brief App</h3><p>Agent briefs</p></div></a>
 </nav>
 </section>
 
-<a class="sugg-teaser mw-hover" href="suggestions.html" aria-label="Coach Suggestions">
-<div class="label">Coach · Deck</div>
-<h2>Coach Suggestions</h2>
-<p>Round 2 is open: five coaching fixes. Vote, add notes, then Submit on the deck page.</p>
-<span class="cta">Open Deck →</span>
-</a>
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
@@ -176,7 +171,7 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 <li><span class="num" aria-hidden="true">2</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div class="txt"><b>Max Said Yes To All Five</b>Yes at 13:03. Round 2 suggestions deck posted for new votes.</div></li>
 <li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h10"/></svg></span><div class="txt"><b>Questionnaire Clarity</b>Plain-language cards with images; answered cards drop after Submit.</div></li>
 <li><span class="num" aria-hidden="true">4</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div class="txt"><b>Catch-Up Polish</b>Cream base, Share header icon, open report card, and report.json.</div></li>
-<li><span class="num" aria-hidden="true">5</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h2M7 17h2"/></svg></span><div class="txt"><b>R63–R66 Plus Picks</b>Open Decks pin, Routines schedule table, Open a New Deck launcher (4 categories); Agent Dashboard picks 15A/19A applied.</div></li>
+<li><span class="num" aria-hidden="true">5</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h2M7 17h2"/></svg></span><div class="txt"><b>R63–R66 Plus Picks</b>Routines schedule table, Ready Deck Shelf (4 ready 20-card decks plus Coach Suggestions), Agent Dashboard picks 15A/19A applied.</div></li>
 </ol>
 <div class="er-split"><h3>Tomorrow</h3>
 <ol class="erows">
@@ -203,12 +198,12 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 </details>
 </section></div><h2>Recent Work</h2><div class="grid rw">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg></span><div><h3>Evening Report Oct 14</h3><p>Catch-up shipped, Round 2 still open; tomorrow 4:00 review and Thursday weekly check.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></span><div><h3>R66 Deck Launcher / R65 Routines</h3><p>Open a New Deck (4 categories), Routines schedule table, picks 15A/19A.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></span><div><h3>R66 Ready Deck Shelf / R65 Routines</h3><p>Ready To Swipe: Dashboard Layout, Agent Overlap And Handoffs, Rule Cleanup, Workflow And Routines (20 cards each); Routines schedule table.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Max Yes On Morning Fixes</h3><p>All five Yes at 13:03; Round 2 Coach Suggestions deck posted.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Five coaching fixes from the 4:00 workflow review.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h10"/></svg></span><div><h3>Questionnaire Plain Language</h3><p>Cards with images; answered cards drop after Submit.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Catch-Up Polish</h3><p>Cream base, Share header icon, open report card, report.json, R63 pin.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; Layout Quick Picks is live.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; open layout questions moved into the Dashboard Layout Deck.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Dashboard Layout Standards</h3><p>Max&#x27;s 19 settled dashboard picks folded into Coach layout guidance.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></span><div><h3>Deck Submit Upgrade</h3><p>Back to Deck Building button, header link, Submit anytime.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coaching Suggestions Questionnaire</h3><p>Coach Suggestions deck page with Submit to Coach.</p></div></div>
@@ -270,29 +265,17 @@ document.querySelectorAll('.grid').forEach(g=>{const cs=[...g.children].filter(x
 })();
 </script>
 <script src="submit.js?v=gr2"></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-launcher.js?v=1" defer></script>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
 <script>
-/* R66: fill unfinished answered/total from device localStorage, then render launcher */
+/* R66 Ready Deck Shelf: render shelf.json; Coach Suggestions stays pinned only while it has unanswered cards on this device (5-deck cap) */
 addEventListener('DOMContentLoaded',()=>{
+ const box=document.getElementById('ready-to-swipe');
  const ls=k=>{try{return JSON.parse(localStorage.getItem(k))||{}}catch(_){return{}}};
- const decks=[
-  {name:'Coach Suggestions',url:'suggestions.html',src:'suggestions.json',key:'coach-q-submitted',pick:d=>(d.items||[]).map(i=>i.id),total:d=>(d.items||[]).length||5},
-  {name:'Layout Quick Picks',url:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/',src:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/cards.json',key:'dashboard-layout-deck-2-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id),total:d=>(d.cards||[]).length||25}
- ];
- Promise.all([
-  fetch('launcher.json?'+Date.now()).then(r=>r.json()),
-  Promise.all(decks.map(x=>fetch(x.src+'?'+Date.now()).then(r=>r.json()).then(d=>{
-   const ids=x.pick(d),sent=ls(x.key),left=ids.filter(i=>!sent[i]).length,tot=x.total(d);
-   return {name:x.name,url:x.url,answered:Math.max(0,tot-left),total:tot,left};
-  }).catch(()=>({name:x.name,url:x.url,answered:0,total:20,left:1}))))
- ]).then(([J,open])=>{
-  J.unfinished=open.filter(d=>d.left>0).map(({name,url,answered,total})=>({name,url,answered,total}));
-  const el=document.getElementById('deck-launcher');
-  if(window.DeckLauncher) DeckLauncher.render(el,J);
-  else {el.removeAttribute('data-launcher'); /* kit will auto-init if still present; else wait */ 
-   const wait=()=>{if(window.DeckLauncher)DeckLauncher.render(el,J);else setTimeout(wait,40)};wait()}
- }).catch(()=>{});
+ const go=J=>{const r=()=>window.DeckShelf?DeckShelf.render(box,J):setTimeout(r,40);r()};
+ Promise.all([fetch('shelf.json?'+Date.now()).then(r=>r.json()),fetch('suggestions.json?'+Date.now()).then(r=>r.json()).catch(()=>null)]).then(([J,Q])=>{
+  if(Q){const ids=(Q.items||[]).map(i=>i.id),sent=ls('coach-q-submitted'),left=ids.filter(i=>!sent[i]).length;
+   J.pinned=(J.pinned||[]).map(p=>p.url==='suggestions.html'?Object.assign({},p,{total:ids.length,answered:ids.length-left,left}):p).filter(p=>p.left!==0)}
+  go(J)}).catch(()=>go({agent:'coach',decks:[]}));
 });
 </script>
 </body></html>

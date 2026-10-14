@@ -1,0 +1,56 @@
+{
+ "agent": "coach",
+ "decks": [
+  {
+   "id": "dashboard-layout-dashboard-layout-deck",
+   "name": "Dashboard Layout Deck",
+   "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-dashboard-layout-deck-ucjnz8/",
+   "total": 20,
+   "topic": "dashboard-layout",
+   "added": "2026-10-14T19:58:45+07:00",
+   "tag": "Dashboard Layout",
+   "blurb": "20 cards, ready now"
+  },
+  {
+   "id": "overlap-handoffs-agent-overlap-and-handoffs-deck",
+   "name": "Agent Overlap And Handoffs Deck",
+   "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-zom8cm/",
+   "total": 20,
+   "topic": "overlap-handoffs",
+   "added": "2026-10-14T19:58:46+07:00",
+   "tag": "Agent Overlap",
+   "blurb": "20 cards, ready now"
+  },
+  {
+   "id": "rule-cleanup-rule-cleanup-deck",
+   "name": "Rule Cleanup Deck",
+   "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-o4wfk0/",
+   "total": 20,
+   "topic": "rule-cleanup",
+   "added": "2026-10-14T19:58:46+07:00",
+   "tag": "Rule Cleanup",
+   "blurb": "20 cards, ready now"
+  },
+  {
+   "id": "workflow-routines-workflow-and-routines-deck",
+   "name": "Workflow And Routines Deck",
+   "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-77t46v/",
+   "total": 20,
+   "topic": "workflow-routines",
+   "added": "2026-10-14T19:58:47+07:00",
+   "tag": "Workflow",
+   "blurb": "20 cards, ready now"
+  }
+ ],
+ "updated": "2026-10-14T19:58:47+07:00",
+ "pinned": [
+  {
+   "name": "Coach Suggestions",
+   "url": "suggestions.html",
+   "answered": 0,
+   "total": 5,
+   "tag": "Questionnaire"
+  }
+ ],
+ "stats_note": "Ready decks refill on submit: ready_shelf.py refill <deck_id> --shelf this file --agent coach"
+}
