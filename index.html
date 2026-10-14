@@ -3,7 +3,7 @@
 <meta name="color-scheme" content="light"><title>Coach Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf8f1;--card:#fff;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--blue:#155dfc;--green:#16a34a;--amber:#d97706;--r:.75rem;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
+:root{--bg:#FDFBF6;--card:#fff;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--blue:#155dfc;--green:#16a34a;--amber:#d97706;--r:.75rem;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
 *{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}
 body{background:var(--bg);color:var(--fg);font:16px/1.5 "Hind",system-ui,sans-serif}
 h1,h2,h3{font-family:"Khand",sans-serif;font-weight:700;line-height:1.1;margin:0}
@@ -110,20 +110,25 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 .std{background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin:.5rem 0}.std summary{min-height:44px;padding:.75rem 1rem;cursor:pointer;font:700 1.15rem "Khand",sans-serif}.std ol{margin:0;padding:0 1rem 1rem 2.25rem}.std li{margin:.25rem 0}
 
 /* Dashboard Layout Deck round 1 (Max, Oct 13 2026): 12 Yes picks */
-.tbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:.75rem;margin:0 -1.25rem .75rem;padding:0 1.25rem;min-height:48px;background:rgba(251,248,241,.96);border-bottom:1px solid var(--bd);backdrop-filter:blur(6px)}
+.tbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:.75rem;margin:0 -1.25rem .75rem;padding:0 1.25rem;min-height:48px;background:rgba(253,251,246,.96);border-bottom:1px solid var(--bd);backdrop-filter:blur(6px)}
 .tbar .home{color:var(--fg);text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;display:inline-flex;align-items:center;min-height:44px;min-width:44px}
 .tbar .nm{font:700 1.15rem "Khand",sans-serif;flex:1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tbar .upd{color:var(--mut);font-size:.8rem;white-space:nowrap}
+.tbar .shic{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;width:44px;height:44px;padding:0;border:1px solid var(--bd);border-radius:8px;background:#fff;color:var(--pri);cursor:pointer;position:relative}
+.tbar .shic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#toast{position:fixed;left:50%;bottom:1.25rem;transform:translateX(-50%);background:#fff;border:1px solid var(--bd);padding:.5rem .85rem;border-radius:var(--r);box-shadow:0 4px 14px rgba(10,10,10,.08);z-index:40;min-height:0;color:var(--green);font-size:.9rem}
 @media (min-width:1600px){.tbar{margin:0 -1.75rem .85rem;padding:0 1.75rem;min-height:56px}.tbar .home,.tbar .upd{font-size:.9rem}.tbar .nm{font-size:1.3rem}}
 @media (min-width:2400px){.tbar{margin:0 -2.25rem 1rem;padding:0 2.25rem;min-height:64px}.tbar .home,.tbar .upd{font-size:1rem}.tbar .nm{font-size:1.45rem}}
 h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:.35rem 0}
 @media (min-width:1600px){h2{margin:1.4rem 0 .6rem}.grid{gap:.85rem}}
 @media (min-width:2400px){h2{margin:1.6rem 0 .7rem}.grid{gap:1rem}}
-details.rep{padding:0}details.rep>summary{list-style:none;display:flex;align-items:center;gap:.75rem;min-height:48px;padding:.75rem 1rem;cursor:pointer;font-weight:600}
-details.rep>summary::-webkit-details-marker{display:none}
-details.rep>summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(45deg);margin-left:auto;flex:none}
-details.rep[open]>summary::after{transform:rotate(-135deg)}
-details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rep.open-rep{padding:0}.rep.open-rep .rhd{display:flex;align-items:center;gap:.75rem;min-height:48px;padding:.75rem 1rem;font-weight:600}
+.rep.open-rep .rhd .sline{flex:1;min-width:0}.rep.open-rep .rbody{padding:0 1rem 1rem}
+.rep.open-rep .rmore{margin-top:.75rem;border-top:1px solid var(--bd);padding-top:.5rem}
+.rep.open-rep .rmore>summary{list-style:none;cursor:pointer;font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);min-height:44px;display:inline-flex;align-items:center;gap:.4rem}
+.rep.open-rep .rmore>summary::-webkit-details-marker{display:none}
+.rep.open-rep .rmore>summary::after{content:"";width:7px;height:7px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg);margin-top:-2px}
+.rep.open-rep .rmore[open]>summary::after{transform:rotate(-135deg);margin-top:2px}
 .bar+.alert{margin-top:.5rem}
 .grid .card{padding:.6rem .85rem;align-items:center;cursor:pointer}
 .card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card.open p{-webkit-line-clamp:unset;display:block}
@@ -133,8 +138,14 @@ details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;ove
 .stats{display:flex;gap:.5rem;overflow-x:auto;margin:.75rem 0 0;padding-bottom:2px}
 .stat{flex:1 0 0;min-width:5.5rem;background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:.5rem .75rem}.stat b{display:block;font:700 1.5rem/1.1 "Khand",sans-serif}.stat span{font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
 @media (min-width:1600px){.stat{padding:.75rem 1rem}.stat b{font-size:1.8rem}}
+.opendecks{margin:.5rem 0 .75rem}.opendecks .label{margin-bottom:.4rem}
+.od-strip{display:flex;flex-wrap:wrap;gap:.5rem}
+.od-strip a{flex:1 1 14rem;display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.5rem .85rem;background:var(--card);border:1px solid var(--bd);border-left:4px solid #0B6E4F;border-radius:var(--r);color:inherit;text-decoration:none}
+.od-strip a b{font:700 1.05rem "Khand",sans-serif;flex:1;min-width:0}.od-strip a span{flex:none;font-size:.8rem;font-weight:600;color:#0B6E4F;border:1px solid #0B6E4F;border-radius:99px;padding:.05rem .55rem}
+@media (min-width:1600px){.od-strip a{min-height:56px}.od-strip a b{font-size:1.2rem}}
 </style><script src="ptr.js" defer></script></head><body><main class="wrap">
-<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 1:15 PM ICT</span></header>
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 2:01 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
+<section class="opendecks" id="openDecks" aria-label="My Open Decks" hidden><div class="label">My Open Decks</div><nav class="od-strip" id="odList"></nav></section>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
@@ -157,18 +168,22 @@ details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;ove
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
-<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 1:15 PM ICT</p>
+<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 2:01 PM ICT</p>
 
-<details class="bar rep" aria-label="Morning Report"><summary><span class="sline">Morning Report &middot; 5 Fixes Settled, Round 2 Open</span></summary><div class="rbody"><div class="label">Morning Report &middot; Oct 14, 2026</div><h2 style="margin-top:.25rem">Today&#x27;s Coaching Fixes</h2><p class="sub">Max said Yes to all five fixes from the 4:00 review at 13:03. Each owner now applies their part. A new round of five is in the questionnaire at the top.</p>
+<section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; 5 Fixes Settled, Round 2 Open</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 14, 2026</div><h2 style="margin-top:.25rem">Today&#x27;s Coaching Fixes</h2><p class="sub">Max said Yes to all five fixes from the 4:00 review at 13:03. Each owner now applies their part. A new round of five is in the questionnaire at the top.</p>
 <div class="grid" style="margin-bottom:1rem">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Keep The Results Inbox Clean</h3><p>Settled. Grok Bot skips test pings and logs site unlocks separately.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>One Rulebook For Dashboards</h3><p>Settled. Branding keeps it; some dashboards may still differ, decided board by board.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>UpKeep Runs Its Customer Site</h3><p>Settled. UpKeep edits the site, logs Max&#x27;s OK, and the password comes out of the feed.</p></div></div>
+</div>
+<details class="rmore"><summary>More (2)</summary>
+<div class="grid" style="margin:.75rem 0">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Put Legal On The Org Chart</h3><p>Settled. Grok Bot adds Legal and finishes the three deletions.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>One Morning Report Deadline</h3><p>Settled. 5:00 ICT stays, 7:00 is dropped.</p></div></div>
 </div>
 <h3>Working On Today</h3><p class="sub">Watching each owner apply the five settled fixes, collecting Round 2 answers, and prepping the Thursday weekly review (Thursday, 6:29 ICT).</p>
-</div></details>
+</details>
+</div></section>
 <details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>1 Need From Max</summary>
 <div class="abody"><h3>Questionnaire Answers</h3><p>Round 2: five new suggestions at the top of this page. Vote, add notes if you like, then Submit.</p></div>
 </details>
@@ -220,7 +235,13 @@ details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;ove
 <li>Pull To Refresh Cue: Numbered Rows, Fold-Out Sections</li>
 <li>Deck Building Page: Fold-Out Sections, Big Title Header</li></ol></details>
 <details class="std"><summary>Still Open (6 To Retest)</summary><ol>
-<li>Evening Report: Dot Rows Or Color Edge Cards</li><li>Evening Report: Big Number Or Progress Bars</li><li>Status Chips: Small Icon Grid Or Feature Plus List</li><li>App Tiles: Big Number Or Progress Bars</li><li>Deck Building Page: Bottom Toast Or Center Pop-Up</li><li>Deck Building Page: Inline Outline Card Or Top Banner</li></ol></details>
+<li>Evening Report rows: small colored dots beside each line, or a color stripe on the left edge of each card?</li>
+<li>Evening Report stats: one large number for each metric, or a progress bar that fills to show how far along it is?</li>
+<li>Status chips area: a small grid of icons you tap, or a short feature list with a plus button to add more?</li>
+<li>App tiles: show a big headline number on each tile, or a progress bar that shows completion?</li>
+<li>Deck Building page alerts: a small toast banner along the bottom, or a centered pop-up in the middle of the screen?</li>
+<li>Deck Building page tips: an outlined card sitting inline with the content, or a banner pinned across the top?</li>
+</ol></details>
 <h2>Brand Guide Summary</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z"/></svg></span><div><h3>Look</h3><p>Light mode, white or cream, neutral with small pops of clear color. Title Case headings (Max, Oct 7).</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 19L12 5l7 14M8 13h8"/></svg></span><div><h3>Type</h3><p>Khand Bold headings in Title Case, Hind body.</p></div></div>
@@ -235,7 +256,7 @@ details.rep .rbody{padding:0 1rem 1rem}details.rep .sline{flex:1;min-width:0;ove
 <a class="card mw-hover" href="https://webermanapps.github.io/thai-vocab-quiz/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Thai Vocab Quiz</h3><p>Standardized</p></div></a>
 </div>
 
-<div style="text-align:center;margin-top:2.5rem"><button id="share" class="btn mw-hover"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Share</button><div id="toast" aria-live="polite"></div></div>
+<div id="toast" aria-live="polite"></div>
 </main>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>
@@ -266,7 +287,7 @@ love:'<svg viewBox="0 0 24 24" fill="#DC2626"><path d="M12 21s-8-5-8-11a4.5 4.5 
 yes:'<svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>'};
 const ORDER=['yes','maybe','no'],L={no:'No',maybe:'Maybe',love:'Love',yes:'Yes'};
 let D,KEY,st={},ALLI=[];const SK='coach-q-submitted';let SENT={};try{SENT=JSON.parse(localStorage.getItem(SK))||{}}catch(_){SENT={}}
-function markSent(){let n=0;ALLI.forEach(i=>{const v=st[i.id];if(!SENT[i.id]&&v&&(v.answer||(v.note&&v.note.trim()))){SENT[i.id]=new Date().toISOString();n++}});try{localStorage.setItem(SK,JSON.stringify(SENT))}catch(_){}D.items=ALLI.filter(i=>!SENT[i.id]);render();return n}const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
+function markSent(){let n=0;ALLI.forEach(i=>{const v=st[i.id];if(!SENT[i.id]&&v&&(v.answer||(v.note&&v.note.trim()))){SENT[i.id]=new Date().toISOString();n++}});try{localStorage.setItem(SK,JSON.stringify(SENT))}catch(_){}D.items=ALLI.filter(i=>!SENT[i.id]);render();setTimeout(()=>window.mwOpenDecks&&window.mwOpenDecks(),0);return n}const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
 function summary(){if(!D)return'';const c={yes:0,maybe:0,no:0};D.items.forEach(i=>{const v=st[i.id];if(v&&v.answer)c[v.answer]++});
  const out=['Coach suggestions '+D.round+': '+c.yes+' Yes, '+c.maybe+' Maybe, '+c.no+' No'];
  D.items.forEach(i=>{const v=st[i.id];if(v&&(v.answer||v.note))out.push('- '+i.title+': '+(v.answer?L[v.answer]:'No vote')+(v.note?' | Note: '+v.note.trim():''))});return out.join('\n')}
@@ -289,5 +310,18 @@ fetch('suggestions.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;ALLI=d.item
   getResults:()=>{save();const r={round:d.round,answers:st,questions:d.items.map(i=>({id:i.id,title:i.title}))};setTimeout(markSent,0);return r},getNotes:summary});
  $('qCopy').onclick=async()=>{const t=summary()+'\n'+location.href.split('#')[0];try{await navigator.clipboard.writeText(t);$('qCopyMsg').textContent='Copied'}catch(_){const b=$('qCopyBox');b.value=t;b.hidden=false;b.select()}};
 }).catch(()=>{});
+})();
+</script><script>
+/* R63 My Open Decks: newest unfinished first; cards left = cards not yet submitted on this device (same-origin localStorage). Hidden when All Caught Up. */
+(function(){
+const ls=k=>{try{return JSON.parse(localStorage.getItem(k))||{}}catch(_){return {}}};
+const D=[{name:'Coach Suggestions',href:'#qs',src:'suggestions.json',key:'coach-q-submitted',pick:d=>(d.items||[]).map(i=>i.id),round:d=>d.round},
+{name:'Dashboard Layout Deck 2',href:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/',src:'/dashboard-layout-deck-2-ujbr8f/cards.json',key:'dashboard-layout-deck-2-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id)},
+{name:'Dashboard Layout Deck',href:'https://webermanapps.github.io/dashboard-layout-deck-9l1e5q/',src:'/dashboard-layout-deck-9l1e5q/cards.json',key:'dashboard-layout-deck-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id)}];
+const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function draw(){Promise.all(D.map(x=>fetch(x.src+'?'+Date.now()).then(r=>r.json()).then(d=>{const sent=ls(x.key),ids=x.pick(d);return {x,left:ids.filter(i=>!sent[i]).length,known:true,round:x.round?x.round(d):''}}).catch(()=>({x,left:null,known:false}))))
+.then(rs=>{const open=rs.filter(r=>!r.known||r.left>0);const el=document.getElementById('odList'),sec=document.getElementById('openDecks');
+ el.innerHTML=open.map(r=>'<a class="mw-hover" href="'+e(r.x.href)+'"><b>'+e(r.x.name)+(r.round?' &middot; Round '+e(r.round):'')+'</b>'+(r.known?'<span>'+r.left+' Left</span>':'')+'</a>').join('');sec.hidden=!open.length})}
+draw();window.addEventListener('pageshow',draw);window.addEventListener('storage',draw);window.mwOpenDecks=draw;
 })();
 </script></body></html>
