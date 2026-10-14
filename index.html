@@ -2,6 +2,8 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light"><title>Coach Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-launcher.css?v=1">
+<link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=2">
 <style>
 :root{--bg:#FDFBF6;--card:#fff;--fg:#0a0a0a;--pri:#171717;--mut:#737373;--bd:#e5e5e5;--blue:#155dfc;--green:#16a34a;--amber:#d97706;--r:.75rem;--ease:cubic-bezier(.2,.8,.2,1);--dur:180ms}
 *{box-sizing:border-box}html,body{margin:0;overflow-x:hidden}
@@ -26,7 +28,7 @@ a.card{cursor:pointer}.card p{margin:.2rem 0 0;color:var(--mut);font-size:.95rem
 .btn:hover{background:var(--pri);color:#fafafa}.btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
 footer{text-align:center;padding:2rem 1rem 3rem;color:var(--mut)}footer a{color:var(--fg);display:inline-block;padding:.75rem 0;min-height:44px}
 #toast{min-height:1.5rem;color:var(--green);font-size:.9rem}
-@media (min-width:1100px){.top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}.top .grid{grid-template-columns:1fr}.top section:first-child .grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.top{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.top .grid{grid-template-columns:1fr}}
 @media (min-width:1600px){
 html{font-size:20px}body{font-size:20px;line-height:1.5}
 .wrap{max-width:90vw;padding:1.75rem}
@@ -39,7 +41,7 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2rem 0 .85rem}h3{font-size:1.2rem
 .btn{min-height:56px;padding:0 2.25rem;font-size:.85rem}.btn svg{width:22px;height:22px}
 .bar{padding:1.25rem;margin-top:1.5rem}
 .sg summary{padding:1.15rem;gap:1rem}.sg .more{padding:0 1.15rem 1.15rem 3.75rem}
-.top .grid{grid-template-columns:1fr!important}.top section:first-child .grid{grid-template-columns:1fr 1fr!important}
+.top .grid{grid-template-columns:1fr!important}
 }
 @media (min-width:2400px){
 html{font-size:24px}body{font-size:24px;line-height:1.5}
@@ -73,27 +75,6 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 @media (min-width:1600px){.alert>summary{padding:1.15rem;gap:1rem}.alert .abody{padding:0 1.15rem 1.15rem 3.75rem}}
 @media (min-width:2400px){.alert>summary{padding:1.35rem;gap:1.15rem}.alert .abody{padding:0 1.35rem 1.35rem 4.25rem}}
 
-#qs{background:#fff;border:1px solid var(--bd);border-left:4px solid var(--pri);border-radius:var(--r);padding:1rem;margin:0 0 1.5rem}
-#qs h2{margin:.25rem 0 .25rem}#qs .sub{color:var(--mut);margin:0 0 1rem}
-.q{border-top:1px solid var(--bd);padding:1rem 0}.q h3{font-size:1.25rem}.q .why{margin:.2rem 0 .75rem;color:var(--mut)}
-.qv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem}
-.qb{min-height:48px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;gap:.35rem;border:2px solid var(--bd);background:#fff;color:var(--fg);font:600 .9rem "Hind",sans-serif;cursor:pointer;border-radius:0;padding:0 .4rem;touch-action:manipulation}
-.qb svg{width:16px;height:16px;flex:none}
-.qb[data-v=no].on{background:#e5e5e5;border-color:#737373}.qb[data-v=maybe].on{background:#fef3c7;border-color:var(--amber)}
-.qb[data-v=love].on{background:#fee2e2;border-color:#dc2626}.qb[data-v=yes].on{background:#dcfce7;border-color:var(--green)}
-.qn{margin-top:.5rem;min-height:44px;min-width:44px;background:none;border:0;color:var(--mut);font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;cursor:pointer;padding:0 .25rem}
-.q textarea{display:none;width:100%;min-height:4.5rem;margin-top:.25rem;font:inherit;padding:.5rem;border:1px solid var(--bd);border-radius:0}.q textarea.show{display:block}
-#qs .mws-wrap{max-width:none}#qs .mws-btn{width:100%;min-height:64px;font-size:1.4rem}
-#qCopyRow{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:center}#qCopyMsg{color:var(--green);font-size:.9rem}
-#qCopyBox{width:100%;min-height:6rem;margin-top:.5rem}
-@media (min-width:1600px){#qs{padding:1.5rem}.qv{max-width:40rem}.qb{min-height:56px}}
-#qs{scroll-margin-top:12px}
-.q .fx{margin:.35rem 0 0;font-size:1rem}.q .fx b{font-weight:600;color:var(--fg)}.q .prob{color:var(--fg)}.q .sol{color:var(--fg)}
-.q .own{margin:.35rem 0 .6rem;color:var(--mut);font-size:.85rem}
-.q figure{margin:.6rem 0 .75rem;max-width:36rem}.q figure img{display:block;width:100%;height:auto;border:1px solid var(--bd);border-radius:var(--r);background:#fff}
-.qv{grid-template-columns:repeat(3,minmax(0,1fr));max-width:30rem}
-#qBackRow{display:flex;justify-content:center;margin:.25rem 0 .75rem}#qBack{text-decoration:none}
-@media (min-width:1100px){.q{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);column-gap:1.5rem}.q{grid-template-rows:repeat(7,auto) 1fr}.q figure{grid-column:2;grid-row:1/span 8;margin-top:0;align-self:start}.q>*:not(figure){grid-column:1}}
 .apps-top{margin:.5rem 0 1rem}.apps-top .label{margin-bottom:.5rem}
 .apps-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
 .apps-strip a{display:flex;flex-direction:column;align-items:flex-start;gap:.35rem;min-height:72px;padding:.75rem .85rem;background:var(--card);border:1px solid var(--bd);border-left:4px solid #05668D;border-radius:var(--r);color:inherit;text-decoration:none}
@@ -119,7 +100,7 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 #toast{position:fixed;left:50%;bottom:1.25rem;transform:translateX(-50%);background:#fff;border:1px solid var(--bd);padding:.5rem .85rem;border-radius:var(--r);box-shadow:0 4px 14px rgba(10,10,10,.08);z-index:40;min-height:0;color:var(--green);font-size:.9rem}
 @media (min-width:1600px){.tbar{margin:0 -1.75rem .85rem;padding:0 1.75rem;min-height:56px}.tbar .home,.tbar .upd{font-size:.9rem}.tbar .nm{font-size:1.3rem}}
 @media (min-width:2400px){.tbar{margin:0 -2.25rem 1rem;padding:0 2.25rem;min-height:64px}.tbar .home,.tbar .upd{font-size:1rem}.tbar .nm{font-size:1.45rem}}
-h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:.35rem 0}
+h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 @media (min-width:1600px){h2{margin:1.4rem 0 .6rem}.grid{gap:.85rem}}
 @media (min-width:2400px){h2{margin:1.6rem 0 .7rem}.grid{gap:1rem}}
 .rep.open-rep{padding:0}.rep.open-rep .rhd{display:flex;align-items:center;gap:.75rem;min-height:48px;padding:.75rem 1rem;font-weight:600}
@@ -143,34 +124,37 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:
 .od-strip a{flex:1 1 14rem;display:flex;align-items:center;gap:.6rem;min-height:48px;padding:.5rem .85rem;background:var(--card);border:1px solid var(--bd);border-left:4px solid #0B6E4F;border-radius:var(--r);color:inherit;text-decoration:none}
 .od-strip a b{font:700 1.05rem "Khand",sans-serif;flex:1;min-width:0}.od-strip a span{flex:none;font-size:.8rem;font-weight:600;color:#0B6E4F;border:1px solid #0B6E4F;border-radius:99px;padding:.05rem .55rem}
 @media (min-width:1600px){.od-strip a{min-height:56px}.od-strip a b{font-size:1.2rem}}
+
+/* R66 launcher + compact suggestions teaser */
+#deck-launcher{margin:.25rem 0 .75rem}
+.sugg-teaser{display:block;background:#fff;border:1px solid var(--bd);border-left:4px solid var(--pri);border-radius:var(--r);padding:1rem;margin:0 0 1rem;color:inherit;text-decoration:none}
+.sugg-teaser h2{margin:.15rem 0 .25rem;font-size:1.4rem}
+.sugg-teaser p{margin:0;color:var(--mut)}
+.sugg-teaser .cta{display:inline-flex;align-items:center;min-height:44px;margin-top:.5rem;font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--blue)}
 </style><script src="ptr.js" defer></script></head><body><main class="wrap">
-<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 2:01 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
-<section class="opendecks" id="openDecks" aria-label="My Open Decks" hidden><div class="label">My Open Decks</div><nav class="od-strip" id="odList"></nav></section>
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 14, 3:22 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
+<div id="deck-launcher" aria-label="Open a New Deck"></div>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
-<a class="mw-hover" href="#qs"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Top Coaching Suggestions</h3><p>Questionnaire on this page</p></div></a>
-<a class="mw-hover" href="https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M5 8h4M15 8h4M15 11h4"/></svg></span><div><h3>Dashboard Layout Deck 2</h3><p>25 refined layout ideas</p></div></a>
+<a class="mw-hover" href="suggestions.html"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coach Suggestions</h3><p>Open the suggestions deck</p></div></a>
+<a class="mw-hover" href="https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1"/><rect x="13" y="4" width="8" height="16" rx="1"/><path d="M5 8h4M15 8h4M15 11h4"/></svg></span><div><h3>Layout Quick Picks</h3><p>25 refined layout ideas</p></div></a>
 <a class="mw-hover" href="https://webermanapps.github.io/brief-app/"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Brief App</h3><p>Agent briefs</p></div></a>
 </nav>
 </section>
 
-<section id="qs" aria-label="Top Coaching Suggestions" hidden>
-<div class="label" id="qRound">Coach &middot; Questionnaire</div>
-<h2 id="qTitle">Top Coaching Suggestions</h2><p class="sub" id="qSub"></p>
-<div id="qList"></div>
-<details class="std" id="qSettled" hidden><summary id="qSetSum">Settled Today</summary><ol id="qSetList"></ol></details>
-<div id="mwSubmit"></div>
-<div id="qBackRow"><a class="btn mw-hover" id="qBack" href="https://webermanapps.github.io/branding-djqmb410/decks/">Back To Deck Building</a></div>
-<div id="qCopyRow"><button type="button" class="btn mw-hover" id="qCopy">Copy My Answers</button><span id="qCopyMsg" role="status" aria-live="polite"></span></div>
-<textarea id="qCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
-</section>
+<a class="sugg-teaser mw-hover" href="suggestions.html" aria-label="Coach Suggestions">
+<div class="label">Coach · Deck</div>
+<h2>Coach Suggestions</h2>
+<p>Round 2 is open: five coaching fixes. Vote, add notes, then Submit on the deck page.</p>
+<span class="cta">Open Deck →</span>
+</a>
 <div class="label">AI Resources</div>
 <h1>Coach Command Center</h1>
 <p>Studies every agent's workflow and suggests improvements.</p>
-<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 2:01 PM ICT</p>
+<p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 14, 2026, 3:22 PM ICT</p>
 
-<section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; 5 Fixes Settled, Round 2 Open</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 14, 2026</div><h2 style="margin-top:.25rem">Today&#x27;s Coaching Fixes</h2><p class="sub">Max said Yes to all five fixes from the 4:00 review at 13:03. Each owner now applies their part. A new round of five is in the questionnaire at the top.</p>
+<section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; 5 Fixes Settled, Round 2 Open</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 14, 2026</div><h2 style="margin-top:.25rem">Today&#x27;s Coaching Fixes</h2><p class="sub">Max said Yes to all five fixes from the 4:00 review at 13:03. Each owner now applies their part. A new round of five is in the <a href="suggestions.html">Coach Suggestions</a> deck.</p>
 <div class="grid" style="margin-bottom:1rem">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Keep The Results Inbox Clean</h3><p>Settled. Grok Bot skips test pings and logs site unlocks separately.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>One Rulebook For Dashboards</h3><p>Settled. Branding keeps it; some dashboards may still differ, decided board by board.</p></div></div>
@@ -185,18 +169,11 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:
 </details>
 </div></section>
 <details class="alert mw-hover"><summary><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>1 Need From Max</summary>
-<div class="abody"><h3>Questionnaire Answers</h3><p>Round 2: five new suggestions at the top of this page. Vote, add notes if you like, then Submit.</p></div>
+<div class="abody"><h3>Questionnaire Answers</h3><p>Round 2: five new suggestions in the Coach Suggestions deck. Vote, add notes if you like, then Submit.</p></div>
 </details>
 <div class="stats" aria-label="Stats"><div class="stat"><b>5</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>0</b><span>Decisions</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
-<div class="top"><section><h2>Routines</h2><div class="grid">
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Daily Workflow Review</h3><p>Every day, 4:00 ICT</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coach Morning Report</h3><p>Every day, 4:43 ICT</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V4h10l-2 4 2 4H4"/></svg></span><div><h3>Coach Evening Report</h3><p>Every day, 18:00 ICT</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><h3>Weekly Agent Optimization Review</h3><p>Thursday, 6:29 ICT</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h3>Morning Brief Backup Check</h3><p>Weekdays, 7:48 ICT. Confirms Grok Bot's morning brief went out.</p></div></div>
-</div>
-
-</section><section><h2>In Progress</h2><div class="grid">
+<section data-routines="routines.json" id="routines"></section>
+<div class="top"><section><h2>In Progress</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><div><h3>Weekly Quality Check Rubric</h3><p><span class="pill amber">Drafting</span></p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span><div><h3>Share Button Re-Check</h3><p><span class="pill blue">Thursday</span> Verify each owner&#x27;s fix in the Oct 15 review.</p></div></div>
 </div>
@@ -207,11 +184,11 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}#qs{margin-bottom:1rem}.wrap>p{margin:
 </details>
 </section></div><h2>Recent Work</h2><div class="grid rw">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Five coaching fixes posted; Max said Yes to all five at 13:03.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; Dashboard Layout Deck 2 (25 cards) is live.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; Layout Quick Picks (25 cards) is live.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Dashboard Layout Standards</h3><p>Max&#x27;s 19 settled dashboard picks folded into Coach layout guidance and this page.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></span><div><h3>Deck Submit Upgrade</h3><p>Dashboard Layout Deck: Back to Deck Building button, header Deck Building link, Submit anytime.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Fresh Start Report</h3><p>Evening Report swapped for Fresh Start bar; ptr.js v3 and submit.js synced.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coaching Suggestions Questionnaire</h3><p>Coaching suggestions at the top of the dashboard with Submit to Coach.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coaching Suggestions Questionnaire</h3><p>Coach Suggestions deck page with Submit to Coach.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V4h10l-2 4 2 4H4"/></svg></span><div><h3>Brand Guide: Submit, Share, Urgent Dropdown</h3><p>Submit button, Share placement and collapsed urgent dropdown standards added.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></span><div><h3>Dashboard Polish</h3><p>Big-screen tuning, Apps Home nav and pull-down-to-refresh.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Oct 13 Reorg Handoffs</h3><p>Routines handed to Thai, Portfolio and Grok Bot.</p></div></div>
@@ -277,51 +254,29 @@ document.querySelectorAll('.grid').forEach(g=>{const cs=[...g.children].filter(x
 })();
 </script>
 <script src="submit.js?v=gr2"></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-launcher.js?v=1" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=2" defer></script>
 <script>
-/* Coach questionnaire: renders suggestions.json. Answers + notes autosave to localStorage (coach-q-<round>), Submit sends via shared MWSubmit pipeline. */
-(function(){
-const $=id=>document.getElementById(id),e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const IC={no:'<svg viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
-maybe:'<svg viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linecap="round"><path d="M9.5 9a2.6 2.6 0 1 1 3.6 2.4c-.8.4-1.1 1-1.1 1.8v.6"/><circle cx="12" cy="17.6" r=".6" fill="#d97706"/></svg>',
-love:'<svg viewBox="0 0 24 24" fill="#DC2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',
-yes:'<svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>'};
-const ORDER=['yes','maybe','no'],L={no:'No',maybe:'Maybe',love:'Love',yes:'Yes'};
-let D,KEY,st={},ALLI=[];const SK='coach-q-submitted';let SENT={};try{SENT=JSON.parse(localStorage.getItem(SK))||{}}catch(_){SENT={}}
-function markSent(){let n=0;ALLI.forEach(i=>{const v=st[i.id];if(!SENT[i.id]&&v&&(v.answer||(v.note&&v.note.trim()))){SENT[i.id]=new Date().toISOString();n++}});try{localStorage.setItem(SK,JSON.stringify(SENT))}catch(_){}D.items=ALLI.filter(i=>!SENT[i.id]);render();setTimeout(()=>window.mwOpenDecks&&window.mwOpenDecks(),0);return n}const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
-function summary(){if(!D)return'';const c={yes:0,maybe:0,no:0};D.items.forEach(i=>{const v=st[i.id];if(v&&v.answer)c[v.answer]++});
- const out=['Coach suggestions '+D.round+': '+c.yes+' Yes, '+c.maybe+' Maybe, '+c.no+' No'];
- D.items.forEach(i=>{const v=st[i.id];if(v&&(v.answer||v.note))out.push('- '+i.title+': '+(v.answer?L[v.answer]:'No vote')+(v.note?' | Note: '+v.note.trim():''))});return out.join('\n')}
-window.mwShareSummary=summary;
-function render(){if(!D.items.length){$('qList').innerHTML='<div class="q qdone"><h3>All Caught Up</h3><p class="why">Every suggestion here has been sent to Coach. New ones appear when Coach publishes the next round.</p></div>';return}$('qList').innerHTML=D.items.map((i,n)=>{const v=st[i.id]||{};return '<div class="q" data-id="'+e(i.id)+'"><h3>'+(n+1)+'. '+e(i.title)+'</h3>'+
- (i.problem?'<p class="fx prob"><b>The Problem:</b> '+e(i.problem)+'</p><p class="fx sol"><b>The Fix:</b> '+e(i.fix)+'</p>':'<p class="why">'+e(i.why)+'</p>')+
- (i.owner?'<p class="own">Who does it: '+e(i.owner)+'</p>':'')+
- (i.img?'<figure><img src="'+e(i.img)+'" alt="'+e(i.alt||'')+'" width="720" height="400"></figure>':'')+
- '<div class="qv" role="group" aria-label="Answer for '+e(i.title)+'">'+
- ORDER.map(k=>'<button type="button" class="qb mw-hover'+(v.answer===k?' on':'')+'" data-v="'+k+'" aria-pressed="'+(v.answer===k)+'">'+IC[k]+L[k]+'</button>').join('')+'</div>'+
- '<button type="button" class="qn mw-hover" aria-expanded="'+(!!v.note)+'">Add Note</button><textarea class="'+(v.note?'show':'')+'" aria-label="Note for '+e(i.title)+'">'+e(v.note||'')+'</textarea></div>'}).join('')}
-fetch('suggestions.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;ALLI=d.items.slice();d.items=ALLI.filter(i=>!SENT[i.id]);KEY='coach-q-'+d.round;try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
- $('qTitle').textContent=d.title||'Top Coaching Suggestions';if(d.settled&&d.settled.length){$('qSetSum').textContent='Settled Today ('+d.settled.length+')';$('qSetList').innerHTML=d.settled.map(x=>'<li><strong>'+e(x.title)+'</strong>: '+e(x.note)+'</li>').join('');$('qSettled').hidden=false}$('qSub').textContent=d.subtitle||'';render();$('qs').hidden=false;
- $('qList').addEventListener('click',ev=>{const q=ev.target.closest('.q');if(!q)return;const id=q.dataset.id,b=ev.target.closest('.qb');
-  if(b){const k=b.dataset.v;st[id]=Object.assign(st[id]||{},{answer:(st[id]&&st[id].answer===k)?null:k,time:new Date().toISOString()});save();
-   q.querySelectorAll('.qb').forEach(x=>{const on=x.dataset.v===st[id].answer;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});return}
-  if(ev.target.closest('.qn')){const t=q.querySelector('textarea');t.classList.toggle('show');ev.target.closest('.qn').setAttribute('aria-expanded',t.classList.contains('show'));if(t.classList.contains('show'))t.focus()}});
- $('qList').addEventListener('input',ev=>{const q=ev.target.closest('.q');if(!q)return;const id=q.dataset.id;st[id]=Object.assign(st[id]||{},{note:ev.target.value,time:new Date().toISOString()});save()});
- MWSubmit.button($('mwSubmit'),{agent:'coach',app:'coach-dashboard',deck:d.round,
-  getResults:()=>{save();const r={round:d.round,answers:st,questions:d.items.map(i=>({id:i.id,title:i.title}))};setTimeout(markSent,0);return r},getNotes:summary});
- $('qCopy').onclick=async()=>{const t=summary()+'\n'+location.href.split('#')[0];try{await navigator.clipboard.writeText(t);$('qCopyMsg').textContent='Copied'}catch(_){const b=$('qCopyBox');b.value=t;b.hidden=false;b.select()}};
-}).catch(()=>{});
-})();
-</script><script>
-/* R63 My Open Decks: newest unfinished first; cards left = cards not yet submitted on this device (same-origin localStorage). Hidden when All Caught Up. */
-(function(){
-const ls=k=>{try{return JSON.parse(localStorage.getItem(k))||{}}catch(_){return {}}};
-const D=[{name:'Coach Suggestions',href:'#qs',src:'suggestions.json',key:'coach-q-submitted',pick:d=>(d.items||[]).map(i=>i.id),round:d=>d.round},
-{name:'Dashboard Layout Deck 2',href:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/',src:'/dashboard-layout-deck-2-ujbr8f/cards.json',key:'dashboard-layout-deck-2-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id)},
-{name:'Dashboard Layout Deck',href:'https://webermanapps.github.io/dashboard-layout-deck-9l1e5q/',src:'/dashboard-layout-deck-9l1e5q/cards.json',key:'dashboard-layout-deck-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id)}];
-const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function draw(){Promise.all(D.map(x=>fetch(x.src+'?'+Date.now()).then(r=>r.json()).then(d=>{const sent=ls(x.key),ids=x.pick(d);return {x,left:ids.filter(i=>!sent[i]).length,known:true,round:x.round?x.round(d):''}}).catch(()=>({x,left:null,known:false}))))
-.then(rs=>{const open=rs.filter(r=>!r.known||r.left>0);const el=document.getElementById('odList'),sec=document.getElementById('openDecks');
- el.innerHTML=open.map(r=>'<a class="mw-hover" href="'+e(r.x.href)+'"><b>'+e(r.x.name)+(r.round?' &middot; Round '+e(r.round):'')+'</b>'+(r.known?'<span>'+r.left+' Left</span>':'')+'</a>').join('');sec.hidden=!open.length})}
-draw();window.addEventListener('pageshow',draw);window.addEventListener('storage',draw);window.mwOpenDecks=draw;
-})();
-</script></body></html>
+/* R66: fill unfinished answered/total from device localStorage, then render launcher */
+addEventListener('DOMContentLoaded',()=>{
+ const ls=k=>{try{return JSON.parse(localStorage.getItem(k))||{}}catch(_){return{}}};
+ const decks=[
+  {name:'Coach Suggestions',url:'suggestions.html',src:'suggestions.json',key:'coach-q-submitted',pick:d=>(d.items||[]).map(i=>i.id),total:d=>(d.items||[]).length||5},
+  {name:'Layout Quick Picks',url:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/',src:'https://webermanapps.github.io/dashboard-layout-deck-2-ujbr8f/cards.json',key:'dashboard-layout-deck-2-v1-submitted',pick:d=>(d.cards||[]).map(c=>c.id),total:d=>(d.cards||[]).length||25}
+ ];
+ Promise.all([
+  fetch('launcher.json?'+Date.now()).then(r=>r.json()),
+  Promise.all(decks.map(x=>fetch(x.src+'?'+Date.now()).then(r=>r.json()).then(d=>{
+   const ids=x.pick(d),sent=ls(x.key),left=ids.filter(i=>!sent[i]).length,tot=x.total(d);
+   return {name:x.name,url:x.url,answered:Math.max(0,tot-left),total:tot,left};
+  }).catch(()=>({name:x.name,url:x.url,answered:0,total:20,left:1}))))
+ ]).then(([J,open])=>{
+  J.unfinished=open.filter(d=>d.left>0).map(({name,url,answered,total})=>({name,url,answered,total}));
+  const el=document.getElementById('deck-launcher');
+  if(window.DeckLauncher) DeckLauncher.render(el,J);
+  else {el.removeAttribute('data-launcher'); /* kit will auto-init if still present; else wait */ 
+   const wait=()=>{if(window.DeckLauncher)DeckLauncher.render(el,J);else setTimeout(wait,40)};wait()}
+ }).catch(()=>{});
+});
+</script>
+</body></html>

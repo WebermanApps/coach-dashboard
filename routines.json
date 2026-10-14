@@ -1,0 +1,40 @@
+{
+ "updated": "2026-10-14 15:22 ICT",
+ "routines": [
+  {
+   "name": "Daily Workflow Review",
+   "group": "Daily",
+   "schedule_plain": "Daily At 4:00 AM ICT",
+   "status": "on",
+   "last_run": "Today 4:05 AM"
+  },
+  {
+   "name": "Coach Morning Report",
+   "group": "Reports",
+   "schedule_plain": "Daily At 4:43 AM ICT",
+   "status": "on",
+   "last_run": "Today 4:46 AM"
+  },
+  {
+   "name": "Coach Evening Report",
+   "group": "Reports",
+   "schedule_plain": "Daily At 6:00 PM ICT",
+   "status": "on",
+   "last_run": "Oct 13, 6:05 PM"
+  },
+  {
+   "name": "Questionnaire Submit Watch",
+   "group": "Event/Listener",
+   "schedule_plain": "Hourly At :17 ICT",
+   "status": "on",
+   "last_run": "Today 2:25 PM"
+  },
+  {
+   "name": "Weekly Agent Optimization Review",
+   "group": "Weekly",
+   "schedule_plain": "Thursdays At 6:29 AM ICT",
+   "status": "on",
+   "last_run": "Oct 8, 6:38 AM"
+  }
+ ]
+}
