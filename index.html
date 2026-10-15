@@ -143,9 +143,10 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .qc h3.qg{font:600 .75rem "Hind",sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:1rem 0 .35rem;color:var(--mut)}
 .qtop{display:flex;align-items:center;gap:.5rem;min-height:24px}
 .qstate{margin-left:auto;display:flex;align-items:center;gap:.5rem;font:600 .78rem "Hind",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#7a5b00}
-.qcard:not(.mw-item--accent) .qstate{display:none}
-.mw-item.qcard[hidden]{display:none}
-#qlist .mw-items{margin-top:.5rem}
+.qcard:not(.mw-block--accent) .qstate{display:none}
+.mw-block.qcard[hidden]{display:none}
+.mw-blocks{display:grid;gap:12px}#qlist .mw-blocks{margin-top:.5rem}
+.qcard h3{margin:.35rem 0 .55rem}
 .qcard .qt{font:600 1rem/1.35 "Hind",sans-serif;margin:.35rem 0 .55rem}
 .qcard .qimg{display:block;width:100%;max-width:360px;margin:0 0 .6rem;border:1px solid var(--bd)}
 .qpill{display:inline-block;font:600 .68rem "Hind",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.05rem .5rem;border:1px solid var(--bd);color:var(--mut)}
@@ -221,7 +222,7 @@ footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
 .qu,.qb{letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
 body.qt-on{padding-bottom:88px}
 .qtoast{bottom:calc(16px + env(safe-area-inset-bottom))}
-</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc2"></head><body><main class="wrap">
+</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc3"></head><body><main class="wrap">
 <header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 8:02 AM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header><div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 27 V18 A9 9 0 0 1 32 23 Z" fill="#05668D"/><path d="M24 27 V18"/><circle cx="24" cy="27" r="13"/><path d="M21 8 H27 M24 8 V14 M35 13 L38 16"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Coach Command Center</h1><p class="mw-cc-desc">Studies every agent&#x27;s workflow and suggests improvements.</p></div></div><section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
 
 <script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
@@ -250,12 +251,12 @@ body.qt-on{padding-bottom:88px}
   c.querySelectorAll('[data-v]').forEach(b=>{const on=b.dataset.v===a.choice;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
   const t=c.querySelector('.qnote');if(document.activeElement!==t)t.value=a.note||'';
   if(a.note)t.hidden=false;c.querySelector('.qn').textContent=t.hidden?'Add Note':'Hide Note';
-  c.classList.toggle('mw-item--accent',!!has(a));count();}
+  c.classList.toggle('mw-block--accent',!!has(a));count();}
  function set(id,patch){const q=Q.find(x=>x.id===id);A[id]=Object.assign({id,question:q.q,choice:'',note:''},A[id],patch);if(!has(A[id]))delete A[id];sv(DK,A);}
  function render(){let g='';const v=Q.filter(q=>!D.includes(q.id));
-  L.innerHTML=v.length?'<ol class="mw-items">'+v.map((q,i)=>{
+  L.innerHTML=v.length?'<div class="mw-blocks">'+v.map(q=>{
    const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
-   return '<li class="mw-item qcard" data-id="'+esc(q.id)+'"><span class="mw-num">'+String(i+1).padStart(2,'0')+'</span><div class="mw-body"><div class="qtop"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span><span class="qstate">Answered <button class="qu" type="button">Undo</button></span></div><h3>'+esc(q.q)+'</h3>'+(q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'" loading="lazy">':'')+'<div class="qrow">'+opts.map(o=>'<button class="qb" type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<button class="qb ghost" type="button" data-v="More Detail">More Detail</button><button class="qb ghost qn" type="button">Add Note</button></div><textarea class="qnote" placeholder="Note or your own answer" hidden></textarea></div></li>'}).join('')+'</ol>':'<p class="qempty">All Caught Up. New questions show here.</p>';
+   return '<div class="mw-block qcard" data-id="'+esc(q.id)+'"><div class="qtop"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span><span class="qstate">Answered <button class="qu" type="button">Undo</button></span></div><h3>'+esc(q.q)+'</h3>'+(q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'" loading="lazy">':'')+'<div class="qrow">'+opts.map(o=>'<button class="qb" type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<button class="qb ghost" type="button" data-v="More Detail">More Detail</button><button class="qb ghost qn" type="button">Add Note</button></div><textarea class="qnote" placeholder="Note or your own answer" hidden></textarea></div>'}).join('')+'</div>':'<p class="qempty">All Caught Up. New questions show here.</p>';
   L.querySelectorAll('.qcard').forEach(c=>{const id=c.dataset.id;
    c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{set(id,{choice:(A[id]&&A[id].choice===b.dataset.v)?'':b.dataset.v});paint(c)});
    const t=c.querySelector('.qnote');t.oninput=()=>{set(id,{note:t.value});paint(c)};
@@ -292,7 +293,7 @@ body.qt-on{padding-bottom:88px}
 <li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div class="txt"><b>Questions Center Waiting On Max</b>5 open (1 urgent whistle pick; sticky header; one publish rule; stop echo feed posts; clear suggestion lanes).</div></li>
 </ol>
 <details class="rmore"><summary>3 Coaching Notes (Since Oct 14 6:00 PM)</summary>
-<ol class="mw-items"><li class="mw-item"><span class="mw-num">01</span><div class="mw-body"><h3>Evening Report Thrash</h3><p>Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</p></div></li><li class="mw-item"><span class="mw-num">02</span><div class="mw-body"><h3>Swipe Counts Flipped To Decks</h3><p>The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</p></div></li><li class="mw-item"><span class="mw-num">03</span><div class="mw-body"><h3>R66 Renamed Three Times In One Hour</h3><p>Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</p></div></li></ol>
+<div class="mw-blocks"><div class="mw-block"><h3>Evening Report Thrash</h3><p>Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</p></div><div class="mw-block"><h3>Swipe Counts Flipped To Decks</h3><p>The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</p></div><div class="mw-block"><h3>R66 Renamed Three Times In One Hour</h3><p>Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</p></div></div>
 </details>
 </div></section>
 
