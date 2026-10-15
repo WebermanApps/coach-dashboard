@@ -144,7 +144,11 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .qtop{display:flex;align-items:center;gap:.5rem;min-height:24px}
 .qstate{margin-left:auto;display:flex;align-items:center;gap:.5rem;font:600 .78rem "Hind",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#7a5b00}
 .qcard:not(.mw-block--accent) .qstate{display:none}
-.mw-block.qcard[hidden]{display:none}
+.qcard[hidden]{display:none}
+.qcard.mw-block--accent{outline:2px solid var(--pri);outline-offset:-2px}
+.qcard .qrow .mw-btn{min-height:44px}
+.mw-carousel--swipe .mw-track{scrollbar-width:none}.mw-carousel--swipe .mw-track::-webkit-scrollbar{display:none}
+.mw-blocks .mw-swipe-card{min-height:0}
 .mw-blocks{display:grid;gap:12px}#qlist .mw-blocks{margin-top:.5rem}
 .qcard h3{margin:.35rem 0 .55rem}
 .qcard .qt{font:600 1rem/1.35 "Hind",sans-serif;margin:.35rem 0 .55rem}
@@ -222,8 +226,8 @@ footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
 .qu,.qb{letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
 body.qt-on{padding-bottom:88px}
 .qtoast{bottom:calc(16px + env(safe-area-inset-bottom))}
-</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc3"></head><body><main class="wrap">
-<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 8:02 AM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header><div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 27 V18 A9 9 0 0 1 32 23 Z" fill="#05668D"/><path d="M24 27 V18"/><circle cx="24" cy="27" r="13"/><path d="M21 8 H27 M24 8 V14 M35 13 L38 16"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Coach Command Center</h1><p class="mw-cc-desc">Studies every agent&#x27;s workflow and suggests improvements.</p></div></div><section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
+</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc4"></head><body><main class="wrap">
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 2:05 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header><div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 27 V18 A9 9 0 0 1 32 23 Z" fill="#05668D"/><path d="M24 27 V18"/><circle cx="24" cy="27" r="13"/><path d="M21 8 H27 M24 8 V14 M35 13 L38 16"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Coach Command Center</h1><p class="mw-cc-desc">Studies every agent&#x27;s workflow and suggests improvements.</p></div></div><section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
 
 <script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
@@ -231,6 +235,13 @@ body.qt-on{padding-bottom:88px}
 
 <p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 15, 2026, 8:02 AM ICT</p>
 
+<script>
+window.mwCarousel=function(root){(root||document).querySelectorAll('.mw-carousel--swipe').forEach(c=>{const t=c.querySelector('.mw-track'),d=c.querySelector('.mw-dots');if(!t||!d)return;
+ const items=()=>[...t.children].filter(x=>!x.hidden);const draw=()=>{const n=items().length,w=t.scrollWidth-t.clientWidth,k=w>0?Math.round(t.scrollLeft/w*(n-1)):0;d.innerHTML=n>1?items().map((_,i)=>'<span class="mw-dot"'+(i===k?' aria-current="true"':'')+'></span>').join(''):''};
+ if(!t.dataset.cw){t.dataset.cw=1;t.addEventListener('scroll',draw,{passive:true});new MutationObserver(draw).observe(t,{attributes:true,subtree:true,attributeFilter:['hidden']})}draw()});
+ (root||document).querySelectorAll('.rmore .mw-thumb-card').forEach(c=>{if(c.dataset.cx)return;c.dataset.cx=1;c.onclick=()=>c.setAttribute('aria-expanded',c.getAttribute('aria-expanded')==='true'?'false':'true');c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();c.click()}}})};
+document.addEventListener('DOMContentLoaded',()=>mwCarousel());
+</script>
 <section class="qc" id="qc" aria-label="Questions Center"><div class="qhd"><h2>Questions Center</h2><p class="cnt" id="qcnt" aria-live="polite"></p><button class="qb qsub2" type="button" id="qsubmit2" disabled>Submit</button></div><div id="qlist"></div><div class="qbar"><span class="qmsg" id="qmsg">Pick an answer to start</span><button class="qb" type="button" id="qsubmit" disabled>Submit</button></div><div class="qtoast" id="qtoast" role="status" aria-live="polite" hidden><span id="qtmsg"></span><button class="qu" type="button" id="qtundo">Undo Submit</button></div></section>
 <script>
 (function(){
@@ -254,14 +265,21 @@ body.qt-on{padding-bottom:88px}
   c.classList.toggle('mw-block--accent',!!has(a));count();}
  function set(id,patch){const q=Q.find(x=>x.id===id);A[id]=Object.assign({id,question:q.q,choice:'',note:''},A[id],patch);if(!has(A[id]))delete A[id];sv(DK,A);}
  function render(){let g='';const v=Q.filter(q=>!D.includes(q.id));
-  L.innerHTML=v.length?'<div class="mw-blocks">'+v.map(q=>{
-   const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
-   return '<div class="mw-block qcard" data-id="'+esc(q.id)+'"><div class="qtop"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span><span class="qstate">Answered <button class="qu" type="button">Undo</button></span></div><h3>'+esc(q.q)+'</h3>'+(q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'" loading="lazy">':'')+'<div class="qrow">'+opts.map(o=>'<button class="qb" type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<button class="qb ghost" type="button" data-v="More Detail">More Detail</button><button class="qb ghost qn" type="button">Add Note</button></div><textarea class="qnote" placeholder="Note or your own answer" hidden></textarea></div>'}).join('')+'</div>':'<p class="qempty">All Caught Up. New questions show here.</p>';
+  const IC={'cq-whistle':'<path d="M14 26a10 10 0 1 0 20 0 10 10 0 0 0-20 0zM34 22h12v6H33M18 14l4 4M24 10v6"/>','cq-sticky-header':'<rect x="10" y="10" width="44" height="32"/><path d="M10 18h44M16 26h20M16 32h14"/>','cq-one-publish-rule':'<path d="M18 8h22l8 8v28H18zM40 8v8h8M24 24h18M24 30h18M24 36h10"/>','cq-no-echo-posts':'<path d="M10 14h30v18H22l-8 6v-6h-4zM16 46l32-34"/>','cq-who-suggests':'<path d="M32 8v40M32 16l14 8-14 8M32 28L18 36l14 8"/>'};
+  const icon=id=>'<svg viewBox="0 0 64 52" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(IC[id]||'<circle cx="32" cy="26" r="14"/><path d="M26 26l4 4 8-8"/>')+'</svg>';
+  const yn=o=>o.length===2&&o[0]==='Yes'&&o[1]==='No';
+  L.innerHTML=v.length?'<div class="mw-carousel mw-carousel--swipe"><div class="mw-track" id="qtrack">'+v.map(q=>{
+   let opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];if(yn(opts))opts=['Approve','No'];
+   const t=q.q.split(':'),h=t.length>1?t[0]:q.q,sub=t.length>1?t.slice(1).join(':').trim():'';
+   return '<div class="mw-thumb-card qcard" tabindex="0" role="button" aria-expanded="false" data-id="'+esc(q.id)+'"><div class="mw-thumb mw-thumb--icon">'+icon(q.id)+'</div><div class="mw-thumb-cap"><div class="qtop"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span><span class="qstate">Answered <button class="qu" type="button">Undo</button></span></div><h3>'+esc(h)+'</h3>'+(sub?'<p class="mw-thumb-sub">'+esc(sub)+'</p>':'')+'<div class="qrow">'+opts.map((o,i)=>'<button class="qb mw-btn'+(i===0?' mw-btn--primary':'')+'" type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<button class="qb ghost" type="button" data-v="More Detail">More Detail</button><button class="qb ghost qn" type="button">Add Note</button></div><textarea class="qnote" placeholder="Note or your own answer" hidden></textarea></div><div class="mw-thumb-more">'+(q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'" loading="lazy">':'')+'<p>'+esc(q.q)+'</p><p>Approve sends with Submit. Undo clears this card.</p></div></div>'}).join('')+'</div><div class="mw-dots" id="qdots"></div></div>':'<p class="qempty">All Caught Up. New questions show here.</p>';
+  if(window.mwCarousel)mwCarousel(L);
   L.querySelectorAll('.qcard').forEach(c=>{const id=c.dataset.id;
    c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{set(id,{choice:(A[id]&&A[id].choice===b.dataset.v)?'':b.dataset.v});paint(c)});
    const t=c.querySelector('.qnote');t.oninput=()=>{set(id,{note:t.value});paint(c)};
    c.querySelector('.qn').onclick=()=>{t.hidden=t.hidden?false:!t.value.trim();if(!t.hidden)t.focus();paint(c)};
    c.querySelector('.qu').onclick=()=>{delete A[id];sv(DK,A);t.value='';t.hidden=true;paint(c)};
+   c.addEventListener('click',e=>{if(e.target.closest('button,textarea,a'))return;c.setAttribute('aria-expanded',c.getAttribute('aria-expanded')==='true'?'false':'true')});
+   c.addEventListener('keydown',e=>{if(e.target===c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();c.click()}});
    paint(c)});
   count();}
   function hide(ids,on){ids.forEach(i=>{const w=L.querySelector('[data-id="'+i+'"]');if(!w)return;const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -288,8 +306,8 @@ body.qt-on{padding-bottom:88px}
 
 <section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Late · Weekly Review + Daily Notes + Open Qs</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 15, 2026 &middot; Posted 8:02 AM ICT (due by 5:00) &middot; Late</div><h2 style="margin-top:.25rem">What Coach Is Working On Today</h2><p class="sub">Usage ran out overnight, so this report is late. Focus is the Thursday weekly agent review (it failed at 6:29), a fresh daily workflow review, and the Questions Center items waiting on Max.</p>
 <div class="mw-blocks"><div class="mw-block"><h3>Thursday Weekly Agent Review</h3><p>Failed this morning at 6:29. Run it later today: dashboards live and on time, team-feed posts, Share-button re-check.</p></div><div class="mw-block"><h3>Fresh Daily Workflow Review</h3><p>New notes from last night&#x27;s feed (double work, overlap, conflicting rules). Full write-up in daily-review.</p></div><div class="mw-block"><h3>Questions Center Waiting On Max</h3><p>5 open (1 urgent whistle pick; sticky header; one publish rule; stop echo feed posts; clear suggestion lanes).</p></div></div>
-<details class="rmore"><summary>3 Coaching Notes (Since Oct 14 6:00 PM)</summary>
-<div class="mw-blocks"><div class="mw-block"><h3>Evening Report Thrash</h3><p>Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</p></div><div class="mw-block"><h3>Swipe Counts Flipped To Decks</h3><p>The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</p></div><div class="mw-block"><h3>R66 Renamed Three Times In One Hour</h3><p>Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</p></div></div>
+<details class="rmore" open><summary>Coaching Notes (Since Oct 14 6:00 PM)</summary>
+<div class="mw-carousel mw-carousel--swipe"><div class="mw-track"><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>Evening Report Thrash</h3><p class="mw-thumb-sub">Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them.</p><div class="mw-thumb-more">Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</div></div><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>Swipe Counts Flipped To Decks</h3><p class="mw-thumb-sub">The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13.</p><div class="mw-thumb-more">The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</div></div><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>R66 Renamed Three Times In One Hour</h3><p class="mw-thumb-sub">Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board.</p><div class="mw-thumb-more">Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</div></div></div><div class="mw-dots"></div></div>
 </details>
 </div></section>
 
