@@ -133,27 +133,42 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .sugg-teaser .cta{display:inline-flex;align-items:center;min-height:44px;margin-top:.5rem;font:600 .85rem "Hind",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--blue)}
 
 
-/* Questions Center (Max QC Deck, Oct 14) */
+/* Questions Center v2 (Max Oct 15 12:32: undo + polish) */
 .qc{margin:1.25rem auto .5rem;max-width:760px}
-.qc h2{margin:0 0 .25rem}
-.qc .cnt{font:500 .9rem "Hind",sans-serif;color:var(--mut);margin:0 0 .75rem}
-.qc h3.qg{font:600 .8rem "Hind",sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:1.1rem 0 .4rem;color:var(--mut)}
-.qcard{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:1rem;margin:.5rem 0}
-.qcard.done{opacity:.55}
-.qcard .qt{font:600 1.05rem "Hind",sans-serif;margin:.4rem 0 .65rem}
-.qcard .qimg{display:block;width:100%;max-width:420px;margin:.35rem 0 .75rem;border:1px solid var(--bd);border-radius:8px;background:#fff}
-.qpill{display:inline-block;font:600 .7rem "Hind",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.1rem .55rem;border-radius:99px;border:1px solid var(--bd);background:var(--bg);color:var(--mut)}
+.qc .qhd{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:0 0 .6rem}
+.qc h2{margin:0}
+.qc .qsub2{min-height:44px;background:var(--pri);color:#fff;letter-spacing:.08em;text-transform:uppercase}
+.qc .qhd .cnt{margin-left:auto}
+.qc .cnt{font:600 .9rem "Hind",sans-serif;color:var(--mut);margin:0;white-space:nowrap}
+.qc h3.qg{font:600 .75rem "Hind",sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:1rem 0 .35rem;color:var(--mut)}
+.qwrap{display:grid;grid-template-rows:1fr;transition:grid-template-rows 260ms var(--ease),opacity 220ms ease,margin 260ms var(--ease);margin:0 0 .5rem}
+.qwrap>.qcard{overflow:hidden;min-height:0}
+.qwrap.gone{grid-template-rows:0fr;opacity:0;margin:0}
+.qcard{background:#fff;border:1px solid var(--bd);border-left:4px solid var(--bd);border-radius:0;padding:.75rem .9rem;transition:border-color var(--dur) ease,background var(--dur) ease}
+.qcard.done{border-left-color:#D4A017;background:#FAF6EE;border-color:#e3ddd2}
+.qtop{display:flex;align-items:center;gap:.5rem;min-height:24px}
+.qstate{margin-left:auto;display:flex;align-items:center;gap:.5rem;font:600 .78rem "Hind",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#7a5b00}
+.qcard:not(.done) .qstate{display:none}
+.qcard .qt{font:600 1rem/1.35 "Hind",sans-serif;margin:.35rem 0 .55rem}
+.qcard .qimg{display:block;width:100%;max-width:360px;margin:0 0 .6rem;border:1px solid var(--bd)}
+.qpill{display:inline-block;font:600 .68rem "Hind",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.05rem .5rem;border:1px solid var(--bd);color:var(--mut)}
 .qpill.Urgent{color:#b42318;border-color:#f3b8b2}
-.qpill.Open{color:#525252;border-color:#d6cfc2}
-.qdue{font:500 .8rem "Hind",sans-serif;color:#b42318;margin-left:.5rem}
-.qrow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
-.qb{min-height:40px;padding:0 .9rem;border:1.5px solid var(--pri);background:#fff;border-radius:8px;font:600 .85rem "Hind",sans-serif;cursor:pointer;color:var(--fg)}
+.qrow{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.qb{min-height:44px;min-width:44px;padding:0 .85rem;border:1.5px solid var(--pri);background:#fff;border-radius:0;font:600 .85rem "Hind",sans-serif;cursor:pointer;color:var(--fg);display:inline-flex;align-items:center;gap:.35rem;transition:background var(--dur) ease,color var(--dur) ease}
 .qb.on{background:var(--pri);color:#fff}
-.qcard input.qtxt,.qcard textarea.qnote{width:100%;box-sizing:border-box;min-height:40px;border:1px solid #d6cfc2;border-radius:8px;padding:.5rem;font:1rem "Hind",sans-serif;margin-top:.5rem;background:#fff;color:var(--fg)}
-.qlink{background:none;border:0;color:var(--blue);font:600 .85rem "Hind",sans-serif;cursor:pointer;padding:.4rem 0}
-.qsend{margin-left:auto}
-.qbar{display:flex;justify-content:center;align-items:center;gap:.75rem;margin:1rem 0}
-.qtick{color:var(--green);font:600 .9rem "Hind",sans-serif}
+.qb.on::before{content:"";width:.7rem;height:.4rem;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg) translateY(-2px)}
+.qb.ghost{border-color:#d6cfc2;color:#525252}
+.qu{min-height:36px;min-width:44px;padding:0 .7rem;border:1.5px solid #7a5b00;background:#fff;color:#7a5b00;border-radius:0;font:600 .78rem "Hind",sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.qcard textarea.qnote{display:block;width:100%;min-height:64px;border:1px solid #d6cfc2;border-radius:0;padding:.5rem;font:1rem "Hind",sans-serif;margin-top:.5rem;background:#fff;color:var(--fg);resize:vertical}
+.qbar{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin:.75rem 0 0;padding:.6rem .75rem;background:#fff;border:1px solid #e3ddd2;border-top:2px solid var(--pri)}
+.qbar .qmsg{font:600 .9rem "Hind",sans-serif;color:var(--mut)}
+#qsubmit{min-height:48px;padding:0 1.4rem;background:var(--pri);color:#fff;font:700 1.05rem "Khand",sans-serif;letter-spacing:.1em;text-transform:uppercase}
+#qsubmit:disabled,#qsubmit2:disabled{background:#fff;color:#a3a3a3;border-color:#d4d4d4;cursor:not-allowed}
+.qtoast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:.75rem;background:#fff;border:1.5px solid var(--pri);padding:.5rem .6rem .5rem .9rem;font:600 .9rem "Hind",sans-serif;box-shadow:0 8px 24px rgba(10,10,10,.12);max-width:calc(100vw - 24px)}
+.qtoast[hidden]{display:none}
+.qempty{padding:1rem;border:1px dashed #e3ddd2;background:#FAF6EE;color:#525252;font-weight:600}
+.qcard textarea.qnote[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){.qwrap,.qcard,.qb{transition:none}}
 
 /* Morning Report: numbered picture rows, saffron accent */
 .rep.open-rep{border-left-color:#D4A017}
@@ -170,6 +185,33 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 .er-split h3{font-size:1.15rem;margin:0 0 .35rem;color:#7a5b00}
 @media (min-width:1600px){.erows .num,.erows .ic{width:34px;height:34px}.erows .ic svg{width:22px;height:22px}.erows .num{font-size:1rem}}
 @media (min-width:2400px){.erows .num,.erows .ic{width:40px;height:40px}.erows .ic svg{width:26px;height:26px}.erows .num{font-size:1.05rem}}
+
+/* Polish v1 (Max Oct 15 12:37): match Apps Home look. White page, light beige accents, square cards and buttons, one section-header style */
+:root{--r:0;--beige:#FAF6EE;--beige-bd:#e3ddd2}
+.card,.bar,.sg,.alert,.std,.stat,.apps-strip a,.od-strip a,.sugg-teaser,.qcard,.qimg{border-radius:0!important}
+.pill,.qpill,.od-strip a span{border-radius:0!important}
+.ic,.erows .ic,.tbar .shic{border-radius:0!important}
+.ic{background:var(--beige)}
+.tbar{background:rgba(255,255,255,.96)}
+.wrap>h2,.top h2,.qc h2,.wrap section>h2{font-size:1.5rem;letter-spacing:.01em;padding-bottom:.3rem;border-bottom:2px solid var(--beige-bd)}
+.qc .qhd h2{border:0;padding:0}.qc .qhd{border-bottom:2px solid var(--beige-bd);padding-bottom:.4rem}
+.wrap>.label{margin-top:.75rem}
+h1{font-size:2.2rem;margin:.1rem 0 .15rem}
+.wrap>p{color:var(--mut);font-size:.95rem}
+.apps-strip a,.rw .card{border-left:4px solid var(--beige-bd)!important}
+.apps-strip a .ic,.rw .ic{background:var(--beige)}.apps-strip a .ic svg{stroke:var(--pri)}
+.bar{border-color:var(--beige-bd)}
+.rep.open-rep{border-left:4px solid #D4A017}
+.rep.open-rep .rhd{background:var(--beige)}
+.stat{background:var(--beige);border-color:var(--beige-bd)}
+.std,.sg,.alert{border-color:var(--beige-bd)}
+.std summary{background:var(--beige)}
+.qc{max-width:none}
+.grid .card{min-height:64px}
+.seeall,.qlink{color:var(--pri);text-decoration:underline;text-underline-offset:3px}
+footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
+.top{display:block!important}.top .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))!important}
+@media(max-width:520px){h1{font-size:1.9rem}.tbar .upd{display:none}.qc .qhd{flex-wrap:wrap}}
 </style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=1"></head><body><main class="wrap">
 <header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 8:02 AM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
 <section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
@@ -188,6 +230,60 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 <p>Studies every agent's workflow and suggests improvements.</p>
 <p><span class="dot"></span><strong>Active</strong> &middot; Updated Oct 15, 2026, 8:02 AM ICT</p>
 
+<section class="qc" id="qc" aria-label="Questions Center"><div class="qhd"><h2>Questions Center</h2><p class="cnt" id="qcnt" aria-live="polite"></p><button class="qb qsub2" type="button" id="qsubmit2" disabled>Submit</button></div><div id="qlist"></div><div class="qbar"><span class="qmsg" id="qmsg">Pick an answer to start</span><button class="qb" type="button" id="qsubmit" disabled>Submit</button></div><div class="qtoast" id="qtoast" role="status" aria-live="polite" hidden><span id="qtmsg"></span><button class="qu" type="button" id="qtundo">Undo Submit</button></div></section>
+<script>
+(function(){
+ /* Answers save on this device as you tap. Undo clears one card. Submit hides answered cards, waits 10 s (Undo Submit), then sends via MWSubmit. */
+ const H='coach-qc-hidden',DK='coach-qc-draft',WAIT=10000;
+ const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(_){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(_){}};
+ let D=ld(H,[]),A=ld(DK,{}),Q=[],pend=null;
+ const $=id=>document.getElementById(id),L=$('qlist');
+ const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const has=a=>a&&(a.choice||(a.note||'').trim());
+ const vis=()=>Q.filter(q=>!D.includes(q.id)&&!(pend&&pend.ids.includes(q.id)));
+ function count(){const v=vis(),n=v.filter(q=>has(A[q.id])).length;
+  $('qcnt').textContent=v.length?n+' of '+v.length+' answered':'';
+  ['qsubmit','qsubmit2'].forEach(k=>{$(k).disabled=!n||!!pend;$(k).textContent=n?'Submit '+n:'Submit'});
+  $('qmsg').textContent=pend?'Sending soon':(n?'Ready to send':(v.length?'Pick an answer to start':'All caught up'));
+  window.mwShareSummary=()=>Object.values(A).filter(has).map(a=>a.question+': '+(a.choice||'')+(a.note?' ('+a.note+')':'')).join('\n');}
+ function paint(c){const id=c.dataset.id,a=A[id]||{};
+  c.querySelectorAll('[data-v]').forEach(b=>{const on=b.dataset.v===a.choice;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+  const t=c.querySelector('.qnote');if(document.activeElement!==t)t.value=a.note||'';
+  if(a.note)t.hidden=false;c.querySelector('.qn').textContent=t.hidden?'Add Note':'Hide Note';
+  c.classList.toggle('done',!!has(a));count();}
+ function set(id,patch){const q=Q.find(x=>x.id===id);A[id]=Object.assign({id,question:q.q,choice:'',note:''},A[id],patch);if(!has(A[id]))delete A[id];sv(DK,A);}
+ function render(){let g='';const v=Q.filter(q=>!D.includes(q.id));
+  L.innerHTML=v.length?v.map(q=>{let h='';if(q.u!==g){g=q.u;h='<h3 class="qg" data-g="'+esc(g)+'">'+esc(g)+'</h3>'}
+   const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
+   return h+'<div class="qwrap" data-w="'+esc(q.id)+'"><div class="qcard" data-id="'+esc(q.id)+'"><div class="qtop"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span><span class="qstate">Answered <button class="qu" type="button">Undo</button></span></div><div class="qt">'+esc(q.q)+'</div>'+(q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'" loading="lazy">':'')+'<div class="qrow">'+opts.map(o=>'<button class="qb" type="button" data-v="'+esc(o)+'">'+esc(o)+'</button>').join('')+'<button class="qb ghost" type="button" data-v="More Detail">More Detail</button><button class="qb ghost qn" type="button">Add Note</button></div><textarea class="qnote" placeholder="Note or your own answer" hidden></textarea></div></div>'}).join(''):'<p class="qempty">All Caught Up. New questions show here.</p>';
+  L.querySelectorAll('.qcard').forEach(c=>{const id=c.dataset.id;
+   c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{set(id,{choice:(A[id]&&A[id].choice===b.dataset.v)?'':b.dataset.v});paint(c)});
+   const t=c.querySelector('.qnote');t.oninput=()=>{set(id,{note:t.value});paint(c)};
+   c.querySelector('.qn').onclick=()=>{t.hidden=t.hidden?false:!t.value.trim();if(!t.hidden)t.focus();paint(c)};
+   c.querySelector('.qu').onclick=()=>{delete A[id];sv(DK,A);t.value='';t.hidden=true;paint(c)};
+   paint(c)});
+  count();}
+ function groups(){L.querySelectorAll('h3.qg').forEach(h=>{let n=h.nextElementSibling,any=false;while(n&&!n.matches('h3')){if(!n.classList.contains('gone'))any=true;n=n.nextElementSibling}h.hidden=!any})}
+ function hide(ids,on){ids.forEach(i=>{const w=L.querySelector('[data-w="'+i+'"]');w&&w.classList.toggle('gone',on)});groups()}
+ function payload(ids){const ans=ids.map(i=>A[i]).filter(Boolean);return{agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:{answers:ans,detail_requests:ans.filter(a=>a.choice==='More Detail').map(a=>a.id)}}}
+ async function fire(){if(!pend)return;const p=pend;pend=null;clearInterval(p.t);$('qtoast').hidden=true;
+  D=D.concat(p.ids);sv(H,D);p.ids.forEach(i=>delete A[i]);sv(DK,A);sv('coach-qc-pending',null);
+  const ok=await MWSubmit.send({agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:p.res});
+  count();$('qmsg').textContent=ok?'Sent':'Saved on this device, will retry';}
+ $('qsubmit2').onclick=()=>$('qsubmit').click();
+ $('qsubmit').onclick=async()=>{const ids=vis().map(q=>q.id).filter(i=>has(A[i]));if(!ids.length||pend)return;
+  if(!window.MWSubmit)return;const ok=await MWSubmit.gate('coach');if(!ok){$('qmsg').textContent='Password needed. Nothing was sent.';return}
+  const res=payload(ids).results;pend={ids,res,left:WAIT/1000};sv('coach-qc-pending',{ids,res});hide(ids,true);count();
+  const tick=()=>{$('qtmsg').textContent='Sending '+ids.length+' in '+pend.left+'s';};tick();$('qtoast').hidden=false;
+  pend.t=setInterval(()=>{if(!pend)return;pend.left--;if(pend.left<=0)fire();else tick()},1000);};
+ $('qtundo').onclick=()=>{if(!pend)return;clearInterval(pend.t);const ids=pend.ids;pend=null;sv('coach-qc-pending',null);$('qtoast').hidden=true;hide(ids,false);count();$('qmsg').textContent='Submit undone. Nothing was sent.'};
+ addEventListener('pagehide',()=>{if(pend)fire()});
+ fetch('questions.json?'+Date.now()).then(r=>r.json()).then(J=>{const o={Urgent:0,Soon:1,Open:2};Q=J.sort((a,b)=>(o[a.u]??9)-(o[b.u]??9));
+  const P=ld('coach-qc-pending',null);render();
+  if(P&&P.ids&&window.MWSubmit){D=D.concat(P.ids);sv(H,D);P.ids.forEach(i=>delete A[i]);sv(DK,A);sv('coach-qc-pending',null);render();MWSubmit.send({agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:P.res})}});
+})();
+</script>
+
 <section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Late · Weekly Review + Daily Notes + Open Qs</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 15, 2026 &middot; Posted 8:02 AM ICT (due by 5:00) &middot; Late</div><h2 style="margin-top:.25rem">What Coach Is Working On Today</h2><p class="sub">Usage ran out overnight, so this report is late. Focus is the Thursday weekly agent review (it failed at 6:29), a fresh daily workflow review, and the Questions Center items waiting on Max.</p>
 <ol class="erows">
 <li><span class="num" aria-hidden="true">1</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></span><div class="txt"><b>Thursday Weekly Agent Review</b>Failed this morning at 6:29. Run it later today: dashboards live and on time, team-feed posts, Share-button re-check.</div></li>
@@ -203,82 +299,22 @@ h2{margin:1.25rem 0 .5rem}.grid{gap:.5rem}.wrap>p{margin:.35rem 0}
 </details>
 </div></section>
 
-<section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
-<script>
-(function(){
- const H='coach-qc-hidden', D=JSON.parse(localStorage.getItem(H)||'[]'), A={};
- function send(ids,extra){
-  const ans=ids.map(i=>A[i]).filter(Boolean);
-  const p={agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:Object.assign({answers:ans},extra||{})};
-  try{if(window.MWSubmit)return MWSubmit.send(p)}catch(e){}
-  return Promise.resolve(false);
- }
- function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
- fetch('questions.json?'+Date.now()).then(r=>r.json()).then(Q=>{
-  Q=Q.filter(q=>!D.includes(q.id));
-  const o={Urgent:0,Soon:1,Open:2};Q.sort((a,b)=>(o[a.u]??9)-(o[b.u]??9));
-  document.getElementById('qcnt').textContent=Q.length+' open, '+Q.filter(q=>q.u==='Urgent').length+' urgent';
-  const L=document.getElementById('qlist');let g='';
-  L.innerHTML=Q.map(q=>{
-   let h='';if(q.u!==g){g=q.u;h='<h3 class="qg">'+(g==='Open'?'Open':g)+'</h3>'}
-   const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
-   const btns=opts.map(v=>'<button class="qb mw-hover" type="button" data-v="'+esc(v)+'">'+esc(v)+'</button>').join('');
-   const img=q.img?'<img class="qimg" src="'+esc(q.img)+'" alt="'+esc(q.alt||'')+'">':'';
-   return h+'<div class="qcard" data-id="'+esc(q.id)+'"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span>'+(q.due?'<span class="qdue">'+esc(q.due)+'</span>':'')+'<div class="qt">'+esc(q.q)+'</div>'+img+'<div class="qrow">'+btns+'<button class="qlink qn" type="button">+ Note</button><button class="qlink qd" type="button">Ask for more detail</button><button class="qb qsend mw-hover" type="button">Send</button></div><input class="qtxt" placeholder="Or type your answer"><textarea class="qnote" placeholder="Note" hidden></textarea></div>';
-  }).join('');
-  L.querySelectorAll('.qcard').forEach(c=>{
-   const id=c.dataset.id,q=Q.find(x=>x.id===id);
-   const up=(v)=>{A[id]={id,question:q.q,choice:v||(A[id]&&A[id].choice)||'',text:c.querySelector('.qtxt').value,note:c.querySelector('.qnote').value};c.classList.add('done')};
-   c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{c.querySelectorAll('[data-v]').forEach(x=>x.classList.remove('on'));b.classList.add('on');up(b.dataset.v)});
-   c.querySelector('.qtxt').oninput=()=>up();
-   c.querySelector('.qnote').oninput=()=>up();
-   c.querySelector('.qn').onclick=()=>{c.querySelector('.qnote').hidden=false};
-   c.querySelector('.qd').onclick=async e=>{
-    const btn=e.target;btn.disabled=true;btn.textContent='Sending';
-    A[id]={id,question:q.q,choice:'Ask for more detail'};
-    const ok=await send([id],{type:'detail-request',detail_request:true,question:q.q});
-    btn.textContent=ok?'Asked':(window.MWSubmit&&MWSubmit.blocked?'Ask for more detail':'Queued');
-    btn.disabled=!!ok;
-   };
-   c.querySelector('.qsend').onclick=async()=>{
-    if(!A[id]||!(A[id].choice||A[id].text))return;
-    const ok=await send([id]);
-    if(ok||!(window.MWSubmit&&MWSubmit.blocked)){D.push(id);localStorage.setItem(H,JSON.stringify(D));c.remove();
-     const left=[...L.querySelectorAll('.qcard')].length;
-     document.getElementById('qcnt').textContent=left+' open, '+[...L.querySelectorAll('.qpill.Urgent')].length+' urgent';
-     if(!left){document.getElementById('qsent').hidden=false}}
-   };
-  });
-  document.getElementById('qsubmit').onclick=async()=>{
-   const ids=Object.keys(A).filter(i=>A[i]&&(A[i].choice||A[i].text));
-   if(!ids.length)return;
-   const ok=await send(ids);
-   if(ok||!(window.MWSubmit&&MWSubmit.blocked)){
-    ids.forEach(i=>{D.push(i);const c=L.querySelector('[data-id="'+i+'"]');c&&c.remove()});
-    localStorage.setItem(H,JSON.stringify(D));
-    document.getElementById('qsent').hidden=false;
-    document.getElementById('qcnt').textContent='0 open, 0 urgent';
-   }
-  };
- });
-})();
-</script>
 
-<div class="stats" aria-label="Stats"><div class="stat"><b>5</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>5</b><span>Open Qs</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
+<div class="stats" aria-label="Stats"><div class="stat"><b>2</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>5</b><span>Open Qs</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
 <div class="top"><section><h2>In Progress</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><div><h3>Weekly Quality Check Rubric</h3><p><span class="pill amber">Drafting</span></p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span><div><h3>Share Button Re-Check</h3><p><span class="pill blue">Thursday</span> Part of today&#x27;s weekly review (run later; morning slot failed).</p></div></div>
 </div>
 
 </section></div><h2>Recent Work</h2><div class="grid rw">
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Morning Report Oct 15 (Late)</h3><p>Weekly review + daily notes + open Qs; deck counts only on Ready To Swipe.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Morning Report Oct 15 (Late)</h3><p>Weekly review, daily notes and open questions.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Morning fixes Yes&#x27;d, Round 2 open, R63–R66 catch-up; Evening Report retired.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></span><div><h3>R66 Ready Deck Shelf / R65 Routines</h3><p>Ready To Swipe: Dashboard Layout, Agent Overlap And Handoffs, Rule Cleanup, Workflow And Routines (20 cards each); Routines schedule table.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></span><div><h3>R66 Ready Deck Shelf / R65 Routines</h3><p>Four 20-card decks on Ready To Swipe, plus the Routines table.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Max Yes On Morning Fixes</h3><p>All five Yes at 13:03; Round 2 Coach Suggestions deck posted.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Morning Report Oct 14</h3><p>Five coaching fixes from the 4:00 workflow review.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h10"/></svg></span><div><h3>Questionnaire Plain Language</h3><p>Cards with images; answered cards drop after Submit.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></span><div><h3>Catch-Up Polish</h3><p>Cream base, Share header icon, open report card, report.json, R63 pin.</p></div></div>
-<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>Max answered 15 of 100: 12 Yes picks applied here; open layout questions moved into the Dashboard Layout Deck.</p></div></div>
+<div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Layout Deck Round 1 Applied</h3><p>12 Yes picks applied; open layout questions moved to the deck.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span><div><h3>Dashboard Layout Standards</h3><p>Max&#x27;s 19 settled dashboard picks folded into Coach layout guidance.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></span><div><h3>Deck Submit Upgrade</h3><p>Back to Deck Building button, header link, Submit anytime.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coaching Suggestions Questionnaire</h3><p>Coach Suggestions deck page with Submit to Coach.</p></div></div>
