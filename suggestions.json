@@ -1,64 +1,65 @@
 {
-  "round": "2026-10-14b",
-  "title": "Top Coaching Suggestions",
-  "subtitle": "Round 2 for Oct 14: less repeat work and fewer clashing rules. Tap Yes, Maybe or No on each, add a note if you like, and press Submit any time.",
-  "settled": [
-    {
-      "title": "Keep The Results Inbox Clean",
-      "note": "Yes. Grok Bot skips test pings and sends site unlocks to their own log."
-    },
-    {
-      "title": "One Rulebook For Dashboards",
-      "note": "Yes. Branding keeps one numbered rulebook; Max still wants some dashboards to differ and is deciding them board by board."
-    },
-    {
-      "title": "UpKeep Runs Its Customer Site",
-      "note": "Yes. Only UpKeep edits it, each change notes Max's OK, and the password comes out of the feed."
-    },
-    {
-      "title": "Put Legal On The Org Chart",
-      "note": "Yes. Grok Bot adds Legal and finishes the three deletions."
-    },
-    {
-      "title": "One Morning Report Deadline",
-      "note": "Yes. 5:00 ICT stays, 7:00 is dropped."
-    },
-    {
-      "title": "Settle Where Share Goes",
-      "note": "Settled by Rulebook Clash Deck (Oct 14). Share is a small icon in the header corner, not fixed at the bottom."
-    },
-    {
-      "title": "One List Of Screen Sizes",
-      "note": "Settled by Rulebook Clash Deck (Oct 14). Test sizes are 393\u00d7852, about 1470 MacBook, and 2560; old 390/768/1440 list retired."
-    }
-  ],
-  "items": [
-    {
-      "id": "one-publish-rule",
-      "title": "One Publishing Rule",
-      "problem": "Two team feed rules from 2 minutes apart and a line in the brand guide all say when to publish, in slightly different words.",
-      "fix": "Merge them into one line in the brand guide: customer apps wait for your OK, everything else publishes right away.",
-      "img": "img/b1-publish.webp",
-      "alt": "Diagram: three similar publishing rules merged into one",
-      "owner": "Branding Agent"
-    },
-    {
-      "id": "no-echo-posts",
-      "title": "Stop Repeating Rules In The Feed",
-      "problem": "When Grok Bot posts a rule, about ten agents each post it back, even when they changed nothing, which buries real news.",
-      "fix": "Agents post only when they changed something, and Grok Bot adds one short done-by-all line.",
-      "img": "img/b4-echo.webp",
-      "alt": "Diagram: ten repeat posts replaced by posts only from agents that changed something plus one roll-up",
-      "owner": "Grok Bot and every agent"
-    },
-    {
-      "id": "who-suggests",
-      "title": "Clear Lanes For Suggestions",
-      "problem": "Coach, Research and Branding are all described as giving suggestions, and Branding appears twice on the org chart.",
-      "fix": "Coach covers how agents work, Research brings new outside ideas, Branding covers look and decks, and Branding is listed once.",
-      "img": "img/b5-suggest.webp",
-      "alt": "Mini chart: Coach, Research and Branding each with one suggestion lane",
-      "owner": "Grok Bot (chart) with Coach, Research and Branding"
-    }
-  ]
+ "round": "2026-10-14b",
+ "title": "Top Coaching Suggestions",
+ "subtitle": "Round 2 for Oct 14: less repeat work and fewer clashing rules. Tap Yes, Maybe or No on each, add a note if you like, and press Submit any time.",
+ "settled": [
+  {
+   "title": "Keep The Results Inbox Clean",
+   "note": "Yes. Grok Bot skips test pings and sends site unlocks to their own log."
+  },
+  {
+   "title": "One Rulebook For Dashboards",
+   "note": "Yes. Branding keeps one numbered rulebook; Max still wants some dashboards to differ and is deciding them board by board."
+  },
+  {
+   "title": "UpKeep Runs Its Customer Site",
+   "note": "Yes. Only UpKeep edits it, each change notes Max's OK, and the password comes out of the feed."
+  },
+  {
+   "title": "Put Legal On The Org Chart",
+   "note": "Yes. Grok Bot adds Legal and finishes the three deletions."
+  },
+  {
+   "title": "One Morning Report Deadline",
+   "note": "Yes. 5:00 ICT stays, 7:00 is dropped."
+  },
+  {
+   "title": "Settle Where Share Goes",
+   "note": "Under review: 'Share in header corner' clashes with R70 (Share goes in the footer). Grok Bot is asking Max.",
+   "status": "under review"
+  },
+  {
+   "title": "One List Of Screen Sizes",
+   "note": "Settled by Rulebook Clash Deck (Oct 14). Test sizes are 393×852, about 1470 MacBook, and 2560; old 390/768/1440 list retired."
+  }
+ ],
+ "items": [
+  {
+   "id": "one-publish-rule",
+   "title": "One Publishing Rule",
+   "problem": "Publishing rules are written in a few places in slightly different words, and some still say other pages are customer-facing.",
+   "fix": "Use one line (Max 22:07): only Niko's apps are customer-facing. smartupkeep.ai and Mom's app are not. Every other page is locked with the shared password.",
+   "img": "img/b1-publish.webp",
+   "alt": "Diagram: three similar publishing rules merged into one",
+   "owner": "Branding Agent"
+  },
+  {
+   "id": "no-echo-posts",
+   "title": "Stop Repeating Rules In The Feed",
+   "problem": "When Grok Bot posts a rule, about ten agents each post it back, even when they changed nothing, which buries real news.",
+   "fix": "Agents post only when they changed something, and Grok Bot adds one short done-by-all line.",
+   "img": "img/b4-echo.webp",
+   "alt": "Diagram: ten repeat posts replaced by posts only from agents that changed something plus one roll-up",
+   "owner": "Grok Bot and every agent"
+  },
+  {
+   "id": "who-suggests",
+   "title": "Clear Lanes For Suggestions",
+   "problem": "Coach, Research and Branding are all described as giving suggestions, and Branding appears twice on the org chart.",
+   "fix": "Coach covers how agents work, Research brings new outside ideas, Branding covers look and decks, and Branding is listed once.",
+   "img": "img/b5-suggest.webp",
+   "alt": "Mini chart: Coach, Research and Branding each with one suggestion lane",
+   "owner": "Grok Bot (chart) with Coach, Research and Branding"
+  }
+ ]
 }
