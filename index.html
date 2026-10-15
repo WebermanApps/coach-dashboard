@@ -226,8 +226,9 @@ footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
 .qu,.qb{letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
 body.qt-on{padding-bottom:88px}
 .qtoast{bottom:calc(16px + env(safe-area-inset-bottom))}
-</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc4"></head><body><main class="wrap">
-<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 2:05 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header><div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 27 V18 A9 9 0 0 1 32 23 Z" fill="#05668D"/><path d="M24 27 V18"/><circle cx="24" cy="27" r="13"/><path d="M21 8 H27 M24 8 V14 M35 13 L38 16"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Coach Command Center</h1><p class="mw-cc-desc">Studies every agent&#x27;s workflow and suggests improvements.</p></div></div><section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
+.mw-section>h2:first-child{margin-top:0}
+</style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc6"></head><body><main class="wrap">
+<header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 2:05 PM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header><div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 27 V18 A9 9 0 0 1 32 23 Z" fill="#05668D"/><path d="M24 27 V18"/><circle cx="24" cy="27" r="13"/><path d="M21 8 H27 M24 8 V14 M35 13 L38 16"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Coach Command Center</h1><p class="mw-cc-desc">Studies every agent&#x27;s workflow and suggests improvements.</p></div></div><div class="mw-section mw-sec-decks"><section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
 
 <script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
@@ -242,7 +243,8 @@ window.mwCarousel=function(root){(root||document).querySelectorAll('.mw-carousel
  (root||document).querySelectorAll('.rmore .mw-thumb-card').forEach(c=>{if(c.dataset.cx)return;c.dataset.cx=1;c.onclick=()=>c.setAttribute('aria-expanded',c.getAttribute('aria-expanded')==='true'?'false':'true');c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();c.click()}}})};
 document.addEventListener('DOMContentLoaded',()=>mwCarousel());
 </script>
-<section class="qc" id="qc" aria-label="Questions Center"><div class="qhd"><h2>Questions Center</h2><p class="cnt" id="qcnt" aria-live="polite"></p><button class="qb qsub2" type="button" id="qsubmit2" disabled>Submit</button></div><div id="qlist"></div><div class="qbar"><span class="qmsg" id="qmsg">Pick an answer to start</span><button class="qb" type="button" id="qsubmit" disabled>Submit</button></div><div class="qtoast" id="qtoast" role="status" aria-live="polite" hidden><span id="qtmsg"></span><button class="qu" type="button" id="qtundo">Undo Submit</button></div></section>
+</div>
+<div class="mw-section mw-sec-qc"><section class="qc" id="qc" aria-label="Questions Center"><div class="qhd"><h2>Questions Center</h2><p class="cnt" id="qcnt" aria-live="polite"></p><button class="qb qsub2" type="button" id="qsubmit2" disabled>Submit</button></div><div id="qlist"></div><div class="qbar"><span class="qmsg" id="qmsg">Pick an answer to start</span><button class="qb" type="button" id="qsubmit" disabled>Submit</button></div><div class="qtoast" id="qtoast" role="status" aria-live="polite" hidden><span id="qtmsg"></span><button class="qu" type="button" id="qtundo">Undo Submit</button></div></section>
 <script>
 (function(){
  /* Answers save on this device as you tap. Undo clears one card. Submit hides answered cards, waits 10 s (Undo Submit), then sends via MWSubmit. */
@@ -304,15 +306,16 @@ document.addEventListener('DOMContentLoaded',()=>mwCarousel());
 })();
 </script>
 
-<section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Late · Weekly Review + Daily Notes + Open Qs</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 15, 2026 &middot; Posted 8:02 AM ICT (due by 5:00) &middot; Late</div><h2 style="margin-top:.25rem">What Coach Is Working On Today</h2><p class="sub">Usage ran out overnight, so this report is late. Focus is the Thursday weekly agent review (it failed at 6:29), a fresh daily workflow review, and the Questions Center items waiting on Max.</p>
+</div>
+<div class="mw-section mw-sec-rep"><section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Late · Weekly Review + Daily Notes + Open Qs</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 15, 2026 &middot; Posted 8:02 AM ICT (due by 5:00) &middot; Late</div><h2 style="margin-top:.25rem">What Coach Is Working On Today</h2><p class="sub">Usage ran out overnight, so this report is late. Focus is the Thursday weekly agent review (it failed at 6:29), a fresh daily workflow review, and the Questions Center items waiting on Max.</p>
 <div class="mw-blocks"><div class="mw-block"><h3>Thursday Weekly Agent Review</h3><p>Failed this morning at 6:29. Run it later today: dashboards live and on time, team-feed posts, Share-button re-check.</p></div><div class="mw-block"><h3>Fresh Daily Workflow Review</h3><p>New notes from last night&#x27;s feed (double work, overlap, conflicting rules). Full write-up in daily-review.</p></div><div class="mw-block"><h3>Questions Center Waiting On Max</h3><p>5 open (1 urgent whistle pick; sticky header; one publish rule; stop echo feed posts; clear suggestion lanes).</p></div></div>
 <details class="rmore" open><summary>Coaching Notes (Since Oct 14 6:00 PM)</summary>
 <div class="mw-carousel mw-carousel--swipe"><div class="mw-track"><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>Evening Report Thrash</h3><p class="mw-thumb-sub">Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them.</p><div class="mw-thumb-more">Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</div></div><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>Swipe Counts Flipped To Decks</h3><p class="mw-thumb-sub">The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13.</p><div class="mw-thumb-more">The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</div></div><div class="mw-swipe-card mw-thumb-card" tabindex="0" role="button" aria-expanded="false"><h3>R66 Renamed Three Times In One Hour</h3><p class="mw-thumb-sub">Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board.</p><div class="mw-thumb-more">Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</div></div></div><div class="mw-dots"></div></div>
 </details>
-</div></section>
+</div></section></div>
 
 
-<div class="stats" aria-label="Stats"><div class="stat"><b>2</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>5</b><span>Open Qs</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
+<div class="mw-section mw-sec-work"><div class="stats" aria-label="Stats"><div class="stat"><b>2</b><span>Routines</span></div><div class="stat"><b>2</b><span>Active</span></div><div class="stat"><b>5</b><span>Open Qs</span></div><div class="stat"><b>12</b><span>Standards</span></div></div>
 <div class="top"><section><h2>In Progress</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><div><h3>Weekly Quality Check Rubric</h3><p><span class="pill amber">Drafting</span></p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span><div><h3>Share Button Re-Check</h3><p><span class="pill blue">Thursday</span> Part of today&#x27;s weekly review (run later; morning slot failed).</p></div></div>
@@ -332,7 +335,8 @@ document.addEventListener('DOMContentLoaded',()=>mwCarousel());
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div><h3>Coaching Suggestions Questionnaire</h3><p>Coach Suggestions deck page with Submit to Coach.</p></div></div>
 </div>
 
-<h2>Dashboard Layout Standards</h2>
+</div>
+<div class="mw-section mw-sec-std"><h2>Dashboard Layout Standards</h2>
 <details class="std"><summary>Settled Picks From Max</summary><ul>
 <li>Layout Round 1 (12): Shared Top Bar; Title Before Report; Report Opens As Key Lines; Sticky Mini Header On Scroll; Decisions Under Report; Consistent Names; Condensed Expanding Rows; Show Five Then See All; Right-Aligned Dates; Two-Line Card Limit; Tighter Rhythm; Stat Tiles Strip</li>
 <li>Apps Home Link: Spaced Caps Title, Compact; Bottom Tabs, Lagoon</li>
@@ -352,20 +356,24 @@ document.addEventListener('DOMContentLoaded',()=>mwCarousel());
 <li>Deck Building page alerts: a small toast banner along the bottom, or a centered pop-up in the middle of the screen?</li>
 <li>Deck Building page tips: an outlined card sitting inline with the content, or a banner pinned across the top?</li>
 </ul></details>
-<h2>Brand Guide Summary</h2><div class="grid">
+</div>
+<div class="mw-section mw-sec-brand"><h2>Brand Guide Summary</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z"/></svg></span><div><h3>Look</h3><p>Light mode, white or cream, neutral with small pops of clear color. Title Case headings (Max, Oct 7).</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 19L12 5l7 14M8 13h8"/></svg></span><div><h3>Type</h3><p>Khand Bold headings in Title Case, Hind body.</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></span><div><h3>Build</h3><p>Phone-first, tap cards, 44px targets, Share button, footer credit.</p></div></div>
 </div>
 
-<h2>Apps</h2><div class="grid">
+</div>
+<div class="mw-section mw-sec-apps"><h2>Apps</h2><div class="grid">
 <a class="card mw-hover" href="https://webermanapps.github.io/"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><div><h3>App Hub</h3><p><span class="pill blue">Hub</span></p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/style-swipe/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Style Swipe</h3><p>Standardized</p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/blueprint-swipe/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Blueprint Swipe</h3><p>Standardized</p></div></a>
 <a class="card mw-hover" href="https://webermanapps.github.io/thai-vocab-quiz/"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><div><h3>Thai Vocab Quiz</h3><p>Standardized</p></div></a>
 </div>
 
-<section data-routines="routines.json" id="routines" aria-label="Routines"></section>
+</div>
+<div class="mw-section mw-sec-routines mw-footer"><section data-routines="routines.json" id="routines" aria-label="Routines"></section>
+</div>
 <div id="toast" aria-live="polite"></div>
 </main>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
