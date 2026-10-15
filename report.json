@@ -1,8 +1,12 @@
 {
-  "agent": "coach",
-  "type": "Morning Report",
-  "date": "2026-10-14",
-  "posted": "2026-10-14T04:43:00+07:00",
-  "due_by": "05:00 ICT",
-  "summary": "Morning Fixes Yes'd, Round 2 Open, R63–R66 Catch-Up"
+ "agent": "coach",
+ "type": "Morning Report",
+ "report_type": "Morning Report",
+ "date": "2026-10-15",
+ "posted_at": "2026-10-15T08:02:59+07:00",
+ "posted": "2026-10-15T08:02:59+07:00",
+ "due": "2026-10-15T05:00:00+07:00",
+ "due_by": "05:00 ICT",
+ "late": true,
+ "summary": "Late \u00b7 Weekly Review + Daily Notes + Open Qs"
 }

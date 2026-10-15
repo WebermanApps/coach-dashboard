@@ -1,26 +1,26 @@
 {
- "updated": "2026-10-14 20:20 ICT",
+ "updated": "2026-10-15 07:25 ICT",
  "routines": [
   {
    "name": "Daily Workflow Review",
    "group": "Daily",
    "schedule_plain": "Daily At 4:00 AM ICT",
    "status": "on",
-   "last_run": "Today 4:05 AM"
+   "last_run": "Today 7:25 AM (make-up; overnight missed)"
   },
   {
    "name": "Coach Morning Report",
    "group": "Reports",
    "schedule_plain": "Daily At 4:43 AM ICT",
    "status": "on",
-   "last_run": "Today 4:46 AM"
+   "last_run": "Today 8:02 AM (late)"
   },
   {
    "name": "Coach Evening Report",
    "group": "Reports",
    "schedule_plain": "Daily At 6:00 PM ICT (Retired)",
    "status": "paused",
-   "last_run": "Today 6:00 PM",
+   "last_run": "Oct 14, 6:00 PM",
    "note": "Retired by Max, Oct 14 2026 20:05 ICT: only the Morning Report (by 5:00 ICT) remains."
   },
   {
@@ -28,14 +28,14 @@
    "group": "Event/Listener",
    "schedule_plain": "Hourly At :17 ICT",
    "status": "on",
-   "last_run": "Today 7:20 PM"
+   "last_run": "Oct 14, 7:20 PM"
   },
   {
    "name": "Weekly Agent Optimization Review",
    "group": "Weekly",
    "schedule_plain": "Thursdays At 6:29 AM ICT",
    "status": "on",
-   "last_run": "Oct 8, 6:38 AM"
+   "last_run": "Failed Today 6:29 AM; re-run later"
   }
  ]
 }
