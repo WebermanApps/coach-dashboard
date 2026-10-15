@@ -212,12 +212,24 @@ h1{font-size:2.2rem;margin:.1rem 0 .15rem}
 footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
 .top{display:block!important}.top .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))!important}
 @media(max-width:520px){h1{font-size:1.9rem}.tbar .upd{display:none}.qc .qhd{flex-wrap:wrap}}
+
+/* Polish v2 (Branding answers, Oct 15 12:42): no colored side edges; beige fill + #e3ddd2 border; uppercase small labels like Apps Home */
+.bar,.alert,.apps-strip a,.rw .card,.od-strip a,.sugg-teaser,.qcard,.qcard.done,.rep.open-rep,.dec h2{border-left:1px solid #e3ddd2!important}
+.qcard.done,.rep.open-rep .rhd,.stat,.std summary,.dec h2{background:#FAF6EE;border-color:#e3ddd2}
+.rep.open-rep,.bar{border-color:#e3ddd2}
+.qstate{color:#0B6E4F}.qstate::before{content:"";width:.55rem;height:.3rem;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg) translateY(-2px)}
+.rep.open-rep .rhd .sline::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#D4A017;margin-right:.5rem;vertical-align:middle}
+.rep.open-rep .rhd .sline,.qc .cnt,.qc h3.qg,.stat span,.label,.seeall,.rep.open-rep .rmore>summary,.std summary,.qbar .qmsg,.card .date,.tbar .upd{text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;font-weight:600}
+.std summary{font-family:"Hind",sans-serif}
+.qu,.qb{letter-spacing:.06em;text-transform:uppercase;font-size:.78rem}
+body.qt-on{padding-bottom:88px}
+.qtoast{bottom:calc(16px + env(safe-area-inset-bottom))}
 </style><script src="ptr.js" defer></script><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=1"></head><body><main class="wrap">
 <header class="tbar" aria-label="Top Bar"><a class="home mw-hover" href="https://webermanapps.github.io/a-o956qercs5ubd57y/">← Apps Home</a><span class="nm">Coach</span><span class="upd">Updated Oct 15, 8:02 AM ICT</span><button id="share" class="shic mw-hover" type="button" aria-label="Share this dashboard" title="Share"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></header>
 <section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
 <script>document.getElementById('ready-to-swipe').dataset.dsDone='1'</script>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=3" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
 <section class="apps-top" aria-label="Coach Apps">
 <div class="label">Coach Apps</div>
 <nav class="apps-strip">
@@ -266,7 +278,7 @@ footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
  function groups(){L.querySelectorAll('h3.qg').forEach(h=>{let n=h.nextElementSibling,any=false;while(n&&!n.matches('h3')){if(!n.classList.contains('gone'))any=true;n=n.nextElementSibling}h.hidden=!any})}
  function hide(ids,on){ids.forEach(i=>{const w=L.querySelector('[data-w="'+i+'"]');w&&w.classList.toggle('gone',on)});groups()}
  function payload(ids){const ans=ids.map(i=>A[i]).filter(Boolean);return{agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:{answers:ans,detail_requests:ans.filter(a=>a.choice==='More Detail').map(a=>a.id)}}}
- async function fire(){if(!pend)return;const p=pend;pend=null;clearInterval(p.t);$('qtoast').hidden=true;
+ async function fire(){if(!pend)return;const p=pend;pend=null;clearInterval(p.t);$('qtoast').hidden=true;document.body.classList.remove('qt-on');
   D=D.concat(p.ids);sv(H,D);p.ids.forEach(i=>delete A[i]);sv(DK,A);sv('coach-qc-pending',null);
   const ok=await MWSubmit.send({agent:'coach',app:'coach-questions-center',deck:'Questions Center',results:p.res});
   count();$('qmsg').textContent=ok?'Sent':'Saved on this device, will retry';}
@@ -274,9 +286,9 @@ footer{border-top:1px solid var(--beige-bd);margin-top:1.5rem}
  $('qsubmit').onclick=async()=>{const ids=vis().map(q=>q.id).filter(i=>has(A[i]));if(!ids.length||pend)return;
   if(!window.MWSubmit)return;const ok=await MWSubmit.gate('coach');if(!ok){$('qmsg').textContent='Password needed. Nothing was sent.';return}
   const res=payload(ids).results;pend={ids,res,left:WAIT/1000};sv('coach-qc-pending',{ids,res});hide(ids,true);count();
-  const tick=()=>{$('qtmsg').textContent='Sending '+ids.length+' in '+pend.left+'s';};tick();$('qtoast').hidden=false;
+  const tick=()=>{$('qtmsg').textContent='Sending '+ids.length+' in '+pend.left+'s';};tick();$('qtoast').hidden=false;document.body.classList.add('qt-on');
   pend.t=setInterval(()=>{if(!pend)return;pend.left--;if(pend.left<=0)fire();else tick()},1000);};
- $('qtundo').onclick=()=>{if(!pend)return;clearInterval(pend.t);const ids=pend.ids;pend=null;sv('coach-qc-pending',null);$('qtoast').hidden=true;hide(ids,false);count();$('qmsg').textContent='Submit undone. Nothing was sent.'};
+ $('qtundo').onclick=()=>{if(!pend)return;clearInterval(pend.t);const ids=pend.ids;pend=null;sv('coach-qc-pending',null);$('qtoast').hidden=true;document.body.classList.remove('qt-on');hide(ids,false);count();$('qmsg').textContent='Submit undone. Nothing was sent.'};
  addEventListener('pagehide',()=>{if(pend)fire()});
  fetch('questions.json?'+Date.now()).then(r=>r.json()).then(J=>{const o={Urgent:0,Soon:1,Open:2};Q=J.sort((a,b)=>(o[a.u]??9)-(o[b.u]??9));
   const P=ld('coach-qc-pending',null);render();
