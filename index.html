@@ -88,7 +88,7 @@ h1{font-size:2.6rem}h2{font-size:1.6rem;margin:2.25rem 0 1rem}h3{font-size:1.2re
 @media (min-width:2400px){.topnav .home{font-size:1rem}}
 .dec h2{margin:2rem 0 .75rem;padding:.6rem .85rem;background:#e6f0f4;border-left:4px solid #05668D;text-transform:uppercase;letter-spacing:.08em;font-size:1.25rem}
 .rw .card{border-radius:0;border-left:4px solid #0B6E4F}@media(max-width:700px){.rw{grid-template-columns:1fr 1fr}.rw .card{flex-direction:column}}
-.std{background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin:.5rem 0}.std summary{min-height:44px;padding:.75rem 1rem;cursor:pointer;font:700 1.15rem "Khand",sans-serif}.std ol{margin:0;padding:0 1rem 1rem 2.25rem}.std li{margin:.25rem 0}
+.std{background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin:.5rem 0}.std summary{min-height:44px;padding:.75rem 1rem;cursor:pointer;font:700 1.15rem "Khand",sans-serif}.std ul{margin:0;padding:0 1rem 1rem 2.25rem}.std li{margin:.25rem 0}
 
 /* Dashboard Layout Deck round 1 (Max, Oct 13 2026): 12 Yes picks */
 .tbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:.75rem;margin:0 -1.25rem .75rem;padding:0 1.25rem;min-height:48px;background:rgba(253,251,246,.96);border-bottom:1px solid var(--bd);backdrop-filter:blur(6px)}
@@ -287,11 +287,7 @@ body.qt-on{padding-bottom:88px}
 </script>
 
 <section class="bar rep open-rep" aria-label="Morning Report"><div class="rhd"><span class="sline">Morning Report &middot; Late · Weekly Review + Daily Notes + Open Qs</span></div><div class="rbody"><div class="label">Morning Report &middot; Oct 15, 2026 &middot; Posted 8:02 AM ICT (due by 5:00) &middot; Late</div><h2 style="margin-top:.25rem">What Coach Is Working On Today</h2><p class="sub">Usage ran out overnight, so this report is late. Focus is the Thursday weekly agent review (it failed at 6:29), a fresh daily workflow review, and the Questions Center items waiting on Max.</p>
-<ol class="erows">
-<li><span class="num" aria-hidden="true">1</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></span><div class="txt"><b>Thursday Weekly Agent Review</b>Failed this morning at 6:29. Run it later today: dashboards live and on time, team-feed posts, Share-button re-check.</div></li>
-<li><span class="num" aria-hidden="true">2</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div class="txt"><b>Fresh Daily Workflow Review</b>New notes from last night&#x27;s feed (double work, overlap, conflicting rules). Full write-up in daily-review.</div></li>
-<li><span class="num" aria-hidden="true">3</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg></span><div class="txt"><b>Questions Center Waiting On Max</b>5 open (1 urgent whistle pick; sticky header; one publish rule; stop echo feed posts; clear suggestion lanes).</div></li>
-</ol>
+<div class="mw-blocks"><div class="mw-block"><h3>Thursday Weekly Agent Review</h3><p>Failed this morning at 6:29. Run it later today: dashboards live and on time, team-feed posts, Share-button re-check.</p></div><div class="mw-block"><h3>Fresh Daily Workflow Review</h3><p>New notes from last night&#x27;s feed (double work, overlap, conflicting rules). Full write-up in daily-review.</p></div><div class="mw-block"><h3>Questions Center Waiting On Max</h3><p>5 open (1 urgent whistle pick; sticky header; one publish rule; stop echo feed posts; clear suggestion lanes).</p></div></div>
 <details class="rmore"><summary>3 Coaching Notes (Since Oct 14 6:00 PM)</summary>
 <div class="mw-blocks"><div class="mw-block"><h3>Evening Report Thrash</h3><p>Every board posted an Evening Report around 6:00 PM, then Max retired them at 8:05 and boards spent the next 10 minutes removing them. Keep the Morning Report as the only report unless Max says otherwise.</p></div><div class="mw-block"><h3>Swipe Counts Flipped To Decks</h3><p>The kit showed swipe counts at 7:55 PM; Max locked &quot;decks only&quot; at 8:13. Boards that applied the first rule rewrote within 20 minutes. Ship metric rules once, versioned, before agents copy them.</p></div><div class="mw-block"><h3>R66 Renamed Three Times In One Hour</h3><p>Launcher → Ready Deck Shelf → Ready To Swipe look cascaded across every board. Branding should batch layout rule changes into one handoff instead of three overlapping ones.</p></div></div>
 </details>
@@ -319,7 +315,7 @@ body.qt-on{padding-bottom:88px}
 </div>
 
 <h2>Dashboard Layout Standards</h2>
-<details class="std"><summary>Settled Picks From Max</summary><ol>
+<details class="std"><summary>Settled Picks From Max</summary><ul>
 <li>Layout Round 1 (12): Shared Top Bar; Title Before Report; Report Opens As Key Lines; Sticky Mini Header On Scroll; Decisions Under Report; Consistent Names; Condensed Expanding Rows; Show Five Then See All; Right-Aligned Dates; Two-Line Card Limit; Tighter Rhythm; Stat Tiles Strip</li>
 <li>Apps Home Link: Spaced Caps Title, Compact; Bottom Tabs, Lagoon</li>
 <li>Fresh Start Bar: Big Title, Fold-Out Sections, Icon Action Tiles</li>
@@ -329,15 +325,15 @@ body.qt-on{padding-bottom:88px}
 <li>Open Items: Two-Up Cards With Color Edge, Square Corners</li>
 <li>Team Feed Panel: Inline Outline Card, Text Links</li>
 <li>Pull To Refresh Cue: Numbered Rows, Fold-Out Sections</li>
-<li>Deck Building Page: Fold-Out Sections, Big Title Header</li></ol></details>
-<details class="std"><summary>Still Open (6 To Retest)</summary><ol>
+<li>Deck Building Page: Fold-Out Sections, Big Title Header</li></ul></details>
+<details class="std"><summary>Still Open (6 To Retest)</summary><ul>
 <li>Report rows: small colored dots beside each line, or a color stripe on the left edge of each card?</li>
 <li>Report stats: one large number for each metric, or a progress bar that fills to show how far along it is?</li>
 <li>Status chips area: a small grid of icons you tap, or a short feature list with a plus button to add more?</li>
 <li>App tiles: show a big headline number on each tile, or a progress bar that shows completion?</li>
 <li>Deck Building page alerts: a small toast banner along the bottom, or a centered pop-up in the middle of the screen?</li>
 <li>Deck Building page tips: an outlined card sitting inline with the content, or a banner pinned across the top?</li>
-</ol></details>
+</ul></details>
 <h2>Brand Guide Summary</h2><div class="grid">
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z"/></svg></span><div><h3>Look</h3><p>Light mode, white or cream, neutral with small pops of clear color. Title Case headings (Max, Oct 7).</p></div></div>
 <div class="card"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 19L12 5l7 14M8 13h8"/></svg></span><div><h3>Type</h3><p>Khand Bold headings in Title Case, Hind body.</p></div></div>
