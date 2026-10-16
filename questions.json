@@ -1,19 +1,5 @@
 [
  {
-  "id": "cq-whistle",
-  "q": "Which whistle (A / B / C) for Coach's picture?",
-  "u": "Urgent",
-  "opts": [
-   "Whistle A",
-   "Whistle B",
-   "Whistle C"
-  ],
-  "img": "img/whistle-options.png",
-  "alt": "Three whistle icon options labeled A, B and C",
-  "answered": "Whistle B",
-  "answeredAt": "2026-10-16 11:50 ICT"
- },
- {
   "id": "cq-sticky-header",
   "q": "The Command Center header always comes first (Max 13:24). Should it also stay pinned at the top as you scroll, on every agent dashboard?",
   "u": "Open",
