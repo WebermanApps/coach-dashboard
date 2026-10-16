@@ -68,6 +68,17 @@
      "url": "https://github.com/WebermanApps/coach-dashboard/commit/fa04bba"
     }
    ]
+  },
+  {
+   "id": "whistle-b",
+   "action": "Set Whistle B as Coach's avatar",
+   "approved": "Oct 16, 2026 (11:50 AM ICT, in chat)",
+   "confirmation": "Done. Coach set Whistle B as its avatar at about 11:51 AM ICT, and the whistle question is marked answered.",
+   "proof": [
+    {
+     "label": "ops/brand/agent-icons/png/whistle-b.png"
+    }
+   ]
   }
  ]
 }

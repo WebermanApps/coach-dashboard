@@ -9,7 +9,9 @@
    "Whistle C"
   ],
   "img": "img/whistle-options.png",
-  "alt": "Three whistle icon options labeled A, B and C"
+  "alt": "Three whistle icon options labeled A, B and C",
+  "answered": "Whistle B",
+  "answeredAt": "2026-10-16 11:50 ICT"
  },
  {
   "id": "cq-sticky-header",
