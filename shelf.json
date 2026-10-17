@@ -2,6 +2,23 @@
  "agent": "coach",
  "decks": [
   {
+   "id": "team-ideas-pjpssr--v1",
+   "deck_id": "team-ideas-pjpssr",
+   "name": "Team Ideas: Quality And Safety",
+   "url": "https://webermanapps.github.io/style-swipe/team-ideas-pjpssr/",
+   "total": 1,
+   "topic": "team-ideas",
+   "tag": "Team Ideas",
+   "format": "ideas",
+   "type": "Ideas From The Team",
+   "progress_key": "styleSwipe:ideas:team-ideas-pjpssr",
+   "added": "2026-10-17T19:18:15+07:00",
+   "updated": "2026-10-17T19:18:15+07:00",
+   "version": 1,
+   "blurb": "1 idea from the team",
+   "new": true
+  },
+  {
    "id": "dashboard-layout-dashboard-layout-deck",
    "name": "Dashboard Layout Deck",
    "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-dashboard-layout-deck-ucjnz8/",
@@ -91,7 +108,7 @@
    "lastWorkAt": "2026-10-17T08:05:35+07:00"
   }
  ],
- "updated": "2026-10-17T08:05:35+07:00",
+ "updated": "2026-10-17T19:18:15+07:00",
  "pinned": [
   {
    "name": "Coach Suggestions",
