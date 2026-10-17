@@ -1,13 +1,1 @@
-[
- {
-  "id": "cq-sticky-header",
-  "q": "The Command Center header always comes first (Max 13:24). Should it also stay pinned at the top as you scroll, on every agent dashboard?",
-  "u": "Open",
-  "opts": [
-   "Yes, Pin It Everywhere",
-   "Coach Only",
-   "Don't Pin It"
-  ],
-  "lastWorkAt": "2026-10-15T23:39:11+07:00"
- }
-]
+[]

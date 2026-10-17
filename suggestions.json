@@ -25,7 +25,7 @@
   },
   {
    "title": "Settle Where Share Goes",
-   "note": "Under review: 'Share in header corner' clashes with R70 (Share goes in the footer). Grok Bot is asking Max.",
+   "note": "Still open. The clash is now R87 (Share is an icon in the header, and the footer Share is retired) against Max's Oct 16 footer wording (Routines, Share, Built by Machan). It is going to Max to decide.",
    "status": "under review"
   },
   {
