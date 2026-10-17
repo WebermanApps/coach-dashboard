@@ -9,7 +9,8 @@
    "topic": "dashboard-layout",
    "added": "2026-10-14T19:58:45+07:00",
    "tag": "Dashboard Layout",
-   "blurb": "20 cards, ready now"
+   "blurb": "20 cards, ready now",
+   "lastWorkAt": "2026-10-14T19:58:45+07:00"
   },
   {
    "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
@@ -21,7 +22,8 @@
    "tag": "Agent Overlap",
    "answered": 0,
    "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   },
   {
    "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene",
@@ -33,7 +35,8 @@
    "tag": "Agent Overlap",
    "answered": 0,
    "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   },
   {
    "id": "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
@@ -45,7 +48,8 @@
    "tag": "Rule Cleanup",
    "answered": 0,
    "split_from": "rule-cleanup-rule-cleanup-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   },
   {
    "id": "rule-cleanup-rule-cleanup-deck-questionnaire-size",
@@ -57,7 +61,8 @@
    "tag": "Rule Cleanup",
    "answered": 0,
    "split_from": "rule-cleanup-rule-cleanup-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   },
   {
    "id": "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
@@ -69,7 +74,8 @@
    "tag": "Workflow",
    "answered": 0,
    "split_from": "workflow-routines-workflow-and-routines-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   },
   {
    "id": "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching",
@@ -81,7 +87,8 @@
    "tag": "Workflow",
    "answered": 0,
    "split_from": "workflow-routines-workflow-and-routines-deck",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "lastWorkAt": "2026-10-17T08:05:35+07:00"
   }
  ],
  "updated": "2026-10-17T08:05:35+07:00",
@@ -91,7 +98,8 @@
    "url": "suggestions.html",
    "answered": 0,
    "total": 3,
-   "tag": "Questionnaire"
+   "tag": "Questionnaire",
+   "lastWorkAt": "2026-10-15T23:39:11+07:00"
   }
  ],
  "stats_note": "Ready decks refill on submit: ready_shelf.py refill <deck_id> --shelf this file --agent coach",
