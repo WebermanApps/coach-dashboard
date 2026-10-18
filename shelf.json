@@ -28,10 +28,17 @@
    "topic": "dashboard-layout",
    "added": "2026-10-17T23:46:18+07:00",
    "tag": "Dashboard Layout",
-   "answered": 0,
+   "answered": 7,
    "replaces": "dashboard-layout-dashboard-layout-deck",
    "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T23:46:18+07:00"
+   "lastWorkAt": "2026-10-17T23:46:18+07:00",
+   "status": "done",
+   "done_at": "2026-10-18T22:18:54+07:00",
+   "skipped": [
+    "06",
+    "09",
+    "10"
+   ]
   },
   {
    "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
@@ -114,7 +121,7 @@
    "lastWorkAt": "2026-10-17T08:05:35+07:00"
   }
  ],
- "updated": "2026-10-17T23:46:18+07:00",
+ "updated": "2026-10-18T23:09:59+07:00",
  "pinned": [
   {
    "name": "Coach Suggestions",
@@ -194,5 +201,14 @@
  "cap": 10,
  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
  "held": [],
- "queued": []
+ "queued": [],
+ "done": [
+  {
+   "id": "dashboard-layout-header-and-footer-details",
+   "at": "2026-10-18T22:18:54+07:00",
+   "name": "Header And Footer Details",
+   "answered": 7,
+   "total": 10
+  }
+ ]
 }
