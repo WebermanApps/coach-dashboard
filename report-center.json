@@ -1,99 +1,123 @@
 {
- "agent": "coach",
- "updated": "2026-10-16",
- "items": [
-  {
-   "id": "undo-questions",
-   "action": "Add an Undo button to the Question Center",
-   "approved": "Oct 15, 2026",
-   "confirmation": "Done. Undo and Question Center polish shipped, with Undo toast padding fixed.",
-   "proof": [
+  "agent": "coach",
+  "updated": "2026-10-20",
+  "items": [
     {
-     "label": "Commit fa04bba",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/fa04bba"
+      "id": "ping-proposal",
+      "action": "Proposal: a reliable ping system (asked via Grok Bot, Oct 20)",
+      "approved": "Requested Oct 20, 2026, 12:30 PM ICT. Advice only, not approved to build yet.",
+      "confirmation": "Sent to Grok Bot. Pings stay on when everyone is paused. You do one Apps Script redeploy, then a test deck proves it works. One pinned routing table. Each ping is tracked until the board is actually cleared, re-sent once after 30 minutes, then flagged stuck. A read-only 15-minute safety check only alerts. The old router is retired. Security decides on the exposed key.",
+      "proof": [
+        {
+          "label": "ops/team-sync/air-reports/coach.md (Oct 20)"
+        }
+      ],
+      "lastWorkAt": "2026-10-20T12:35:00+07:00"
     },
     {
-     "label": "Commit 12c402e",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/12c402e"
-    }
-   ],
-   "lastWorkAt": "2026-10-15T12:44:39+07:00",
-   "dismissed": "2026-10-17T12:13:00+07:00",
-   "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
-  },
-  {
-   "id": "no-numbering",
-   "action": "Remove numbering from question cards, coaching notes and report rows",
-   "approved": "Oct 15, 2026 (1:31 PM and 1:35 PM ICT)",
-   "confirmation": "Done. Plain kit blocks with no number circles.",
-   "proof": [
-    {
-     "label": "Commit cb26428",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/cb26428"
+      "id": "image-handoff",
+      "action": "Advice: a simpler image hand-off (asked via Swatch, Oct 20)",
+      "approved": "Requested Oct 20, 2026, 12:29 PM ICT. Advice only, not approved to build yet.",
+      "confirmation": "Sent to Swatch. One shared folder every agent can read holds all finished images. A hand-off counts only after the file is checked readable. Until then, agents make images themselves and give workers only the file path.",
+      "proof": [
+        {
+          "label": "ops/team-sync/air-reports/coach.md (Oct 20)"
+        }
+      ],
+      "lastWorkAt": "2026-10-20T12:35:00+07:00"
     },
     {
-     "label": "Commit e484e2f",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/e484e2f"
-    }
-   ],
-   "lastWorkAt": "2026-10-15T13:36:11+07:00",
-   "dismissed": "2026-10-17T12:13:00+07:00",
-   "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
-  },
-  {
-   "id": "brief-link",
-   "action": "Remove the Brief App link from the dashboard",
-   "approved": "Oct 15, 2026",
-   "confirmation": "Done. Link removed.",
-   "proof": [
+      "id": "undo-questions",
+      "action": "Add an Undo button to the Question Center",
+      "approved": "Oct 15, 2026",
+      "confirmation": "Done. Undo and Question Center polish shipped, with Undo toast padding fixed.",
+      "proof": [
+        {
+          "label": "Commit fa04bba",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/fa04bba"
+        },
+        {
+          "label": "Commit 12c402e",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/12c402e"
+        }
+      ],
+      "lastWorkAt": "2026-10-15T12:44:39+07:00",
+      "dismissed": "2026-10-17T12:13:00+07:00",
+      "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
+    },
     {
-     "label": "Commit 7d819d7",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/7d819d7"
-    }
-   ],
-   "lastWorkAt": "2026-10-15T13:17:01+07:00",
-   "dismissed": "2026-10-17T12:13:00+07:00",
-   "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
-  },
-  {
-   "id": "praise-log",
-   "action": "Set up a praise log",
-   "approved": "Oct 15, 2026",
-   "confirmation": "Done. Praise log created for the team.",
-   "proof": [
+      "id": "no-numbering",
+      "action": "Remove numbering from question cards, coaching notes and report rows",
+      "approved": "Oct 15, 2026 (1:31 PM and 1:35 PM ICT)",
+      "confirmation": "Done. Plain kit blocks with no number circles.",
+      "proof": [
+        {
+          "label": "Commit cb26428",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/cb26428"
+        },
+        {
+          "label": "Commit e484e2f",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/e484e2f"
+        }
+      ],
+      "lastWorkAt": "2026-10-15T13:36:11+07:00",
+      "dismissed": "2026-10-17T12:13:00+07:00",
+      "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
+    },
     {
-     "label": "ops/team-sync/praise-log.md"
-    }
-   ]
-  },
-  {
-   "id": "routines-two",
-   "action": "Trim Coach routines to two",
-   "approved": "Oct 15, 2026",
-   "confirmation": "Done. Coach Morning Run (4:33) and Weekly Agent Review (Thu 9:17) are the only routines.",
-   "proof": [
+      "id": "brief-link",
+      "action": "Remove the Brief App link from the dashboard",
+      "approved": "Oct 15, 2026",
+      "confirmation": "Done. Link removed.",
+      "proof": [
+        {
+          "label": "Commit 7d819d7",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/7d819d7"
+        }
+      ],
+      "lastWorkAt": "2026-10-15T13:17:01+07:00",
+      "dismissed": "2026-10-17T12:13:00+07:00",
+      "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
+    },
     {
-     "label": "Commit fa04bba",
-     "url": "https://github.com/WebermanApps/coach-dashboard/commit/fa04bba"
-    }
-   ],
-   "lastWorkAt": "2026-10-15T12:40:49+07:00",
-   "dismissed": "2026-10-17T12:13:00+07:00",
-   "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
-  },
-  {
-   "id": "whistle-b",
-   "action": "Set Whistle B as Coach's avatar",
-   "approved": "Oct 16, 2026 (11:50 AM ICT, in chat)",
-   "confirmation": "Done. Coach set Whistle B as its avatar at about 11:51 AM ICT, and the whistle question is marked answered.",
-   "proof": [
+      "id": "praise-log",
+      "action": "Set up a praise log",
+      "approved": "Oct 15, 2026",
+      "confirmation": "Done. Praise log created for the team.",
+      "proof": [
+        {
+          "label": "ops/team-sync/praise-log.md"
+        }
+      ]
+    },
     {
-     "label": "ops/brand/agent-icons/png/whistle-b.png"
+      "id": "routines-two",
+      "action": "Trim Coach routines to two",
+      "approved": "Oct 15, 2026",
+      "confirmation": "Done. Coach Morning Run (4:33) and Weekly Agent Review (Thu 9:17) are the only routines.",
+      "proof": [
+        {
+          "label": "Commit fa04bba",
+          "url": "https://github.com/WebermanApps/coach-dashboard/commit/fa04bba"
+        }
+      ],
+      "lastWorkAt": "2026-10-15T12:40:49+07:00",
+      "dismissed": "2026-10-17T12:13:00+07:00",
+      "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
+    },
+    {
+      "id": "whistle-b",
+      "action": "Set Whistle B as Coach's avatar",
+      "approved": "Oct 16, 2026 (11:50 AM ICT, in chat)",
+      "confirmation": "Done. Coach set Whistle B as its avatar at about 11:51 AM ICT, and the whistle question is marked answered.",
+      "proof": [
+        {
+          "label": "ops/brand/agent-icons/png/whistle-b.png"
+        }
+      ],
+      "lastWorkAt": "2026-10-16T11:51:00+07:00",
+      "dismissed": "2026-10-17T12:13:00+07:00",
+      "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
     }
-   ],
-   "lastWorkAt": "2026-10-16T11:51:00+07:00",
-   "dismissed": "2026-10-17T12:13:00+07:00",
-   "dismissedBy": "Max pressed Thank You! (ops/submit/outbox/router-2026-10-17-2011.md)"
-  }
- ]
+  ]
 }
