@@ -13,7 +13,8 @@
       "added": "2026-10-20T20:40:00+07:00",
       "lastWorkAt": "2026-10-20T20:40:00+07:00",
       "blurb": "10 cards, ready now",
-      "about": "How pings flow now that Grok Bot is ping master, routine vs ping, and what still reaches Max"
+      "about": "How pings flow now that Grok Bot is ping master, routine vs ping, and what still reaches Max",
+      "made": "2026-10-20"
     },
     {
       "id": "clarification-cards",
@@ -27,7 +28,8 @@
       "added": "2026-10-20T20:40:00+07:00",
       "lastWorkAt": "2026-10-20T20:40:00+07:00",
       "blurb": "10 cards, ready now",
-      "about": "How clarification questions reach Max as Swatch swipe cards, plus shadow over shine and the Built by Machan footer rollout"
+      "about": "How clarification questions reach Max as Swatch swipe cards, plus shadow over shine and the Built by Machan footer rollout",
+      "made": "2026-10-20"
     },
     {
       "id": "morning-brief-readiness",
@@ -41,7 +43,8 @@
       "added": "2026-10-20T20:40:00+07:00",
       "lastWorkAt": "2026-10-20T20:40:00+07:00",
       "blurb": "10 cards, ready now",
-      "about": "What Coach's pinged work and the morning brief should look like before Max wakes"
+      "about": "What Coach's pinged work and the morning brief should look like before Max wakes",
+      "made": "2026-10-20"
     }
   ],
   "updated": "2026-10-20T20:40:00+07:00",
@@ -71,7 +74,8 @@
         "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
         "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene"
       ],
-      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)",
+      "made": "2026-10-14"
     },
     {
       "id": "rule-cleanup-rule-cleanup-deck",
@@ -87,7 +91,8 @@
         "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
         "rule-cleanup-rule-cleanup-deck-questionnaire-size"
       ],
-      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)",
+      "made": "2026-10-14"
     },
     {
       "id": "workflow-routines-workflow-and-routines-deck",
@@ -103,7 +108,8 @@
         "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
         "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching"
       ],
-      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)",
+      "made": "2026-10-14"
     },
     {
       "id": "dashboard-layout-dashboard-layout-deck",
@@ -118,7 +124,8 @@
       "status": "retired",
       "unlisted_at": "2026-10-17T23:46:18+07:00",
       "replaced_by": "dashboard-layout-header-and-footer-details",
-      "note": "Retired Oct 17 2026 (Coach via Grok Bot): 20 picks (R86 says 10), most about sections removed Oct 16; replaced by Header And Footer Details. No results submitted; page, file kept."
+      "note": "Retired Oct 17 2026 (Coach via Grok Bot): 20 picks (R86 says 10), most about sections removed Oct 16; replaced by Header And Footer Details. No results submitted; page, file kept.",
+      "made": "2026-10-14"
     }
   ],
   "cap": 10,
@@ -131,7 +138,8 @@
       "at": "2026-10-18T22:18:54+07:00",
       "name": "Header And Footer Details",
       "answered": 7,
-      "total": 10
+      "total": 10,
+      "made": "2026-10-18"
     },
     {
       "id": "team-ideas-pjpssr--v2",
@@ -140,7 +148,8 @@
       "answered": 0,
       "total": 0,
       "url": "https://webermanapps.github.io/style-swipe/team-ideas-pjpssr/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
@@ -149,7 +158,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending-qhxral/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene",
@@ -158,7 +168,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene-pu24l4/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
@@ -167,7 +178,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-love-button-sticky-header-8r410p/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "rule-cleanup-rule-cleanup-deck-questionnaire-size",
@@ -176,7 +188,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-questionnaire-size-ihfxll/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
@@ -185,7 +198,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-weekly-output-late-flags-c54sh5/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     },
     {
       "id": "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching",
@@ -194,7 +208,8 @@
       "answered": 0,
       "total": 10,
       "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-review-sources-rule-batching-8e6ei4/",
-      "retired": "Old ask, cleared by Max Oct 20 2026"
+      "retired": "Old ask, cleared by Max Oct 20 2026",
+      "made": "2026-10-20"
     }
   ]
 }
