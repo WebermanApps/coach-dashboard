@@ -2,12 +2,12 @@
  "agent": "coach",
  "type": "Morning Report",
  "report_type": "Morning Report",
- "date": "2026-10-15",
- "posted_at": "2026-10-15T08:02:59+07:00",
- "posted": "2026-10-15T08:02:59+07:00",
+ "date": "2026-10-20",
+ "posted_at": "2026-10-20T12:44:00+07:00",
+ "posted": "2026-10-20T12:44:00+07:00",
  "due": "2026-10-15T05:00:00+07:00",
  "due_by": "05:00 ICT",
- "late": true,
- "summary": "Late \u00b7 Weekly Review + Daily Notes + Open Qs",
- "lastWorkAt": "2026-10-15T08:02:59+07:00"
+ "late": false,
+ "summary": "Empty. Starting clean (Oct 20). Morning reports now come only from Grok Bot and Swatch.",
+ "items": []
 }
