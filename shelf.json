@@ -1,214 +1,226 @@
 {
- "agent": "coach",
- "decks": [
-  {
-   "id": "team-ideas-pjpssr--v2",
-   "deck_id": "team-ideas-pjpssr",
-   "name": "Team Ideas: Quality And Safety",
-   "url": "https://webermanapps.github.io/style-swipe/team-ideas-pjpssr/",
-   "total": 0,
-   "topic": "team-ideas",
-   "tag": "Team Ideas",
-   "format": "ideas",
-   "type": "Ideas From The Team",
-   "progress_key": "styleSwipe:ideas:team-ideas-pjpssr",
-   "added": "2026-10-17T19:18:15+07:00",
-   "updated": "2026-10-17T19:19:52+07:00",
-   "version": 2,
-   "blurb": "0 ideas from the team",
-   "new": true,
-   "hidden": true,
-   "hidden_reason": "no ideas (R103: Ideas decks with 0 ideas stay off the shelf)"
-  },
-  {
-   "id": "dashboard-layout-header-and-footer-details",
-   "name": "Header And Footer Details",
-   "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-header-and-footer-details-lyc9b3/",
-   "total": 10,
-   "topic": "dashboard-layout",
-   "added": "2026-10-17T23:46:18+07:00",
-   "tag": "Dashboard Layout",
-   "answered": 7,
-   "replaces": "dashboard-layout-dashboard-layout-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T23:46:18+07:00",
-   "status": "done",
-   "done_at": "2026-10-18T22:18:54+07:00",
-   "skipped": [
-    "06",
-    "09",
-    "10"
-   ]
-  },
-  {
-   "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
-   "name": "Agent Overlap: Owners & Site Fixes",
-   "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending-qhxral/",
-   "total": 10,
-   "topic": "overlap-handoffs",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Agent Overlap",
-   "answered": 0,
-   "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T08:05:35+07:00"
-  },
-  {
-   "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene",
-   "name": "Agent Overlap: Replies, Files & Privacy",
-   "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene-pu24l4/",
-   "total": 10,
-   "topic": "overlap-handoffs",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Agent Overlap",
-   "answered": 0,
-   "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T08:05:35+07:00"
-  },
-  {
-   "id": "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
-   "name": "Rule Cleanup: Names, Labels & Sources",
-   "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-love-button-sticky-header-8r410p/",
-   "total": 10,
-   "topic": "rule-cleanup",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Rule Cleanup",
-   "answered": 0,
-   "split_from": "rule-cleanup-rule-cleanup-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T23:46:18+07:00",
-   "rebuilt": "2026-10-17T23:46:18+07:00"
-  },
-  {
-   "id": "rule-cleanup-rule-cleanup-deck-questionnaire-size",
-   "name": "Rule Cleanup: Files, Copies & Retests",
-   "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-questionnaire-size-ihfxll/",
-   "total": 10,
-   "topic": "rule-cleanup",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Rule Cleanup",
-   "answered": 0,
-   "split_from": "rule-cleanup-rule-cleanup-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T23:46:18+07:00",
-   "rebuilt": "2026-10-17T23:46:18+07:00"
-  },
-  {
-   "id": "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
-   "name": "Workflow: Weekly Rhythm & Coaching",
-   "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-weekly-output-late-flags-c54sh5/",
-   "total": 10,
-   "topic": "workflow-routines",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Workflow",
-   "answered": 0,
-   "split_from": "workflow-routines-workflow-and-routines-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T08:05:35+07:00"
-  },
-  {
-   "id": "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching",
-   "name": "Workflow: Reviews, Refills & Shipping",
-   "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-review-sources-rule-batching-8e6ei4/",
-   "total": 10,
-   "topic": "workflow-routines",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Workflow",
-   "answered": 0,
-   "split_from": "workflow-routines-workflow-and-routines-deck",
-   "blurb": "10 cards, ready now",
-   "lastWorkAt": "2026-10-17T08:05:35+07:00"
-  }
- ],
- "updated": "2026-10-18T23:09:59+07:00",
- "pinned": [
-  {
-   "name": "Coach Suggestions",
-   "url": "suggestions.html",
-   "answered": 0,
-   "total": 3,
-   "tag": "Questionnaire",
-   "lastWorkAt": "2026-10-15T23:39:11+07:00"
-  }
- ],
- "stats_note": "Ready decks refill on submit: ready_shelf.py refill <deck_id> --shelf this file --agent coach",
- "unlisted": [
-  {
-   "id": "overlap-handoffs-agent-overlap-and-handoffs-deck",
-   "name": "Agent Overlap And Handoffs Deck",
-   "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-zom8cm/",
-   "total": 20,
-   "topic": "overlap-handoffs",
-   "added": "2026-10-14T19:58:46+07:00",
-   "tag": "Agent Overlap",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
-    "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "rule-cleanup-rule-cleanup-deck",
-   "name": "Rule Cleanup Deck",
-   "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-o4wfk0/",
-   "total": 20,
-   "topic": "rule-cleanup",
-   "added": "2026-10-14T19:58:46+07:00",
-   "tag": "Rule Cleanup",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
-    "rule-cleanup-rule-cleanup-deck-questionnaire-size"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "workflow-routines-workflow-and-routines-deck",
-   "name": "Workflow And Routines Deck",
-   "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-77t46v/",
-   "total": 20,
-   "topic": "workflow-routines",
-   "added": "2026-10-14T19:58:47+07:00",
-   "tag": "Workflow",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
-    "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "dashboard-layout-dashboard-layout-deck",
-   "name": "Dashboard Layout Deck",
-   "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-dashboard-layout-deck-ucjnz8/",
-   "total": 20,
-   "topic": "dashboard-layout",
-   "added": "2026-10-14T19:58:45+07:00",
-   "tag": "Dashboard Layout",
-   "blurb": "20 cards, ready now",
-   "lastWorkAt": "2026-10-14T19:58:45+07:00",
-   "status": "retired",
-   "unlisted_at": "2026-10-17T23:46:18+07:00",
-   "replaced_by": "dashboard-layout-header-and-footer-details",
-   "note": "Retired Oct 17 2026 (Coach via Grok Bot): 20 picks (R86 says 10), most about sections removed Oct 16; replaced by Header And Footer Details. No results submitted; page, file kept."
-  }
- ],
- "cap": 10,
- "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
- "held": [],
- "queued": [],
- "done": [
-  {
-   "id": "dashboard-layout-header-and-footer-details",
-   "at": "2026-10-18T22:18:54+07:00",
-   "name": "Header And Footer Details",
-   "answered": 7,
-   "total": 10
-  }
- ]
+  "agent": "coach",
+  "decks": [
+    {
+      "id": "team-ideas-pjpssr--v2",
+      "deck_id": "team-ideas-pjpssr",
+      "name": "Team Ideas: Quality And Safety",
+      "url": "https://webermanapps.github.io/style-swipe/team-ideas-pjpssr/",
+      "total": 0,
+      "topic": "team-ideas",
+      "tag": "Team Ideas",
+      "format": "ideas",
+      "type": "Ideas From The Team",
+      "progress_key": "styleSwipe:ideas:team-ideas-pjpssr",
+      "added": "2026-10-17T19:18:15+07:00",
+      "updated": "2026-10-17T19:19:52+07:00",
+      "version": 2,
+      "blurb": "0 ideas from the team",
+      "new": true,
+      "hidden": true,
+      "hidden_reason": "no ideas (R103: Ideas decks with 0 ideas stay off the shelf)"
+    },
+    {
+      "id": "dashboard-layout-header-and-footer-details",
+      "name": "Header And Footer Details",
+      "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-header-and-footer-details-lyc9b3/",
+      "total": 10,
+      "topic": "dashboard-layout",
+      "added": "2026-10-17T23:46:18+07:00",
+      "tag": "Dashboard Layout",
+      "answered": 7,
+      "replaces": "dashboard-layout-dashboard-layout-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T23:46:18+07:00",
+      "status": "done",
+      "done_at": "2026-10-18T22:18:54+07:00",
+      "skipped": [
+        "06",
+        "09",
+        "10"
+      ]
+    },
+    {
+      "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
+      "name": "Agent Overlap: Owners & Site Fixes",
+      "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending-qhxral/",
+      "total": 10,
+      "topic": "overlap-handoffs",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Agent Overlap",
+      "answered": 0,
+      "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T08:05:35+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene",
+      "name": "Agent Overlap: Replies, Files & Privacy",
+      "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene-pu24l4/",
+      "total": 10,
+      "topic": "overlap-handoffs",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Agent Overlap",
+      "answered": 0,
+      "split_from": "overlap-handoffs-agent-overlap-and-handoffs-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T08:05:35+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
+      "name": "Rule Cleanup: Names, Labels & Sources",
+      "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-love-button-sticky-header-8r410p/",
+      "total": 10,
+      "topic": "rule-cleanup",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Rule Cleanup",
+      "answered": 0,
+      "split_from": "rule-cleanup-rule-cleanup-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T23:46:18+07:00",
+      "rebuilt": "2026-10-17T23:46:18+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "rule-cleanup-rule-cleanup-deck-questionnaire-size",
+      "name": "Rule Cleanup: Files, Copies & Retests",
+      "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-questionnaire-size-ihfxll/",
+      "total": 10,
+      "topic": "rule-cleanup",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Rule Cleanup",
+      "answered": 0,
+      "split_from": "rule-cleanup-rule-cleanup-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T23:46:18+07:00",
+      "rebuilt": "2026-10-17T23:46:18+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
+      "name": "Workflow: Weekly Rhythm & Coaching",
+      "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-weekly-output-late-flags-c54sh5/",
+      "total": 10,
+      "topic": "workflow-routines",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Workflow",
+      "answered": 0,
+      "split_from": "workflow-routines-workflow-and-routines-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T08:05:35+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching",
+      "name": "Workflow: Reviews, Refills & Shipping",
+      "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-review-sources-rule-batching-8e6ei4/",
+      "total": 10,
+      "topic": "workflow-routines",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Workflow",
+      "answered": 0,
+      "split_from": "workflow-routines-workflow-and-routines-deck",
+      "blurb": "10 cards, ready now",
+      "lastWorkAt": "2026-10-17T08:05:35+07:00",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    }
+  ],
+  "updated": "2026-10-18T23:09:59+07:00",
+  "pinned": [
+    {
+      "name": "Coach Suggestions",
+      "url": "suggestions.html",
+      "answered": 0,
+      "total": 3,
+      "tag": "Questionnaire",
+      "lastWorkAt": "2026-10-15T23:39:11+07:00"
+    }
+  ],
+  "stats_note": "Ready decks refill on submit: ready_shelf.py refill <deck_id> --shelf this file --agent coach",
+  "unlisted": [
+    {
+      "id": "overlap-handoffs-agent-overlap-and-handoffs-deck",
+      "name": "Agent Overlap And Handoffs Deck",
+      "url": "https://webermanapps.github.io/style-swipe/overlap-handoffs-agent-overlap-and-handoffs-deck-zom8cm/",
+      "total": 20,
+      "topic": "overlap-handoffs",
+      "added": "2026-10-14T19:58:46+07:00",
+      "tag": "Agent Overlap",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "overlap-handoffs-agent-overlap-and-handoffs-deck-card-spending",
+        "overlap-handoffs-agent-overlap-and-handoffs-deck-password-hygiene"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "rule-cleanup-rule-cleanup-deck",
+      "name": "Rule Cleanup Deck",
+      "url": "https://webermanapps.github.io/style-swipe/rule-cleanup-rule-cleanup-deck-o4wfk0/",
+      "total": 20,
+      "topic": "rule-cleanup",
+      "added": "2026-10-14T19:58:46+07:00",
+      "tag": "Rule Cleanup",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "rule-cleanup-rule-cleanup-deck-love-button-sticky-header",
+        "rule-cleanup-rule-cleanup-deck-questionnaire-size"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "workflow-routines-workflow-and-routines-deck",
+      "name": "Workflow And Routines Deck",
+      "url": "https://webermanapps.github.io/style-swipe/workflow-routines-workflow-and-routines-deck-77t46v/",
+      "total": 20,
+      "topic": "workflow-routines",
+      "added": "2026-10-14T19:58:47+07:00",
+      "tag": "Workflow",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "workflow-routines-workflow-and-routines-deck-weekly-output-late-flags",
+        "workflow-routines-workflow-and-routines-deck-review-sources-rule-batching"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "dashboard-layout-dashboard-layout-deck",
+      "name": "Dashboard Layout Deck",
+      "url": "https://webermanapps.github.io/style-swipe/dashboard-layout-dashboard-layout-deck-ucjnz8/",
+      "total": 20,
+      "topic": "dashboard-layout",
+      "added": "2026-10-14T19:58:45+07:00",
+      "tag": "Dashboard Layout",
+      "blurb": "20 cards, ready now",
+      "lastWorkAt": "2026-10-14T19:58:45+07:00",
+      "status": "retired",
+      "unlisted_at": "2026-10-17T23:46:18+07:00",
+      "replaced_by": "dashboard-layout-header-and-footer-details",
+      "note": "Retired Oct 17 2026 (Coach via Grok Bot): 20 picks (R86 says 10), most about sections removed Oct 16; replaced by Header And Footer Details. No results submitted; page, file kept."
+    }
+  ],
+  "cap": 10,
+  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
+  "held": [],
+  "queued": [],
+  "done": [
+    {
+      "id": "dashboard-layout-header-and-footer-details",
+      "at": "2026-10-18T22:18:54+07:00",
+      "name": "Header And Footer Details",
+      "answered": 7,
+      "total": 10
+    }
+  ]
 }
