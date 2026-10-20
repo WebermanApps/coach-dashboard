@@ -3,6 +3,18 @@
   "updated": "2026-10-20",
   "items": [
     {
+      "id": "ping-list",
+      "action": "Advice: what should still ping you (Oct 20)",
+      "approved": "Requested via Swatch, Oct 20, 2026, 2:13 PM ICT. You decide in a swipe deck.",
+      "confirmation": "Sent to Swatch. 7 items: security incidents, money due or at risk, a Smart Upkeep customer issue that needs you, a live app or site down, legal or tenant deadlines within 48 hours, an agent blocked on a step only you can do, and a rule conflict that's stopping work. Everything else goes on boards and decks.",
+      "proof": [
+        {
+          "label": "ops/team-sync/air-reports/coach.md (Oct 20)"
+        }
+      ],
+      "lastWorkAt": "2026-10-20T14:15:00+07:00"
+    },
+    {
       "id": "deck-engine",
       "action": "Advice: cheaper deck-making for Swatch (Oct 20)",
       "approved": "Requested Oct 20, 2026, 1:25 PM ICT. Advice only, not approved to build yet.",
