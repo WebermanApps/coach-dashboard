@@ -28,9 +28,9 @@
     },
     {
       "id": "rule-conflicts",
-      "action": "Rule conflicts for your decision (10, Oct 20)",
-      "approved": "Pinged Oct 20, 2026, 12:36 PM ICT. Waiting on your swipes in the Rules Check deck.",
-      "confirmation": "Sent to Swatch as 9 swipe cards (Rules Check deck) in Max's Picks (Yes means the new rule, No means the old rule). They cover: 1 whether a ping can wake a paused agent, 2 whether pings wake Prop and Construction, 3 retiring or keeping the Deck Results Router, 4 who tells deck owners, 5 turning on the instant ping routine and changing the Router, 6 Coach's old routines staying off (already off), 7 Swatch publishing while paused, 8 pinning drafts before your OK, 9 refilling the shelf after a submit. Plus 10 (added 12:43 PM, decided by you at 12:45 PM: Yes, the 4 AM run applies picks): in the 4 AM Deck Run, Swatch applies deck changes, which replaces the old 'implement deck changes' hold for that run.",
+      "action": "Rule conflicts: your Rules Check answers (Oct 20, 3:20 PM)",
+      "approved": "Answered Oct 20, 2026, 3:20 PM ICT. 9 of 10 settled, 1 still open.",
+      "confirmation": "New rule wins on 1 (a ping can wake a paused agent, then it re-pauses), 2 (pings wake Prop and Construction, but only if they're needed), 3 (retire the Deck Results Router once instant pings work), 4 (Swatch tells deck owners), 5 (turn on Deck Submitted (instant) and change the Router), 6 (Coach's old routines stay off, not deleted), 9 (Branding refills the shelf after a submit). 7 from your note: Swatch can publish follow-up decks while paused, but only after a ping. 10 decided at 12:45 PM: the 4 AM run applies picks. Still open: 8, whether to pin drafts before you approve them (skipped with no note).",
       "proof": [
         {
           "label": "Rules Check deck",
@@ -40,7 +40,7 @@
           "label": "ops/banks/rules-bank.md, Possible conflicts for Coach"
         }
       ],
-      "lastWorkAt": "2026-10-20T12:44:00+07:00"
+      "lastWorkAt": "2026-10-20T18:27:00+07:00"
     },
     {
       "id": "ping-proposal",
