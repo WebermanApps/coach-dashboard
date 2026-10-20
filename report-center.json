@@ -3,10 +3,22 @@
   "updated": "2026-10-20",
   "items": [
     {
+      "id": "deck-engine",
+      "action": "Advice: cheaper deck-making for Swatch (Oct 20)",
+      "approved": "Requested Oct 20, 2026, 1:25 PM ICT. Advice only, not approved to build yet.",
+      "confirmation": "Sent to Swatch, ranked by savings. 1 One shared deck builder: workers write only a short card list and one command builds, publishes, pins and checks the deck (biggest saving). 2 Build every deck in a pass with one worker. 3 Scripted live checks with one screenshot per batch. 4 One-line reports. 5 Reuse saved video frames. 6 Exactly 10 cards, not 11. 7 Use lower effort for the mechanical building steps.",
+      "proof": [
+        {
+          "label": "ops/team-sync/air-reports/coach.md (Oct 20)"
+        }
+      ],
+      "lastWorkAt": "2026-10-20T13:27:00+07:00"
+    },
+    {
       "id": "rule-conflicts",
       "action": "Rule conflicts for your decision (10, Oct 20)",
       "approved": "Pinged Oct 20, 2026, 12:36 PM ICT. Waiting on your swipes in the Rules Check deck.",
-      "confirmation": "Sent to Swatch as 9 swipe cards (Rules Check deck) in Max's Picks (Yes means the new rule, No means the old rule). They cover: 1 whether a ping can wake a paused agent, 2 whether pings wake Prop and Construction, 3 retiring or keeping the Deck Results Router, 4 who tells deck owners, 5 turning on the instant ping routine and changing the Router, 6 Coach's old routines staying off (already off), 7 Swatch publishing while paused, 8 pinning drafts before your OK, 9 refilling the shelf after a submit. Plus 10 (added 12:43 PM): in the 4 AM Deck Run, Swatch applies deck changes, which replaces the old 'implement deck changes' hold for that run.",
+      "confirmation": "Sent to Swatch as 9 swipe cards (Rules Check deck) in Max's Picks (Yes means the new rule, No means the old rule). They cover: 1 whether a ping can wake a paused agent, 2 whether pings wake Prop and Construction, 3 retiring or keeping the Deck Results Router, 4 who tells deck owners, 5 turning on the instant ping routine and changing the Router, 6 Coach's old routines staying off (already off), 7 Swatch publishing while paused, 8 pinning drafts before your OK, 9 refilling the shelf after a submit. Plus 10 (added 12:43 PM, decided by you at 12:45 PM: Yes, the 4 AM run applies picks): in the 4 AM Deck Run, Swatch applies deck changes, which replaces the old 'implement deck changes' hold for that run.",
       "proof": [
         {
           "label": "Rules Check deck",
