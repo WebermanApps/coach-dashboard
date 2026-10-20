@@ -3,6 +3,18 @@
   "updated": "2026-10-20",
   "items": [
     {
+      "id": "rule-conflicts",
+      "action": "Rule conflicts for your decision (9, from Grok Bot, Oct 20)",
+      "approved": "Pinged Oct 20, 2026, 12:36 PM ICT. Waiting on your decision, and it stays in every morning brief until resolved.",
+      "confirmation": "Sent to Swatch as 9 swipe cards in Max's Picks (Yes means the new rule, No means the old rule). They cover: 1 whether a ping can wake a paused agent, 2 whether pings wake Prop and Construction, 3 retiring or keeping the Deck Results Router, 4 who tells deck owners, 5 turning on the instant ping routine and changing the Router, 6 Coach's old routines staying off (already off), 7 Swatch publishing while paused, 8 pinning drafts before your OK, 9 refilling the shelf after a submit.",
+      "proof": [
+        {
+          "label": "ops/banks/rules-bank.md, Possible conflicts for Coach"
+        }
+      ],
+      "lastWorkAt": "2026-10-20T12:38:00+07:00"
+    },
+    {
       "id": "ping-proposal",
       "action": "Proposal: a reliable ping system (asked via Grok Bot, Oct 20)",
       "approved": "Requested Oct 20, 2026, 12:30 PM ICT. Advice only, not approved to build yet.",
