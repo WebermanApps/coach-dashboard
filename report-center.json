@@ -1,7 +1,23 @@
 {
   "agent": "coach",
-  "updated": "2026-10-20",
+  "updated": "2026-10-27",
   "items": [
+    {
+      "id": "branding-gate-remakes-1027",
+      "action": "Branding hard publish gate + High deck remakes (Oct 27)",
+      "approved": "Approved by Max Oct 27, 2026: hard deck publish gate (5 QA checks) + remake High Oct 27 decks.",
+      "confirmation": "Branding hard publish gate wired Oct 27. 7 High remakes live: Site Spaces, PowerHaus Fresh Start, Farm Basket Fresh Look, Member Home & Visit, Member Plan & Messages, Tech Van & Schedule, Prop Dashboard Arrangement. Old High slugs removed (8). Medium remakes not done yet (Roselle Pack Confirm, Brand Logo & Houses, Tech Today & Route, Mellow Wood / Wickfield).",
+      "proof": [
+        {
+          "label": "/workspace/high-remake-1027/REPORT.md"
+        },
+        {
+          "label": "Report Page",
+          "url": "https://cursor.com/canvas/store-de078f70-696b-4e81-a426-6c1dda29a8ea/ccbb7803-42f4-4f99-b09c-4636881de8f1"
+        }
+      ],
+      "lastWorkAt": "2026-10-27T17:30:00+07:00"
+    },
     {
       "id": "ping-list",
       "action": "Advice: what should still ping you (Oct 20)",
