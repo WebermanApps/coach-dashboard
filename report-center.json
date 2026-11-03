@@ -1,7 +1,23 @@
 {
   "agent": "coach",
-  "updated": "2026-10-27",
+  "updated": "2026-11-03",
   "items": [
+    {
+      "id": "info-flow-plan-1103",
+      "title": "Information Flow Plan — Nov 3",
+      "action": "Information Flow Plan — Nov 3",
+      "approved": "Requested by Machan Nov 3, 2026: tighten flow of information and updates between agents and dashboards.",
+      "confirmation": "Found: org chart last activity and agent status are hand-run (status as of Oct 28), shelf sync is manual/4 AM so done decks stay live, each dashboard keeps its own deck list. Plan: instant shelf sync on submit, one ops/status.json all dashboards read, auto last activity from team-feed and commits, stale-item check via Grok Bot, one-line handoff format. Swipe deck spec ready.",
+      "proof": [
+        {
+          "label": "/workspace/coach/flow-plan-1103.md"
+        },
+        {
+          "label": "/workspace/coach/flow-decks-1103.json"
+        }
+      ],
+      "lastWorkAt": "2026-11-03T12:10:00+07:00"
+    },
     {
       "id": "branding-gate-remakes-1027",
       "action": "Branding hard publish gate + High deck remakes (Oct 27)",
